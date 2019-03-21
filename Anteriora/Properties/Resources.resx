@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wojowniklewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wojowniklewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goblinlewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goblinlewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KwateraRybacka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KwateraRybacka.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sad.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wlocznikdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wlocznikdol1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goblinprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goblinprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mapa1koniec1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mapa1koniec.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goblingora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goblingora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trybwalki" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trybwalki.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waz2lewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waz4lewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzmalyprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzmalyprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duzykamienmapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duzykamienmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzmalygora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzmalygora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapa1koniecbiała1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapa1koniecbiała.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wloczniklewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wloczniklewo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orklewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orklewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wojownikdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wojownikdol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goblindol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goblindol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hodowla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hodowla.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robakprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robakprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iks.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucznikdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucznikdol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kamieniołom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kamieniołom1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucznikgora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucznikgora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wojownikgora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wojownikgora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luczniklewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\luczniklewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wlocznikgora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wlocznikgora1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Koszary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Koszary.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mur" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mur.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinozaurmacius1przez2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinozaurmacius1przez2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kłoda1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kłoda.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart4.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzduzydol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzduzydol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lucznikprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lucznikprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tartak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tartak1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="przyciskkoszary2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\przyciskkoszary2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapa1koniecbiała" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapa1koniecbiała.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mostmapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mostmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orkgora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orkgora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waz3lewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waz3lewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="siano1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siano.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart5.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kawalkidrewna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kawalkidrewna.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart6.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="piorun2beztła" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\piorun2beztła.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Most" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Most.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mostmapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mostmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waz1lewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waz1lewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\load.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tloprzyciskikoszary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tloprzyciskikoszary.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brakmostumapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brakmostumapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="przyciskkoszary3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\przyciskkoszary3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="krabymapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\krabymapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skarbmapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skarbmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Magazyn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Magazyn.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="schodymapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\schodymapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orkdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orkdol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wojownikprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wojownikprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="skarbmapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skarbmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="orkprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\orkprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robakdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robaldol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="brakmostumapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\brakmostumapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GraczPart31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GraczPart3.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tlomenukoszary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tlomenukoszary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzduzylewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzduzylewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="duzykamienmapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\duzykamienmapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="load2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\load2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BudynekMieszkalny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BudynekMieszkalny.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robaklewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robaklewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MiejsceNaNamiot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MiejsceNaNamiot.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warsztat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warsztat.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzduzygora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzduzygora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jabłko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jabłko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kawalkidrewna1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kawalkidrewna.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kłoda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kłoda.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mapa1koniec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mapa1koniec.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="łódkamapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\łódkamapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatkaRolnika" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatkaRolnika.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzduzyprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzduzyprawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kamieniołom2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kamieniołom2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="labelkoszary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\labelkoszary.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="waz3prawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\waz3prawo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pasekzyciatlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pasekzyciatlo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="krabymapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\krabymapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Studnia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Studnia.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tartak2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tartak2.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NamiotNaKiju" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Namiot.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="łódkamapa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\łódkamapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="schodymapa11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\schodymapa1.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wlocznikprawo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wlocznikprawo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jabłko1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jabłko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robakgora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\robalgora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dinozaurmacius" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dinozaurmacius.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="siano" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\siano.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Targowisko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Targowisko.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzmalydol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzmalydol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nietoperzmalylewo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nietoperzmalylewo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainakwaterarybacka1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainakwaterarybacka1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainakwaterarybacka2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainakwaterarybacka2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainamagazyn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainamagazyn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainanamiot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainanamiot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainaprzejscie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainaprzejscie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainastudnia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainastudnia1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainastudnia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainastudnia2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakrainawarsztat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakrainawarsztat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poczatek1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poczatek1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poczatek2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poczatek2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poczatek3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\poczatek3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blokadalodowakraina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blokadalodowakraina.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinowfull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinowfull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="osadagoblinow2b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\osadagoblinow2b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="namiot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\namiot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kursor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mechanizm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mechanizm1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mechanizm2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mechanizm2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mechanizmytlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mechanizmytlo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezyfull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezyfull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blokada1jaskiniawezy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blokada1jaskiniawezy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blokada2jaskiniawezy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blokada2jaskiniawezy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mostjaskiniawezy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mostjaskiniawezy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy3a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy3a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy3b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy3b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy4a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy4a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy4b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy4b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezybitwa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezybitwa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lodowakraina10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lodowakraina10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapa2elementypoprawa21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapa2elementypoprawa21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapagrawalka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapagrawalka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy3c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy3c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="miecze2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2 miecze.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy6a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy6a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy6b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy6b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy11a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy11a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy11b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy11b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy12a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy12a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy12b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy12b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

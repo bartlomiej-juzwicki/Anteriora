@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D5C028E6-FBA1-4390-B414-64F6A199247B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Anteriora</RootNamespace>
+    <AssemblyName>Anteriora</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Budowa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Budowa.Designer.cs">
+      <DependentUpon>Budowa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Budowle.cs" />
+    <Compile Include="BudynekMieszkalny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BudynekMieszkalny.Designer.cs">
+      <DependentUpon>BudynekMieszkalny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dziennik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dziennik.Designer.cs">
+      <DependentUpon>Dziennik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EkranLadowania.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EkranLadowania.Designer.cs">
+      <DependentUpon>EkranLadowania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hodowla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hodowla.Designer.cs">
+      <DependentUpon>Hodowla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instancje.cs" />
+    <Compile Include="JaskiniaWezy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JaskiniaWezy.Designer.cs">
+      <DependentUpon>JaskiniaWezy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JednostkiDefensywne.cs" />
+    <Compile Include="JednostkiMilitarne.cs" />
+    <Compile Include="JednostkiGracza.cs" />
+    <Compile Include="Koszary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koszary.Designer.cs">
+      <DependentUpon>Koszary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Koszary2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koszary2.Designer.cs">
+      <DependentUpon>Koszary2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoszaryZwiadowca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KoszaryZwiadowca.Designer.cs">
+      <DependentUpon>KoszaryZwiadowca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mapa.Designer.cs">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materiały.cs" />
+    <Compile Include="MechanizmJaskiniaWezy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MechanizmJaskiniaWezy.Designer.cs">
+      <DependentUpon>MechanizmJaskiniaWezy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mieszkancy.cs" />
+    <Compile Include="Namiot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Namiot.Designer.cs">
+      <DependentUpon>Namiot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Osada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Osada.Designer.cs">
+      <DependentUpon>Osada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OsadaGoblinow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OsadaGoblinow.Designer.cs">
+      <DependentUpon>OsadaGoblinow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoleBitwy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoleBitwy.Designer.cs">
+      <DependentUpon>PoleBitwy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPolaBitwy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPolaBitwy.Designer.cs">
+      <DependentUpon>MenuPolaBitwy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Początek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Początek.Designer.cs">
+      <DependentUpon>Początek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LodowaKraina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LodowaKraina.Designer.cs">
+      <DependentUpon>LodowaKraina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Wrogowie.cs" />
+    <Compile Include="Targowisko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Targowisko.Designer.cs">
+      <DependentUpon>Targowisko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ulepszanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ulepszanie.Designer.cs">
+      <DependentUpon>Ulepszanie.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Budowa.resx">
+      <DependentUpon>Budowa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BudynekMieszkalny.resx">
+      <DependentUpon>BudynekMieszkalny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dziennik.resx">
+      <DependentUpon>Dziennik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EkranLadowania.resx">
+      <DependentUpon>EkranLadowania.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hodowla.resx">
+      <DependentUpon>Hodowla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JaskiniaWezy.resx">
+      <DependentUpon>JaskiniaWezy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Koszary.resx">
+      <DependentUpon>Koszary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Koszary2.resx">
+      <DependentUpon>Koszary2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoszaryZwiadowca.resx">
+      <DependentUpon>KoszaryZwiadowca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapa.resx">
+      <DependentUpon>Mapa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MechanizmJaskiniaWezy.resx">
+      <DependentUpon>MechanizmJaskiniaWezy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Namiot.resx">
+      <DependentUpon>Namiot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Osada.resx">
+      <DependentUpon>Osada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OsadaGoblinow.resx">
+      <DependentUpon>OsadaGoblinow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoleBitwy.resx">
+      <DependentUpon>PoleBitwy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPolaBitwy.resx">
+      <DependentUpon>MenuPolaBitwy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Początek.resx">
+      <DependentUpon>Początek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LodowaKraina.resx">
+      <DependentUpon>LodowaKraina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Targowisko.resx">
+      <DependentUpon>Targowisko.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ulepszanie.resx">
+      <DependentUpon>Ulepszanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jabłko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kawalkidrewna.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kłoda.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\krabymapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\łódkamapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schodymapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siano.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skarbmapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duzykamienmapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mapa1koniec.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brakmostumapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostmapa1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa1koniecbiała.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GraczPart6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MiejsceNaNamiot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Namiot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tartak1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tartak2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Targowisko.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Studnia.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Magazyn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koszary.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChatkaRolnika.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sad.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warsztat.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KwateraRybacka.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Most.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mur.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hodowla.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BudynekMieszkalny.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamieniołom1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamieniołom2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piorun2beztła.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trybwalki.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojownik1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblinek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblinek2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojownik2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wloczniklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikprawo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikdol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wlocznikgora1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wloczniklewo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucznikdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucznikgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luczniklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucznikprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojownikdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojownikgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojowniklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wojownikprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblinlewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblinprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orkdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orkprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblindol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goblingora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orkgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pasekzyciatlo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tlokoszarypng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tlomenukoszary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tloprzyciskikoszary.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\labelkoszary.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\przyciskkoszary2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\przyciskkoszary3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzduzylewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzduzyprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzduzydol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzduzygora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzmalylewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzmalydol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzmalygora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nietoperzmalyprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz1prawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz2lewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz2prawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz3lewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz3prawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz4lewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waz1lewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robaklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robakprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robaldol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robalgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinozaurmacius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinozaurmacius1przez2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainanamiot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainamagazyn.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainawarsztat.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainakwaterarybacka1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 miecze.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainakwaterarybacka1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainakwaterarybacka2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainamagazyn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainanamiot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainaprzejscie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainastudnia1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainastudnia2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakrainawarsztat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poczatek1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poczatek2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\poczatek3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blokadalodowakraina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinowfull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinow2b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\namiot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kursor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanizm1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanizm2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mechanizmytlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezyfull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blokada1jaskiniawezy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blokada2jaskiniawezy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostjaskiniawezy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy3a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy4a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy4b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniaschematbitwa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezybitwa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa1biała.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapa2elementypoprawa21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapagrawalka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapka1bezelementów1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapka2zelementmi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinowbitwa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinowbitwa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinowbitwa3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proba1mapa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lodowakraina10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy3c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 miecze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy6a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy6b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy11a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy11b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy12a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy12b.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
