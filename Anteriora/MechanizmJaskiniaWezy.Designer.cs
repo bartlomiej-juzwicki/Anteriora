@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxMechanizm5 = new System.Windows.Forms.PictureBox();
             this.pictureBoxMechanizm6 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMechanizm4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMechanizm3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMechanizm2)).BeginInit();
@@ -104,7 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 34);
+            this.label1.Location = new System.Drawing.Point(71, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 4;
@@ -136,6 +137,16 @@
             this.pictureBoxMechanizm6.TabStop = false;
             this.pictureBoxMechanizm6.Click += new System.EventHandler(this.pictureBoxMechanizm6_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(74, 235);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 31);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Exit";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MechanizmJaskiniaWezy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +154,7 @@
             this.BackgroundImage = global::Anteriora.Properties.Resources.mechanizmytlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1067, 295);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBoxMechanizm6);
             this.Controls.Add(this.pictureBoxMechanizm5);
             this.Controls.Add(this.label1);
@@ -180,5 +192,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxMechanizm5;
         private System.Windows.Forms.PictureBox pictureBoxMechanizm6;
+        private System.Windows.Forms.Button button1;
     }
 }

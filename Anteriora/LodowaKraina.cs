@@ -218,7 +218,7 @@ namespace Anteriora
             if(pictureBoxMglaPoziom3.Visible == false)
             {
                 pictureBoxPrzeszkoda.Visible = false;
-                o1.lodowaKraina.czyBlokadaIstnieje = false;
+                o1.lodowaKraina.czyBlokadaIstnieje1 = false;
             }
         }
 
@@ -235,7 +235,7 @@ namespace Anteriora
 
         public void TworzWidok()
         {
-            if (o1.lodowaKraina.czyBlokadaIstnieje == false)
+            if (o1.lodowaKraina.czyBlokadaIstnieje1 == false)
             {
                 pictureBoxPrzeszkoda.Visible = false;
             }

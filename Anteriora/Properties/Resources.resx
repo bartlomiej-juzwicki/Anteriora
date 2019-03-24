@@ -568,9 +568,6 @@
   <data name="jaskiniawezy7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jaskiniawezy7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jaskiniawezy8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jaskiniawezy8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="jaskiniawezy9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jaskiniawezy9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -615,5 +612,62 @@
   </data>
   <data name="jaskiniawezy12b" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jaskiniawezy12b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy12c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy12c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy12d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy12d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy13e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy13e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy14a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy14a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy14b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy14b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy14c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy14c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy14d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy14d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy15a" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy15a.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy15b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy15b.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy15c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy15c.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy15d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy15d.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jaskiniawezy15e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jaskiniawezy15e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kamieniołom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kamieniołom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

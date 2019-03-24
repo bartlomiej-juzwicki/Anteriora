@@ -781,5 +781,62 @@
   <ItemGroup>
     <None Include="Resources\jaskiniawezy12b.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy12c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy12d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy14a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy14b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy14c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy14d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy15a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy15b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy15c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy15d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaskiniawezy15e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kamieniołom.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,7 +25,11 @@ namespace Anteriora
         public bool enablePoziom4 { get; set; }
         public bool enablePoziom5 { get; set; }
         public int postep { get; set; }
-        public bool czyBlokadaIstnieje { get; set; }
+        public bool czyBlokadaIstnieje1 { get; set; }
+        public bool czyBlokadaIstnieje2 { get; set; }
+        public bool czyBudowlaIstnieje1 { get; set; }
+        public bool czyBudowlaIstnieje2 { get; set; }
+        public bool czyBudowlaIstnieje3 { get; set; }
 
 
 
@@ -38,7 +42,12 @@ namespace Anteriora
             this.obrazekGora = obrazekGora;
             this.obrazekDol = obrazekDol;
 
-            czyBlokadaIstnieje = true;
+            czyBlokadaIstnieje1 = true;
+            czyBlokadaIstnieje2 = true;
+            czyBudowlaIstnieje1 = false;
+            czyBudowlaIstnieje2 = false;
+            czyBudowlaIstnieje3 = false;
+
             czasWroga = 0;
             czasZwiadowcy = 0;
             licznikZwiadowca = 1;

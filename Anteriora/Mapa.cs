@@ -63,7 +63,7 @@ namespace Anteriora
         private void pictureBoxJaskiniaWezy_Click(object sender, EventArgs e)
         {
             //new MenuPolaBitwy(o1, this, 2).ShowDialog();
-            new JaskiniaWezy().Show();
+            new JaskiniaWezy(o1, o2, this).Show();
         }
 
         private void timerPoruszanieWroga_Tick(object sender, EventArgs e)

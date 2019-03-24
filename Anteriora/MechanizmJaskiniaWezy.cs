@@ -31,10 +31,12 @@ namespace Anteriora
         public Random rnd = new Random();
 
         JaskiniaWezy o;
+        Osada o2;
 
-        public MechanizmJaskiniaWezy(JaskiniaWezy c, int mechanizm)
+        public MechanizmJaskiniaWezy(JaskiniaWezy c, Osada c2, int mechanizm)
         {
             o = c;
+            o2 = c2;
             InitializeComponent();
 
             ktoryMechanizm = mechanizm;
@@ -162,6 +164,7 @@ namespace Anteriora
                 else if (mechanizmobrazek1 == mechanizm1 && mechanizmobrazek2 == mechanizm2 && mechanizmobrazek3 == mechanizm3 && mechanizmobrazek4 == mechanizm4)
                 {
                     this.Close();
+                    o2.jaskiniaWezy.czyBlokadaIstnieje1 = false;
                     o.pictureBoxBlokada1.Visible = false;
                 }
             }
@@ -179,6 +182,7 @@ namespace Anteriora
                 else if (mechanizmobrazek1 == mechanizm1 && mechanizmobrazek2 == mechanizm2 && mechanizmobrazek3 == mechanizm3 && mechanizmobrazek4 == mechanizm4 && mechanizmobrazek5 == mechanizm5 && mechanizmobrazek6 == mechanizm6)
                 {
                     this.Close();
+                    o2.jaskiniaWezy.czyBlokadaIstnieje2 = false;
                     o.pictureBoxBlokada2.Visible = false;
                 }
             }
@@ -199,6 +203,9 @@ namespace Anteriora
            
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

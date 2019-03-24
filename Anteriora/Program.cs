@@ -16,7 +16,7 @@ namespace Anteriora
         {
             
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new JaskiniaWezy());
+            Application.Run(new Początek());
         }
     }
 }

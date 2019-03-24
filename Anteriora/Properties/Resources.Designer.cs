@@ -433,6 +433,186 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy12c {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy12c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy12d {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy12d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13 {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13a {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13b {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13c {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13d {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy13e {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy13e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy14 {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy14a {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy14a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy14b {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy14b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy14c {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy14c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy14d {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy14d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy15a {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy15a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy15b {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy15b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy15c {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy15c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy15d {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy15d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap jaskiniawezy15e {
+            get {
+                object obj = ResourceManager.GetObject("jaskiniawezy15e", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap jaskiniawezy2 {
             get {
                 object obj = ResourceManager.GetObject("jaskiniawezy2", resourceCulture);
@@ -543,16 +723,6 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
-        public static System.Drawing.Bitmap jaskiniawezy8 {
-            get {
-                object obj = ResourceManager.GetObject("jaskiniawezy8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
-        /// </summary>
         public static System.Drawing.Bitmap jaskiniawezy9 {
             get {
                 object obj = ResourceManager.GetObject("jaskiniawezy9", resourceCulture);
@@ -576,6 +746,16 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap jaskiniawezyfull {
             get {
                 object obj = ResourceManager.GetObject("jaskiniawezyfull", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Kamieniołom {
+            get {
+                object obj = ResourceManager.GetObject("Kamieniołom", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
