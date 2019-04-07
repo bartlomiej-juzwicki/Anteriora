@@ -16,37 +16,37 @@ namespace Anteriora
         public Początek o;
 
         // nowy "surowiec"
-        public Materiały zloto = new Materiały();
+        public Materiały zloto = new Materiały(1000);
         // mieszkancy
         public Mieszkancy mieszkancy = new Mieszkancy();
 
         // obiekty klasy Budowle, nasze budynki w osadzie
         
-        public Budowle tartak1 = new Budowle("pierwszy tartak");
-        public Budowle tartak2 = new Budowle("drugi tartak");
-        public Budowle kamieniolom1 = new Budowle("pierwszy kamieniołom");
-        public Budowle kamieniolom2 = new Budowle("drugi kamieniołom");
-        public Budowle kwateraRybacka = new Budowle("kwatera rybacka");
-        public Budowle chataMaga = new Budowle("chata maga");
-        public Budowle chatkaRolnika = new Budowle("chatka rolnika");
-        public Budowle hodowla = new Budowle("hodowla");
-        public Budowle studnia = new Budowle("studnia");
-        public Budowle magazyn = new Budowle("magazyn");
-        public Budowle targowisko = new Budowle("targowisko");
-        public Budowle most = new Budowle("most");
-        public Budowle mur = new Budowle("mur");
-        public Budowle koszary = new Budowle("koszary");
-        public Budowle budynekMieszkalny = new Budowle("budynek mieszkalny");
-        public Budowle warsztat = new Budowle("warsztat");
+        public Budowle tartak1 = new Budowle("pierwszy tartak", 1);
+        public Budowle tartak2 = new Budowle("drugi tartak", 1);
+        public Budowle kamieniolom1 = new Budowle("pierwszy kamieniołom", 2);
+        public Budowle kamieniolom2 = new Budowle("drugi kamieniołom", 2);
+        public Budowle kwateraRybacka = new Budowle("kwatera rybacka", 2);
+        public Budowle chataMaga = new Budowle("chata maga", 1);
+        public Budowle chatkaRolnika = new Budowle("chatka rolnika", 3);
+        public Budowle hodowla = new Budowle("hodowla", 4);
+        public Budowle studnia = new Budowle("studnia", 2);
+        public Budowle magazyn = new Budowle("magazyn", 1);
+        public Budowle targowisko = new Budowle("targowisko",1);
+        public Budowle most = new Budowle("most",4);
+        public Budowle mur = new Budowle("mur", 10);
+        public Budowle koszary = new Budowle("koszary", 20);
+        public Budowle budynekMieszkalny = new Budowle("budynek mieszkalny", 4);
+        public Budowle kuznia = new Budowle("kuznia", 2);
 
         // w lodowej krainie
 
-        public Budowle warsztatLK = new Budowle("lodowy warsztat");
-        public Budowle kwateraRybackaLK1 = new Budowle("pierwsza lodowa kwatera rybacka");
-        public Budowle kwateraRybackaLK2 = new Budowle("druga lodowa kwatera rybacka");
-        public Budowle studniaLK1 = new Budowle("pierwsza lodowa studnia");
-        public Budowle studniaLK2 = new Budowle("druga lodowa studnia");
-        public Budowle budynekMieszkalnyLK = new Budowle("lodowy budynek mieszkalny");
+        public Budowle warsztatLK = new Budowle("lodowy warsztat",1);
+        public Budowle kwateraRybackaLK1 = new Budowle("pierwsza lodowa kwatera rybacka",1);
+        public Budowle kwateraRybackaLK2 = new Budowle("druga lodowa kwatera rybacka",1);
+        public Budowle studniaLK1 = new Budowle("pierwsza lodowa studnia",1);
+        public Budowle studniaLK2 = new Budowle("druga lodowa studnia",1);
+        public Budowle budynekMieszkalnyLK = new Budowle("lodowy budynek mieszkalny",1);
 
 
 
@@ -117,17 +117,20 @@ namespace Anteriora
         {
             o = c;
             InitializeComponent();
-
-         
             // kontynuacja czasu rzeczywistego
             czasGry = o.czasGry;
             timerCzasGryMapa2.Start();
+            timerJedzenie.Start();
             surowce.Add(o.drewno);
             surowce.Add(o.siano);
             surowce.Add(o.jedzenie);
             surowce.Add(o.kamień);
             surowce.Add(o.woda);
             surowce.Add(zloto);
+
+            o.drewno.ilosc = 1000;
+            o.kamień.ilosc = 1000;
+            o.siano.ilosc = 1000;
 
             //zagadka.obrazekLewo = "dinozaurmacius";
             //zagadka.obrazekDol = "dinozaurmacius";
@@ -147,7 +150,7 @@ namespace Anteriora
             targowisko.pictureBox = pictureBoxTargowisko;
             hodowla.pictureBox = pictureBoxHodowla;
             chataMaga.pictureBox = pictureBoxChataMaga;
-            warsztat.pictureBox = pictureBoxWarsztat;
+            kuznia.pictureBox = pictureBoxKuznia;
             magazyn.pictureBox = pictureBoxMagazyn;
             mur.pictureBox = pictureBoxMur;
 
@@ -169,25 +172,17 @@ namespace Anteriora
             targowisko.PrzypiszPozycjeBudowli();
             hodowla.PrzypiszPozycjeBudowli();
             chataMaga.PrzypiszPozycjeBudowli();
-            warsztat.PrzypiszPozycjeBudowli();
+            kuznia.PrzypiszPozycjeBudowli();
             magazyn.PrzypiszPozycjeBudowli();
             mur.PrzypiszPozycjeBudowli();
 
             #endregion
-
-            zloto.ilosc = 20;
-            o.drewno.ilosc = 10000;
-            o.kamień.ilosc = 10000;
-            o.siano.ilosc = 10000;
-
-
 
         }
 
 
         private void timerCzasGryMapa2_Tick(object sender, EventArgs e)
         {
-
             czasGry++;
             // wrzucenie do labeli wartości surowców 
             labelCzasMapa1.Text = "  Czas gry: " + czasGry.ToString() + " sekund(y)";
@@ -204,15 +199,46 @@ namespace Anteriora
             ZmianaKoloruTekstuLabela(o.jedzenie, labelJedzenie);
             ZmianaKoloruTekstuLabela(o.woda, labelWoda);
             ZmianaKoloruTekstuLabela(zloto, labelZloto);
+
+            ZmienKolorLabelaPrzyGlodzie();
+
             PojemnośćMagazynu();
 
             //wzrost wartosci surowców
-            o.drewno.ZwiekszPrzyrostMaterialu(tartak1.poziomUlepszenia * 10, tartak2.poziomUlepszenia, 0);
-            o.kamień.ZwiekszPrzyrostMaterialu(kamieniolom1.poziomUlepszenia * 10, kamieniolom2.poziomUlepszenia, 0);
-            o.siano.ZwiekszPrzyrostMaterialu(chatkaRolnika.poziomUlepszenia * 10, 0, 0);
-            o.jedzenie.ZwiekszPrzyrostMaterialu(hodowla.poziomUlepszenia,kwateraRybacka.poziomUlepszenia,0);
-            o.woda.ZwiekszPrzyrostMaterialu(studnia.poziomUlepszenia, 0, 0);
-            
+            o.drewno.ObliczPoziomUlepszenia(tartak1.poziomUlepszenia, tartak2.poziomUlepszenia, 0);
+            o.drewno.ZwiekszPrzyrostMaterialu(o.drewno.poziomEksploatacji);
+
+            o.kamień.ObliczPoziomUlepszenia(kamieniolom1.poziomUlepszenia, kamieniolom2.poziomUlepszenia, 0);
+            o.kamień.ZwiekszPrzyrostMaterialu(o.kamień.poziomEksploatacji);
+
+            o.siano.ObliczPoziomUlepszenia(chatkaRolnika.poziomUlepszenia, 0, 0);
+            o.siano.ZwiekszPrzyrostMaterialu(o.siano.poziomEksploatacji);
+
+            o.jedzenie.ObliczPoziomUlepszenia(hodowla.poziomUlepszenia, kwateraRybacka.poziomUlepszenia, 0);
+            o.jedzenie.ZwiekszPrzyrostMaterialu(o.jedzenie.poziomEksploatacji);
+
+            o.woda.ObliczPoziomUlepszenia(studnia.poziomUlepszenia, 0, 0);
+            o.woda.ZwiekszPrzyrostMaterialu(o.woda.poziomEksploatacji);
+
+            if (budynekMieszkalny.pictureBox.Visible == true)
+            {
+                if (mieszkancy.czyPrzyrostMieszkancow == true)
+                {
+                    timerMieszkancy.Start();
+                }
+                else if (mieszkancy.czyPrzyrostMieszkancow == false)
+                {
+                    timerMieszkancy.Stop();
+                }
+            }
+
+           
+
+        }
+
+        private void timerMieszkancy_Tick(object sender, EventArgs e)
+        {
+            mieszkancy.liczbaMieszkancow++;
         }
 
         private void Osada_FormClosed(object sender, FormClosedEventArgs e)
@@ -287,12 +313,12 @@ namespace Anteriora
             {
                 foreach (var item in surowce)
                 {
-                    if (item.ilosc > 999)
+                    if (item.ilosc > 99)
                     {
                         i++;
-                        item.ilosc = 1000;
+                        item.ilosc = 100;
                     }
-                    else if (item.ilosc <= 999)
+                    else if (item.ilosc <= 99)
                     {
                         i = i + 0;
                     }
@@ -409,7 +435,7 @@ namespace Anteriora
             {
                 if (material.ilosc >= 99)
                 {
-                    label.ForeColor = Color.Red;
+                    label.ForeColor = Color.DimGray;
                 }
                 else if (material.ilosc < 99)
                 {
@@ -420,7 +446,7 @@ namespace Anteriora
             {
                 if (material.ilosc >= 999)
                 {
-                    label.ForeColor = Color.Red;
+                    label.ForeColor = Color.DarkGreen;
                 }
                 else if (material.ilosc < 999)
                 {
@@ -431,7 +457,7 @@ namespace Anteriora
             {
                 if (material.ilosc >= 1999)
                 {
-                    label.ForeColor = Color.Red;
+                    label.ForeColor = Color.DarkGreen;
                 }
                 else if (material.ilosc < 1999)
                 {
@@ -442,7 +468,7 @@ namespace Anteriora
             {
                 if (material.ilosc >= 2999)
                 {
-                    label.ForeColor = Color.Red;
+                    label.ForeColor = Color.DarkGreen;
                 }
                 else if (material.ilosc < 2999)
                 {
@@ -450,6 +476,31 @@ namespace Anteriora
                 }
             }
         }
+        #endregion
+
+
+        #region Zmiana koloru labela jedzenia i wody podczas głodu
+        public void ZmienKolorLabelaPrzyGlodzie()
+        {
+            if(o.jedzenie.ilosc< 0)
+            {
+                labelJedzenie.ForeColor = Color.DarkRed;
+            }
+            else
+            {
+                labelJedzenie.ForeColor = Color.Black;
+            }
+
+            if(o.woda.ilosc< 0)
+            {
+                labelWoda.ForeColor = Color.DarkRed;
+            }
+            else
+            {
+                labelWoda.ForeColor = Color.Black;
+            }
+        }
+
         #endregion
 
         private void pictureBoxMapa_Click(object sender, EventArgs e)
@@ -592,9 +643,43 @@ namespace Anteriora
             }
         }
 
+        public void Zjedz()
+        {
+            if ((o.jedzenie.ilosc < (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow) || (o.woda.ilosc < (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow))
+            {
+                mieszkancy.poziomZadowolenia = 0;
+                ZmienNaGlod();
+            }
+            else
+            {
+                ZmienNaDostatek();  
+            }
+
+            o.jedzenie.ilosc -= (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow;
+            o.woda.ilosc -= (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow;
+        }
+
+        public static void ZmienNaGlod()
+        {
+            Materiały.glod = 2;
+
+        }
+
+        public static void ZmienNaDostatek()
+        {
+            Materiały.glod = 1;
+        }
+
+
+
         private void pictureBoxBudynekMieszkalny_Click(object sender, EventArgs e)
         {
-            new BudynekMieszkalny().ShowDialog();
+            new BudynekMieszkalny(this,o).ShowDialog();
+        }
+
+        private void timerJedzenie_Tick(object sender, EventArgs e)
+        {
+            Zjedz();
         }
     }
 }

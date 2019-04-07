@@ -12,12 +12,12 @@ namespace Anteriora
 {
     public partial class Namiot : Form
     {
-        Osada originalForm;
-        Początek originalForm2;
-        public Namiot(Osada copyForm, Początek copyForm2)
+        Osada o1;
+        Początek o2;
+        public Namiot(Osada c1, Początek c2)
         {
-            originalForm = copyForm;
-            originalForm2 = copyForm2;
+            o1 = c1;
+            o2 = c2;
             InitializeComponent();
         }
 
@@ -33,7 +33,17 @@ namespace Anteriora
         /// <param name="e"></param>
         private void buttonBudowaNamiot_Click(object sender, EventArgs e)
         {
-            new Budowa(originalForm,originalForm2).ShowDialog();
+            new Budowa(o1,o2).ShowDialog();
+        }
+
+        private void buttonUlepszanieNamiot_Click(object sender, EventArgs e)
+        {
+            new Ulepszanie(o1, o2).ShowDialog();
+        }
+
+        private void buttonZarządzanieNamiot_Click(object sender, EventArgs e)
+        {
+            new Zarzadzanie(o1,o2).ShowDialog();
         }
     }
 }

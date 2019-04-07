@@ -1703,6 +1703,16 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap strzalka {
+            get {
+                object obj = ResourceManager.GetObject("strzalka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Studnia {
             get {
                 object obj = ResourceManager.GetObject("Studnia", resourceCulture);

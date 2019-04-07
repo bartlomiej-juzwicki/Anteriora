@@ -36,7 +36,7 @@
             this.buttonHodowlaBudowa = new System.Windows.Forms.Button();
             this.buttonKamieniolomBudowa = new System.Windows.Forms.Button();
             this.buttonBudynekMieszkalnyBudowa = new System.Windows.Forms.Button();
-            this.buttonWarsztatBudowa = new System.Windows.Forms.Button();
+            this.buttonKuzniaBudowa = new System.Windows.Forms.Button();
             this.buttonChataMagaBudowa = new System.Windows.Forms.Button();
             this.buttonStudniaBudowa = new System.Windows.Forms.Button();
             this.buttonTargowiskoBudowa = new System.Windows.Forms.Button();
@@ -53,7 +53,7 @@
             this.buttonStudniaOpis = new System.Windows.Forms.Button();
             this.buttonMagazynOpis = new System.Windows.Forms.Button();
             this.buttonBudynekMieszkalnyOpis = new System.Windows.Forms.Button();
-            this.buttonWarsztatOpis = new System.Windows.Forms.Button();
+            this.buttonKuzniaOpis = new System.Windows.Forms.Button();
             this.buttonTargowiskoOpis = new System.Windows.Forms.Button();
             this.buttonKoszaryOpis = new System.Windows.Forms.Button();
             this.buttonMostOpis = new System.Windows.Forms.Button();
@@ -158,21 +158,21 @@
             this.buttonBudynekMieszkalnyBudowa.UseVisualStyleBackColor = true;
             this.buttonBudynekMieszkalnyBudowa.Click += new System.EventHandler(this.buttonBudynekMieszkalnyBudowa_Click);
             // 
-            // buttonWarsztatBudowa
+            // buttonKuzniaBudowa
             // 
-            this.buttonWarsztatBudowa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonWarsztatBudowa.BackgroundImage")));
-            this.buttonWarsztatBudowa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonWarsztatBudowa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonWarsztatBudowa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.buttonWarsztatBudowa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWarsztatBudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonWarsztatBudowa.Location = new System.Drawing.Point(359, 70);
-            this.buttonWarsztatBudowa.Name = "buttonWarsztatBudowa";
-            this.buttonWarsztatBudowa.Size = new System.Drawing.Size(286, 42);
-            this.buttonWarsztatBudowa.TabIndex = 6;
-            this.buttonWarsztatBudowa.Text = "Warsztat";
-            this.buttonWarsztatBudowa.UseVisualStyleBackColor = true;
-            this.buttonWarsztatBudowa.Click += new System.EventHandler(this.buttonWarsztatBudowa_Click);
+            this.buttonKuzniaBudowa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKuzniaBudowa.BackgroundImage")));
+            this.buttonKuzniaBudowa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonKuzniaBudowa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonKuzniaBudowa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.buttonKuzniaBudowa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKuzniaBudowa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonKuzniaBudowa.Location = new System.Drawing.Point(359, 70);
+            this.buttonKuzniaBudowa.Name = "buttonKuzniaBudowa";
+            this.buttonKuzniaBudowa.Size = new System.Drawing.Size(286, 42);
+            this.buttonKuzniaBudowa.TabIndex = 6;
+            this.buttonKuzniaBudowa.Text = "Kuznia";
+            this.buttonKuzniaBudowa.UseVisualStyleBackColor = true;
+            this.buttonKuzniaBudowa.Click += new System.EventHandler(this.buttonKuzniaBudowa_Click);
             // 
             // buttonChataMagaBudowa
             // 
@@ -430,21 +430,21 @@
             this.buttonBudynekMieszkalnyOpis.UseVisualStyleBackColor = false;
             this.buttonBudynekMieszkalnyOpis.Click += new System.EventHandler(this.buttonBudynekMieszkalnyOpis_Click);
             // 
-            // buttonWarsztatOpis
+            // buttonKuzniaOpis
             // 
-            this.buttonWarsztatOpis.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.buttonWarsztatOpis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonWarsztatOpis.BackgroundImage")));
-            this.buttonWarsztatOpis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonWarsztatOpis.Cursor = System.Windows.Forms.Cursors.Help;
-            this.buttonWarsztatOpis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonWarsztatOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonWarsztatOpis.Location = new System.Drawing.Point(651, 70);
-            this.buttonWarsztatOpis.Name = "buttonWarsztatOpis";
-            this.buttonWarsztatOpis.Size = new System.Drawing.Size(44, 42);
-            this.buttonWarsztatOpis.TabIndex = 23;
-            this.buttonWarsztatOpis.Text = "?";
-            this.buttonWarsztatOpis.UseVisualStyleBackColor = false;
-            this.buttonWarsztatOpis.Click += new System.EventHandler(this.buttonWarsztatOpis_Click);
+            this.buttonKuzniaOpis.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buttonKuzniaOpis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonKuzniaOpis.BackgroundImage")));
+            this.buttonKuzniaOpis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonKuzniaOpis.Cursor = System.Windows.Forms.Cursors.Help;
+            this.buttonKuzniaOpis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonKuzniaOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonKuzniaOpis.Location = new System.Drawing.Point(651, 70);
+            this.buttonKuzniaOpis.Name = "buttonKuzniaOpis";
+            this.buttonKuzniaOpis.Size = new System.Drawing.Size(44, 42);
+            this.buttonKuzniaOpis.TabIndex = 23;
+            this.buttonKuzniaOpis.Text = "?";
+            this.buttonKuzniaOpis.UseVisualStyleBackColor = false;
+            this.buttonKuzniaOpis.Click += new System.EventHandler(this.buttonKuzniaOpis_Click);
             // 
             // buttonTargowiskoOpis
             // 
@@ -537,7 +537,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.buttonAnulujBudowa;
             this.ClientSize = new System.Drawing.Size(708, 427);
@@ -546,7 +546,7 @@
             this.Controls.Add(this.buttonMostOpis);
             this.Controls.Add(this.buttonKoszaryOpis);
             this.Controls.Add(this.buttonTargowiskoOpis);
-            this.Controls.Add(this.buttonWarsztatOpis);
+            this.Controls.Add(this.buttonKuzniaOpis);
             this.Controls.Add(this.buttonBudynekMieszkalnyOpis);
             this.Controls.Add(this.buttonMagazynOpis);
             this.Controls.Add(this.buttonStudniaOpis);
@@ -563,7 +563,7 @@
             this.Controls.Add(this.buttonTargowiskoBudowa);
             this.Controls.Add(this.buttonStudniaBudowa);
             this.Controls.Add(this.buttonChataMagaBudowa);
-            this.Controls.Add(this.buttonWarsztatBudowa);
+            this.Controls.Add(this.buttonKuzniaBudowa);
             this.Controls.Add(this.buttonBudynekMieszkalnyBudowa);
             this.Controls.Add(this.buttonKamieniolomBudowa);
             this.Controls.Add(this.buttonHodowlaBudowa);
@@ -590,7 +590,7 @@
         private System.Windows.Forms.Button buttonHodowlaBudowa;
         private System.Windows.Forms.Button buttonKamieniolomBudowa;
         private System.Windows.Forms.Button buttonBudynekMieszkalnyBudowa;
-        private System.Windows.Forms.Button buttonWarsztatBudowa;
+        private System.Windows.Forms.Button buttonKuzniaBudowa;
         private System.Windows.Forms.Button buttonChataMagaBudowa;
         private System.Windows.Forms.Button buttonStudniaBudowa;
         private System.Windows.Forms.Button buttonTargowiskoBudowa;
@@ -607,7 +607,7 @@
         private System.Windows.Forms.Button buttonStudniaOpis;
         private System.Windows.Forms.Button buttonMagazynOpis;
         private System.Windows.Forms.Button buttonBudynekMieszkalnyOpis;
-        private System.Windows.Forms.Button buttonWarsztatOpis;
+        private System.Windows.Forms.Button buttonKuzniaOpis;
         private System.Windows.Forms.Button buttonTargowiskoOpis;
         private System.Windows.Forms.Button buttonKoszaryOpis;
         private System.Windows.Forms.Button buttonMostOpis;

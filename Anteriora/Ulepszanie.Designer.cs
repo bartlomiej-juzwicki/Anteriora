@@ -59,6 +59,8 @@
             this.koszaryPoziomUlepszenia = new System.Windows.Forms.Button();
             this.murPoziomUlepszenia = new System.Windows.Forms.Button();
             this.timerSprawdzaniePoziomuUlepszenia = new System.Windows.Forms.Timer(this.components);
+            this.buttonUlepszKowala = new System.Windows.Forms.Button();
+            this.kowalPoziomUlepszenia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonUlepszTartakPierwszy
@@ -71,7 +73,7 @@
             this.buttonUlepszTartakPierwszy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszTartakPierwszy.Location = new System.Drawing.Point(16, 22);
             this.buttonUlepszTartakPierwszy.Name = "buttonUlepszTartakPierwszy";
-            this.buttonUlepszTartakPierwszy.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszTartakPierwszy.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszTartakPierwszy.TabIndex = 0;
             this.buttonUlepszTartakPierwszy.Text = "Ulepsz pierwszy tartak";
             this.buttonUlepszTartakPierwszy.UseVisualStyleBackColor = true;
@@ -92,7 +94,7 @@
             this.buttonUlepszTartakDrugi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszTartakDrugi.Location = new System.Drawing.Point(16, 70);
             this.buttonUlepszTartakDrugi.Name = "buttonUlepszTartakDrugi";
-            this.buttonUlepszTartakDrugi.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszTartakDrugi.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszTartakDrugi.TabIndex = 1;
             this.buttonUlepszTartakDrugi.Text = "Ulepsz drugi tartak";
             this.buttonUlepszTartakDrugi.UseVisualStyleBackColor = true;
@@ -108,7 +110,7 @@
             this.buttonUlepszKamieniolomPierwszy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszKamieniolomPierwszy.Location = new System.Drawing.Point(16, 118);
             this.buttonUlepszKamieniolomPierwszy.Name = "buttonUlepszKamieniolomPierwszy";
-            this.buttonUlepszKamieniolomPierwszy.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszKamieniolomPierwszy.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszKamieniolomPierwszy.TabIndex = 2;
             this.buttonUlepszKamieniolomPierwszy.Text = "Ulepsz pierwszy kamieniołom";
             this.buttonUlepszKamieniolomPierwszy.UseVisualStyleBackColor = true;
@@ -124,7 +126,7 @@
             this.buttonUlepszKamieniolomDrugi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszKamieniolomDrugi.Location = new System.Drawing.Point(16, 166);
             this.buttonUlepszKamieniolomDrugi.Name = "buttonUlepszKamieniolomDrugi";
-            this.buttonUlepszKamieniolomDrugi.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszKamieniolomDrugi.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszKamieniolomDrugi.TabIndex = 3;
             this.buttonUlepszKamieniolomDrugi.Text = "Ulepsz drugi kamieniołom";
             this.buttonUlepszKamieniolomDrugi.UseVisualStyleBackColor = true;
@@ -140,7 +142,7 @@
             this.buttonUlepszKwateraRybacka.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszKwateraRybacka.Location = new System.Drawing.Point(16, 214);
             this.buttonUlepszKwateraRybacka.Name = "buttonUlepszKwateraRybacka";
-            this.buttonUlepszKwateraRybacka.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszKwateraRybacka.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszKwateraRybacka.TabIndex = 4;
             this.buttonUlepszKwateraRybacka.Text = "Ulepsz kwatere rybacką";
             this.buttonUlepszKwateraRybacka.UseVisualStyleBackColor = true;
@@ -156,7 +158,7 @@
             this.buttonUlepszChatkaRolnika.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszChatkaRolnika.Location = new System.Drawing.Point(16, 262);
             this.buttonUlepszChatkaRolnika.Name = "buttonUlepszChatkaRolnika";
-            this.buttonUlepszChatkaRolnika.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszChatkaRolnika.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszChatkaRolnika.TabIndex = 5;
             this.buttonUlepszChatkaRolnika.Text = "Ulepsz chatkę rolnika";
             this.buttonUlepszChatkaRolnika.UseVisualStyleBackColor = true;
@@ -172,7 +174,7 @@
             this.buttonUlepszHodowla.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonUlepszHodowla.Location = new System.Drawing.Point(16, 310);
             this.buttonUlepszHodowla.Name = "buttonUlepszHodowla";
-            this.buttonUlepszHodowla.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszHodowla.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszHodowla.TabIndex = 6;
             this.buttonUlepszHodowla.Text = "Ulepsz hodowle";
             this.buttonUlepszHodowla.UseVisualStyleBackColor = true;
@@ -186,9 +188,9 @@
             this.buttonUlepszChateMaga.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszChateMaga.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszChateMaga.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszChateMaga.Location = new System.Drawing.Point(354, 22);
+            this.buttonUlepszChateMaga.Location = new System.Drawing.Point(358, 24);
             this.buttonUlepszChateMaga.Name = "buttonUlepszChateMaga";
-            this.buttonUlepszChateMaga.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszChateMaga.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszChateMaga.TabIndex = 7;
             this.buttonUlepszChateMaga.Text = "Ulepsz chatę maga";
             this.buttonUlepszChateMaga.UseVisualStyleBackColor = true;
@@ -202,9 +204,9 @@
             this.buttonUlepszKoszary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszKoszary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszKoszary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszKoszary.Location = new System.Drawing.Point(354, 214);
+            this.buttonUlepszKoszary.Location = new System.Drawing.Point(358, 262);
             this.buttonUlepszKoszary.Name = "buttonUlepszKoszary";
-            this.buttonUlepszKoszary.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszKoszary.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszKoszary.TabIndex = 8;
             this.buttonUlepszKoszary.Text = "Ulepsz koszary";
             this.buttonUlepszKoszary.UseVisualStyleBackColor = true;
@@ -218,9 +220,9 @@
             this.buttonUlepszBudynekMieszkalny.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszBudynekMieszkalny.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszBudynekMieszkalny.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszBudynekMieszkalny.Location = new System.Drawing.Point(354, 166);
+            this.buttonUlepszBudynekMieszkalny.Location = new System.Drawing.Point(358, 168);
             this.buttonUlepszBudynekMieszkalny.Name = "buttonUlepszBudynekMieszkalny";
-            this.buttonUlepszBudynekMieszkalny.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszBudynekMieszkalny.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszBudynekMieszkalny.TabIndex = 9;
             this.buttonUlepszBudynekMieszkalny.Text = "Ulepsz budynek mieszkalny";
             this.buttonUlepszBudynekMieszkalny.UseVisualStyleBackColor = true;
@@ -234,9 +236,9 @@
             this.buttonUlepszStudnie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszStudnie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszStudnie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszStudnie.Location = new System.Drawing.Point(354, 70);
+            this.buttonUlepszStudnie.Location = new System.Drawing.Point(358, 72);
             this.buttonUlepszStudnie.Name = "buttonUlepszStudnie";
-            this.buttonUlepszStudnie.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszStudnie.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszStudnie.TabIndex = 10;
             this.buttonUlepszStudnie.Text = "Ulepsz studnie";
             this.buttonUlepszStudnie.UseVisualStyleBackColor = true;
@@ -250,9 +252,9 @@
             this.buttonUlepszMagazyn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszMagazyn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszMagazyn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszMagazyn.Location = new System.Drawing.Point(354, 118);
+            this.buttonUlepszMagazyn.Location = new System.Drawing.Point(358, 120);
             this.buttonUlepszMagazyn.Name = "buttonUlepszMagazyn";
-            this.buttonUlepszMagazyn.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszMagazyn.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszMagazyn.TabIndex = 11;
             this.buttonUlepszMagazyn.Text = "Ulepsz magazyn";
             this.buttonUlepszMagazyn.UseVisualStyleBackColor = true;
@@ -266,9 +268,9 @@
             this.buttonUlepszMur.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonUlepszMur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonUlepszMur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonUlepszMur.Location = new System.Drawing.Point(354, 262);
+            this.buttonUlepszMur.Location = new System.Drawing.Point(358, 310);
             this.buttonUlepszMur.Name = "buttonUlepszMur";
-            this.buttonUlepszMur.Size = new System.Drawing.Size(282, 42);
+            this.buttonUlepszMur.Size = new System.Drawing.Size(286, 42);
             this.buttonUlepszMur.TabIndex = 12;
             this.buttonUlepszMur.Text = "Ulepsz mur";
             this.buttonUlepszMur.UseVisualStyleBackColor = true;
@@ -283,7 +285,7 @@
             this.tartak1PoziomUlepszenia.Enabled = false;
             this.tartak1PoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tartak1PoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.tartak1PoziomUlepszenia.Location = new System.Drawing.Point(304, 22);
+            this.tartak1PoziomUlepszenia.Location = new System.Drawing.Point(308, 22);
             this.tartak1PoziomUlepszenia.Name = "tartak1PoziomUlepszenia";
             this.tartak1PoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.tartak1PoziomUlepszenia.TabIndex = 13;
@@ -298,7 +300,7 @@
             this.tartak2PoziomUlepszenia.Enabled = false;
             this.tartak2PoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.tartak2PoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.tartak2PoziomUlepszenia.Location = new System.Drawing.Point(304, 70);
+            this.tartak2PoziomUlepszenia.Location = new System.Drawing.Point(308, 70);
             this.tartak2PoziomUlepszenia.Name = "tartak2PoziomUlepszenia";
             this.tartak2PoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.tartak2PoziomUlepszenia.TabIndex = 14;
@@ -313,7 +315,7 @@
             this.sadPoziomUlepszenia.Enabled = false;
             this.sadPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.sadPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.sadPoziomUlepszenia.Location = new System.Drawing.Point(642, 22);
+            this.sadPoziomUlepszenia.Location = new System.Drawing.Point(650, 22);
             this.sadPoziomUlepszenia.Name = "sadPoziomUlepszenia";
             this.sadPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.sadPoziomUlepszenia.TabIndex = 15;
@@ -328,7 +330,7 @@
             this.studniaPoziomUlepszenia.Enabled = false;
             this.studniaPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.studniaPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.studniaPoziomUlepszenia.Location = new System.Drawing.Point(642, 70);
+            this.studniaPoziomUlepszenia.Location = new System.Drawing.Point(650, 70);
             this.studniaPoziomUlepszenia.Name = "studniaPoziomUlepszenia";
             this.studniaPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.studniaPoziomUlepszenia.TabIndex = 16;
@@ -343,7 +345,7 @@
             this.kamieniolom1PoziomUlepszenia.Enabled = false;
             this.kamieniolom1PoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.kamieniolom1PoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.kamieniolom1PoziomUlepszenia.Location = new System.Drawing.Point(304, 118);
+            this.kamieniolom1PoziomUlepszenia.Location = new System.Drawing.Point(308, 118);
             this.kamieniolom1PoziomUlepszenia.Name = "kamieniolom1PoziomUlepszenia";
             this.kamieniolom1PoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.kamieniolom1PoziomUlepszenia.TabIndex = 17;
@@ -358,7 +360,7 @@
             this.kamieniolom2PoziomUlepszenia.Enabled = false;
             this.kamieniolom2PoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.kamieniolom2PoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.kamieniolom2PoziomUlepszenia.Location = new System.Drawing.Point(304, 166);
+            this.kamieniolom2PoziomUlepszenia.Location = new System.Drawing.Point(308, 166);
             this.kamieniolom2PoziomUlepszenia.Name = "kamieniolom2PoziomUlepszenia";
             this.kamieniolom2PoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.kamieniolom2PoziomUlepszenia.TabIndex = 18;
@@ -373,7 +375,7 @@
             this.kwateraRybackaPoziomUlepszenia.Enabled = false;
             this.kwateraRybackaPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.kwateraRybackaPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.kwateraRybackaPoziomUlepszenia.Location = new System.Drawing.Point(304, 214);
+            this.kwateraRybackaPoziomUlepszenia.Location = new System.Drawing.Point(308, 214);
             this.kwateraRybackaPoziomUlepszenia.Name = "kwateraRybackaPoziomUlepszenia";
             this.kwateraRybackaPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.kwateraRybackaPoziomUlepszenia.TabIndex = 19;
@@ -388,7 +390,7 @@
             this.chatkaRolnikaPoziomUlepszenia.Enabled = false;
             this.chatkaRolnikaPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.chatkaRolnikaPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.chatkaRolnikaPoziomUlepszenia.Location = new System.Drawing.Point(304, 262);
+            this.chatkaRolnikaPoziomUlepszenia.Location = new System.Drawing.Point(308, 262);
             this.chatkaRolnikaPoziomUlepszenia.Name = "chatkaRolnikaPoziomUlepszenia";
             this.chatkaRolnikaPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.chatkaRolnikaPoziomUlepszenia.TabIndex = 20;
@@ -403,7 +405,7 @@
             this.hodowlaPoziomUlepszenia.Enabled = false;
             this.hodowlaPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.hodowlaPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.hodowlaPoziomUlepszenia.Location = new System.Drawing.Point(304, 310);
+            this.hodowlaPoziomUlepszenia.Location = new System.Drawing.Point(308, 310);
             this.hodowlaPoziomUlepszenia.Name = "hodowlaPoziomUlepszenia";
             this.hodowlaPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.hodowlaPoziomUlepszenia.TabIndex = 21;
@@ -419,9 +421,9 @@
             this.buttonWyjscie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.buttonWyjscie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonWyjscie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonWyjscie.Location = new System.Drawing.Point(354, 310);
+            this.buttonWyjscie.Location = new System.Drawing.Point(16, 358);
             this.buttonWyjscie.Name = "buttonWyjscie";
-            this.buttonWyjscie.Size = new System.Drawing.Size(282, 42);
+            this.buttonWyjscie.Size = new System.Drawing.Size(678, 42);
             this.buttonWyjscie.TabIndex = 22;
             this.buttonWyjscie.Text = "Powrót";
             this.buttonWyjscie.UseVisualStyleBackColor = false;
@@ -436,7 +438,7 @@
             this.magazynPoziomUlepszenia.Enabled = false;
             this.magazynPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.magazynPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.magazynPoziomUlepszenia.Location = new System.Drawing.Point(642, 118);
+            this.magazynPoziomUlepszenia.Location = new System.Drawing.Point(650, 118);
             this.magazynPoziomUlepszenia.Name = "magazynPoziomUlepszenia";
             this.magazynPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.magazynPoziomUlepszenia.TabIndex = 23;
@@ -451,7 +453,7 @@
             this.budynekMieszkalnyPoziomUlepszenia.Enabled = false;
             this.budynekMieszkalnyPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.budynekMieszkalnyPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.budynekMieszkalnyPoziomUlepszenia.Location = new System.Drawing.Point(642, 166);
+            this.budynekMieszkalnyPoziomUlepszenia.Location = new System.Drawing.Point(650, 166);
             this.budynekMieszkalnyPoziomUlepszenia.Name = "budynekMieszkalnyPoziomUlepszenia";
             this.budynekMieszkalnyPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.budynekMieszkalnyPoziomUlepszenia.TabIndex = 24;
@@ -466,7 +468,7 @@
             this.koszaryPoziomUlepszenia.Enabled = false;
             this.koszaryPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.koszaryPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.koszaryPoziomUlepszenia.Location = new System.Drawing.Point(642, 214);
+            this.koszaryPoziomUlepszenia.Location = new System.Drawing.Point(650, 262);
             this.koszaryPoziomUlepszenia.Name = "koszaryPoziomUlepszenia";
             this.koszaryPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.koszaryPoziomUlepszenia.TabIndex = 25;
@@ -481,7 +483,7 @@
             this.murPoziomUlepszenia.Enabled = false;
             this.murPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.murPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.murPoziomUlepszenia.Location = new System.Drawing.Point(642, 262);
+            this.murPoziomUlepszenia.Location = new System.Drawing.Point(650, 310);
             this.murPoziomUlepszenia.Name = "murPoziomUlepszenia";
             this.murPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
             this.murPoziomUlepszenia.TabIndex = 26;
@@ -491,6 +493,36 @@
             // 
             this.timerSprawdzaniePoziomuUlepszenia.Tick += new System.EventHandler(this.timerSprawdzaniePoziomuUlepszenia_Tick);
             // 
+            // buttonUlepszKowala
+            // 
+            this.buttonUlepszKowala.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonUlepszKowala.BackgroundImage")));
+            this.buttonUlepszKowala.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonUlepszKowala.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonUlepszKowala.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.buttonUlepszKowala.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUlepszKowala.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.buttonUlepszKowala.Location = new System.Drawing.Point(358, 214);
+            this.buttonUlepszKowala.Name = "buttonUlepszKowala";
+            this.buttonUlepszKowala.Size = new System.Drawing.Size(286, 42);
+            this.buttonUlepszKowala.TabIndex = 27;
+            this.buttonUlepszKowala.Text = "Ulepsz kowala";
+            this.buttonUlepszKowala.UseVisualStyleBackColor = true;
+            // 
+            // kowalPoziomUlepszenia
+            // 
+            this.kowalPoziomUlepszenia.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.kowalPoziomUlepszenia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("kowalPoziomUlepszenia.BackgroundImage")));
+            this.kowalPoziomUlepszenia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.kowalPoziomUlepszenia.Cursor = System.Windows.Forms.Cursors.Help;
+            this.kowalPoziomUlepszenia.Enabled = false;
+            this.kowalPoziomUlepszenia.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.kowalPoziomUlepszenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.kowalPoziomUlepszenia.Location = new System.Drawing.Point(650, 214);
+            this.kowalPoziomUlepszenia.Name = "kowalPoziomUlepszenia";
+            this.kowalPoziomUlepszenia.Size = new System.Drawing.Size(44, 42);
+            this.kowalPoziomUlepszenia.TabIndex = 28;
+            this.kowalPoziomUlepszenia.UseVisualStyleBackColor = false;
+            // 
             // Ulepszanie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -498,7 +530,9 @@
             this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.buttonWyjscie;
-            this.ClientSize = new System.Drawing.Size(702, 376);
+            this.ClientSize = new System.Drawing.Size(708, 427);
+            this.Controls.Add(this.kowalPoziomUlepszenia);
+            this.Controls.Add(this.buttonUlepszKowala);
             this.Controls.Add(this.murPoziomUlepszenia);
             this.Controls.Add(this.koszaryPoziomUlepszenia);
             this.Controls.Add(this.budynekMieszkalnyPoziomUlepszenia);
@@ -569,5 +603,7 @@
         private System.Windows.Forms.Button koszaryPoziomUlepszenia;
         private System.Windows.Forms.Button murPoziomUlepszenia;
         public System.Windows.Forms.Timer timerSprawdzaniePoziomuUlepszenia;
+        private System.Windows.Forms.Button buttonUlepszKowala;
+        private System.Windows.Forms.Button kowalPoziomUlepszenia;
     }
 }

@@ -96,6 +96,7 @@
             this.pictureBoxOgnistaKraina.Size = new System.Drawing.Size(454, 285);
             this.pictureBoxOgnistaKraina.TabIndex = 2;
             this.pictureBoxOgnistaKraina.TabStop = false;
+            this.pictureBoxOgnistaKraina.Click += new System.EventHandler(this.pictureBoxOgnistaKraina_Click);
             // 
             // pictureBoxLodowaKraina
             // 
@@ -119,6 +120,7 @@
             this.pictureBoxLas.Size = new System.Drawing.Size(391, 369);
             this.pictureBoxLas.TabIndex = 4;
             this.pictureBoxLas.TabStop = false;
+            this.pictureBoxLas.Click += new System.EventHandler(this.pictureBoxLas_Click);
             // 
             // pictureBoxZamek
             // 
@@ -130,6 +132,7 @@
             this.pictureBoxZamek.Size = new System.Drawing.Size(483, 465);
             this.pictureBoxZamek.TabIndex = 5;
             this.pictureBoxZamek.TabStop = false;
+            this.pictureBoxZamek.Click += new System.EventHandler(this.pictureBoxZamek_Click);
             // 
             // pictureBoxWodnaKryjowka
             // 

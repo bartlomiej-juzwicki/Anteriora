@@ -13,12 +13,25 @@ namespace Anteriora
     {
         public int ilosc { get; set; }
         public int poziomUlepszenia { get; set; }
+        // jesli glod = 1 to brak glodu a gdy = 2 to glod
+        public static int glod = 1;
+        public int poziomEksploatacji { get; set; }
+
+        public Materiały(int ilosc)
+        {
+            this.ilosc = ilosc;
+            poziomEksploatacji = 1;
+        }
 
         // z każdym poziomem ulepszenia budowli(lub kilku tych samych) rośnie ilość zdobywanych surowców
-        public void ZwiekszPrzyrostMaterialu(int poziomUlepszenia, int poziomUlepszenia2, int poziomUlepszenia3)
+        public void ZwiekszPrzyrostMaterialu(int poziomEksploatacji)
         {
-            ilosc += (poziomUlepszenia + poziomUlepszenia2 + poziomUlepszenia3);
-            
+            ilosc += (poziomEksploatacji * poziomUlepszenia)/glod;
+        }
+
+        public void ObliczPoziomUlepszenia(int poziomUlepszenia, int poziomUlepszenia2, int poziomUlepszenia3)
+        {
+            this.poziomUlepszenia = poziomUlepszenia + poziomUlepszenia2 + poziomUlepszenia3;
         }
 
     }

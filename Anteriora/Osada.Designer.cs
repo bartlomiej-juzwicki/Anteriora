@@ -45,7 +45,7 @@
             this.pictureBoxKoszary = new System.Windows.Forms.PictureBox();
             this.pictureBoxChatkaRolnika = new System.Windows.Forms.PictureBox();
             this.pictureBoxChataMaga = new System.Windows.Forms.PictureBox();
-            this.pictureBoxWarsztat = new System.Windows.Forms.PictureBox();
+            this.pictureBoxKuznia = new System.Windows.Forms.PictureBox();
             this.pictureBoxKwateraRybacka = new System.Windows.Forms.PictureBox();
             this.pictureBoxMost = new System.Windows.Forms.PictureBox();
             this.pictureBoxMur = new System.Windows.Forms.PictureBox();
@@ -71,6 +71,8 @@
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelZloto = new System.Windows.Forms.Label();
             this.timerZwiadowca = new System.Windows.Forms.Timer(this.components);
+            this.timerMieszkancy = new System.Windows.Forms.Timer(this.components);
+            this.timerJedzenie = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGraczPart5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGraczPart6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiejsceNaNamiot)).BeginInit();
@@ -83,7 +85,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKoszary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChatkaRolnika)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChataMaga)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarsztat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKuznia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKwateraRybacka)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMur)).BeginInit();
@@ -276,18 +278,18 @@
             this.pictureBoxChataMaga.TabStop = false;
             this.pictureBoxChataMaga.Visible = false;
             // 
-            // pictureBoxWarsztat
+            // pictureBoxKuznia
             // 
-            this.pictureBoxWarsztat.BackgroundImage = global::Anteriora.Properties.Resources.Warsztat;
-            this.pictureBoxWarsztat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxWarsztat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxWarsztat.Location = new System.Drawing.Point(821, 591);
-            this.pictureBoxWarsztat.Name = "pictureBoxWarsztat";
-            this.pictureBoxWarsztat.Size = new System.Drawing.Size(164, 158);
-            this.pictureBoxWarsztat.TabIndex = 45;
-            this.pictureBoxWarsztat.TabStop = false;
-            this.pictureBoxWarsztat.Visible = false;
-            this.pictureBoxWarsztat.Click += new System.EventHandler(this.pictureBoxWarsztat_Click);
+            this.pictureBoxKuznia.BackgroundImage = global::Anteriora.Properties.Resources.Warsztat;
+            this.pictureBoxKuznia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxKuznia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxKuznia.Location = new System.Drawing.Point(821, 591);
+            this.pictureBoxKuznia.Name = "pictureBoxKuznia";
+            this.pictureBoxKuznia.Size = new System.Drawing.Size(164, 158);
+            this.pictureBoxKuznia.TabIndex = 45;
+            this.pictureBoxKuznia.TabStop = false;
+            this.pictureBoxKuznia.Visible = false;
+            this.pictureBoxKuznia.Click += new System.EventHandler(this.pictureBoxWarsztat_Click);
             // 
             // pictureBoxKwateraRybacka
             // 
@@ -612,6 +614,16 @@
             this.timerZwiadowca.Interval = 1000;
             this.timerZwiadowca.Tick += new System.EventHandler(this.timerZwiadowca_Tick);
             // 
+            // timerMieszkancy
+            // 
+            this.timerMieszkancy.Interval = 10000;
+            this.timerMieszkancy.Tick += new System.EventHandler(this.timerMieszkancy_Tick);
+            // 
+            // timerJedzenie
+            // 
+            this.timerJedzenie.Interval = 30000;
+            this.timerJedzenie.Tick += new System.EventHandler(this.timerJedzenie_Tick);
+            // 
             // Osada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -635,7 +647,7 @@
             this.Controls.Add(this.pictureBoxMost);
             this.Controls.Add(this.pictureBoxKwateraRybacka);
             this.Controls.Add(this.pictureBoxGraczPart6);
-            this.Controls.Add(this.pictureBoxWarsztat);
+            this.Controls.Add(this.pictureBoxKuznia);
             this.Controls.Add(this.pictureBoxChataMaga);
             this.Controls.Add(this.pictureBoxChatkaRolnika);
             this.Controls.Add(this.pictureBoxMagazyn);
@@ -670,7 +682,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKoszary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChatkaRolnika)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxChataMaga)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWarsztat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKuznia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKwateraRybacka)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMur)).EndInit();
@@ -706,7 +718,7 @@
         public System.Windows.Forms.PictureBox pictureBoxKoszary;
         public System.Windows.Forms.PictureBox pictureBoxChatkaRolnika;
         public System.Windows.Forms.PictureBox pictureBoxChataMaga;
-        public System.Windows.Forms.PictureBox pictureBoxWarsztat;
+        public System.Windows.Forms.PictureBox pictureBoxKuznia;
         public System.Windows.Forms.PictureBox pictureBoxKwateraRybacka;
         public System.Windows.Forms.PictureBox pictureBoxMost;
         public System.Windows.Forms.PictureBox pictureBoxMur;
@@ -732,5 +744,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         public System.Windows.Forms.Label labelZloto;
         public System.Windows.Forms.Timer timerZwiadowca;
+        public System.Windows.Forms.Timer timerMieszkancy;
+        private System.Windows.Forms.Timer timerJedzenie;
     }
 }

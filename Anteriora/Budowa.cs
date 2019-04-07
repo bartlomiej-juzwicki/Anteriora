@@ -74,9 +74,9 @@ namespace Anteriora
             MessageBox.Show("Wzrost liczby osadników.");
         }
 
-        private void buttonWarsztatOpis_Click(object sender, EventArgs e)
+        private void buttonKuzniaOpis_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ulepszanie budowli.");
+            MessageBox.Show("Produkcja nowych surowców.");
         }
 
         private void buttonTargowiskoOpis_Click(object sender, EventArgs e)
@@ -172,9 +172,9 @@ namespace Anteriora
             KosztBudowyJeden(o2.drewno, 100,o2.siano,100, o.budynekMieszkalny);
         }
 
-        private void buttonWarsztatBudowa_Click(object sender, EventArgs e)
+        private void buttonKuzniaBudowa_Click(object sender, EventArgs e)
         {
-            KosztBudowyJeden(o2.drewno, 200,o2.siano,0, o.warsztat);
+            KosztBudowyJeden(o2.drewno, 200,o2.siano,0, o.kuznia);
         }
         private void buttonTargowiskoBudowa_Click(object sender, EventArgs e)
         {
@@ -234,8 +234,8 @@ namespace Anteriora
                 case "targowisko":
                     Budowa2(o.targowisko);
                     break;
-                case "warsztat":
-                    Budowa2(o.warsztat);
+                case "kuznia":
+                    Budowa2(o.kuznia);
                     break;
                 case "chata maga":
                     Budowa2(o.chataMaga);
@@ -304,33 +304,41 @@ namespace Anteriora
             // jesli nie jest wybudowany i mamy surowce
             if (budowle.pictureBox.Visible == false)
             {
-                if(material.ilosc >= ilosc && material2.ilosc >= ilosc2)
+                if(budowle.liczbaPracownikowPotrzebnychDoBudowy <= o.mieszkancy.liczbaBezrobotnychMieszkancow)
                 {
-                    // gdy czas jest równy 0, czyli na początku
-                    if (o.progressBar.Value == 0)
+                    if (material.ilosc >= ilosc && material2.ilosc >= ilosc2)
                     {
-                        // start
-                        timerCzasBudowy.Start();
-                        // zabranie surowcow
-                        material.ilosc -= ilosc;
-                        material2.ilosc -= ilosc2;
-                        // przejscie progressBara do określonej lokalizacji budynku
-                        o.progressBar.Location = budowle.punkt;
-                        // pojawienie sie go na mapie
-                        o.progressBar.Visible = true;
-                        // przypisanie do nazwyBudowli nazwy budowli
-                        nazwaBudowli = budowle.nazwa;
-                        // i "wyrzucenie" tej nazwy z metody na zewnątrz
-                        return nazwaBudowli;
+                        // gdy czas jest równy 0, czyli na początku
+                        if (o.progressBar.Value == 0)
+                        {
+                            // start
+                            timerCzasBudowy.Start();
+                            // zabranie surowcow
+                            material.ilosc -= ilosc;
+                            material2.ilosc -= ilosc2;
+                            o.mieszkancy.liczbaPracujacychMieszkancow += budowle.liczbaPracownikowPotrzebnychDoBudowy;
+                            // przejscie progressBara do określonej lokalizacji budynku
+                            o.progressBar.Location = budowle.punkt;
+                            // pojawienie sie go na mapie
+                            o.progressBar.Visible = true;
+                            // przypisanie do nazwyBudowli nazwy budowli
+                            nazwaBudowli = budowle.nazwa;
+                            // i "wyrzucenie" tej nazwy z metody na zewnątrz
+                            return nazwaBudowli;
+                        }
+                        else
+                        {
+                            MessageBox.Show("W jednym momencie możesz budować tylko jeden obiekt!");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("W jednym momencie możesz budować tylko jeden obiekt!");
+                        MessageBox.Show("Brak odpowiednich surowców!");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Brak odpowiednich surowców!");
+                    MessageBox.Show("Brak pracowników!");
                 }
             }
             else if(budowle.pictureBox.Visible == true)

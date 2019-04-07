@@ -13,16 +13,12 @@ namespace Anteriora
     public partial class Początek : Form
     {
         // nowe obiekty klasy Materiały - surowce
-        public Materiały drewno = new Materiały();
-        public Materiały siano = new Materiały();
-        public Materiały jedzenie = new Materiały();
-        public Materiały kamień = new Materiały();
-        public Materiały woda = new Materiały();
+        public Materiały drewno = new Materiały(100);
+        public Materiały siano = new Materiały(200);
+        public Materiały kamień = new Materiały(100);
+        public Materiały jedzenie = new Materiały(100);
+        public Materiały woda = new Materiały(100);
         
-
-
-        
-
         public int czasGry;
         // przydaje sie przy zapobiegnięciu spamu messageBoxami
         public int flaga;

@@ -187,5 +187,20 @@ namespace Anteriora
             o1.ZmianaKoloruTekstuLabela(o1.zloto, labelZloto);
             o1.PojemnośćMagazynu();
         }
+
+        private void pictureBoxOgnistaKraina_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Instancja dostępna wkrótce");
+        }
+
+        private void pictureBoxLas_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Instancja dostępna wkrótce");
+        }
+
+        private void pictureBoxZamek_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Instancja dostępna wkrótce");
+        }
     }
 }

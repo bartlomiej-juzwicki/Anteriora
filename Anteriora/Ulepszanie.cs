@@ -117,8 +117,8 @@ namespace Anteriora
                 case "targowisko":
                     UlepszanieBudynkuCzesc2(o1.targowisko);
                     break;
-                case "warsztat":
-                    UlepszanieBudynkuCzesc2(o1.warsztat);
+                case "kuznia":
+                    UlepszanieBudynkuCzesc2(o1.kuznia);
                     break;
                 case "sad":
                     UlepszanieBudynkuCzesc2(o1.chataMaga);
