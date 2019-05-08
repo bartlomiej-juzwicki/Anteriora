@@ -13,15 +13,10 @@ namespace Anteriora
 
     public partial class Osada : Form
     {
-        public Początek o;
+        public Poczatek o;
 
-        // nowy "surowiec"
-        public Materiały zloto = new Materiały(1000);
-        // mieszkancy
-        public Mieszkancy mieszkancy = new Mieszkancy();
+        //budynki w osadzie
 
-        // obiekty klasy Budowle, nasze budynki w osadzie
-        
         public Budowle tartak1 = new Budowle("pierwszy tartak", 1);
         public Budowle tartak2 = new Budowle("drugi tartak", 1);
         public Budowle kamieniolom1 = new Budowle("pierwszy kamieniołom", 2);
@@ -31,15 +26,15 @@ namespace Anteriora
         public Budowle chatkaRolnika = new Budowle("chatka rolnika", 3);
         public Budowle hodowla = new Budowle("hodowla", 4);
         public Budowle studnia = new Budowle("studnia", 2);
-        public Budowle magazyn = new Budowle("magazyn", 1);
+        
         public Budowle targowisko = new Budowle("targowisko",1);
         public Budowle most = new Budowle("most",4);
         public Budowle mur = new Budowle("mur", 10);
-        public Budowle koszary = new Budowle("koszary", 20);
+        public Budowle koszary = new Budowle("koszary", 6);
         public Budowle budynekMieszkalny = new Budowle("budynek mieszkalny", 4);
         public Budowle kuznia = new Budowle("kuznia", 2);
 
-        // w lodowej krainie
+        //budynki w lodowej krainie
 
         public Budowle warsztatLK = new Budowle("lodowy warsztat",1);
         public Budowle kwateraRybackaLK1 = new Budowle("pierwsza lodowa kwatera rybacka",1);
@@ -48,94 +43,73 @@ namespace Anteriora
         public Budowle studniaLK2 = new Budowle("druga lodowa studnia",1);
         public Budowle budynekMieszkalnyLK = new Budowle("lodowy budynek mieszkalny",1);
 
+        //budynki w osadzie goblinów
 
+        public Budowle kopalniaKamienia = new Budowle("kopalnia kamienia", 2);
+        public Budowle kopalniaRudyZelaza1 = new Budowle("pierwsza kopalnia rudy zelaza", 2);
+        public Budowle kopalniaRudyZelaza2 = new Budowle("druga kopalnia rudy zelaza", 2);
 
         public List<Budowle> budynki = new List<Budowle>();
+        public List<Materialy> surowce = new List<Materialy>();
+        
+        public Przeciwnicy goblin = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin2 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin3 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin4 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin5 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin6 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy goblin7 = new Przeciwnicy("Goblin", 10, 5, 20, 100, Properties.Resources.goblinprawo, Properties.Resources.goblinlewo, Properties.Resources.goblingora, Properties.Resources.goblindol);
+        public Przeciwnicy ork = new Przeciwnicy("Ork", 400, 50, 400, 100, Properties.Resources.orkprawo, Properties.Resources.orklewo, Properties.Resources.orkgora, Properties.Resources.orkdol);
+        public Przeciwnicy nietoperzDuzy = new Przeciwnicy("Duży nietoperz", 10, 5, 20, 100, Properties.Resources.nietoperzduzyprawo, Properties.Resources.nietoperzduzylewo, Properties.Resources.nietoperzduzygora, Properties.Resources.nietoperzduzydol);
+        public Przeciwnicy nietoperzMaly = new Przeciwnicy("Mały nietoperz", 5, 1, 5, 100, Properties.Resources.nietoperzmalyprawo, Properties.Resources.nietoperzmalylewo, Properties.Resources.nietoperzmalygora, Properties.Resources.nietoperzmalydol);
+        public Przeciwnicy robak = new Przeciwnicy("Robak", 30, 10, 50, 100, Properties.Resources.robakprawo, Properties.Resources.robaklewo, Properties.Resources.robakgora, Properties.Resources.robakdol);
+        public Przeciwnicy wazOgnisty = new Przeciwnicy("Ognisty wąż", 10, 10, 100, 100, Properties.Resources.waz3lewo, Properties.Resources.waz3lewo, Properties.Resources.waz3lewo, Properties.Resources.waz3lewo);
+        public Przeciwnicy wazJadowity = new Przeciwnicy("Jadowity wąż", 10, 10, 100, 100, Properties.Resources.waz1lewo, Properties.Resources.waz1lewo, Properties.Resources.waz1lewo, Properties.Resources.waz1lewo);
+        public Przeciwnicy brak = new Przeciwnicy();
 
-        #region zmienne związane z sprawdzeniem czy magazyn jest przepełniony
-
-        public int i = 0;
-        public int j = 0;
-
-        #endregion
-
-
-
-        // stworzenie listy jednostek ofensywnych
-        public List<JednostkiGracza> listWojownik = new List<JednostkiGracza>();
-        public List<JednostkiGracza> listRycerz = new List<JednostkiGracza>();
-        public List<JednostkiGracza> listKawalerzysta = new List<JednostkiGracza>();
-
-        // i defensywnych
-        public List<JednostkiDefensywne> listPeltasta = new List<JednostkiDefensywne>();
-        public List<JednostkiDefensywne> listLucznik = new List<JednostkiDefensywne>();
-        public List<JednostkiDefensywne> listHalabardnik = new List<JednostkiDefensywne>();
-
-       
-        public JednostkiGracza zwiadowca = new JednostkiGracza(0,1,30);
-
-        // tworzenie obietów klasy JednostkiOfensywnne, czyli nasze jednostki atakujące
-        public JednostkiGracza wojownik = new JednostkiGracza("Wojownik",1,10,10,100,3,96,96,"wojownikprawo","wojowniklewo","wojownikgora","wojownikdol");
-        public JednostkiGracza rycerz = new JednostkiGracza();
-        public JednostkiGracza kawalerzysta = new JednostkiGracza();
-        public JednostkiGracza lucznik2 = new JednostkiGracza("Łucznik",1,20,5,50,10,96,288,"lucznikprawo", "łuczniklewo", "lucznikgora", "lucznikdol");
-        public JednostkiGracza wlocznik = new JednostkiGracza("Włócznik",1,40,20,200,2,96,96,"wlocznikprawo", "wloczniklewo", "wlocznikgora", "wlocznikdol");
-        public JednostkiGracza juzek = new JednostkiGracza();
-        public JednostkiGracza jednostkiOfensywne = new JednostkiGracza();
-
-        public Wrogowie goblin = new Wrogowie("Goblin", 10, 5, 20, 96, 96, "goblinprawo","goblinlewo","goblingora","goblindol");
-        public Wrogowie goblin2 = new Wrogowie("Goblin", 10, 5, 20, 96, 96, "goblinprawo", "goblinlewo", "goblingora", "goblindol");
-        public Wrogowie ork = new Wrogowie("Ork", 400, 50, 400, 96, 96, "orkprawo", "orklewo", "orkgora", "orkdol");
-        public Wrogowie nietoperzDuzy = new Wrogowie("Duży nietoperz", 10, 5, 20, 96, 96, "nietoperzduzyprawo", "nietoperzduzylewo", "nietoperzduzygora", "nietoperzduzydol");
-        public Wrogowie nietoperzMaly = new Wrogowie("Mały nietoperz", 5, 1, 5, 96, 96, "nietoperzmalyprawo", "nietoperzmalylewo", "nietoperzmalygora", "nietoperzmalydol");
-        public Wrogowie robak = new Wrogowie("Robak", 30, 10, 50, 96, 96, "robakprawo", "robaklewo", "robakgora", "robakdol");
-        public Wrogowie wazOgnisty = new Wrogowie("Ognisty wąż", 10, 10, 100, 96, 0, "waz4lewo", "waz4lewo", "waz4lewo", "waz4lewo");
-        public Wrogowie wazJadowity = new Wrogowie("Jadowity wąż", 10, 10, 100, 96, 0, "waz3lewo", "waz3lewo", "waz3lewo", "waz3lewo");
-
-        // tworzenie obiektów klasy JednostkiDefensywne, czyli nasze jednostki obronne
-        public JednostkiDefensywne peltasta = new JednostkiDefensywne();
-        public JednostkiDefensywne lucznik = new JednostkiDefensywne();
-        public JednostkiDefensywne halabardnik = new JednostkiDefensywne();
-        public JednostkiDefensywne jednostkiDefensywne = new JednostkiDefensywne();
-
-        public List<Materiały> surowce = new List<Materiały>();
+        public ObszaryInstancji osadaGoblinow1 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow2 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow3 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow4 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow5 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow6 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow7 = new ObszaryInstancji();
+        public ObszaryInstancji osadaGoblinow8 = new ObszaryInstancji();
 
         public Instancje osadaGoblinow = new Instancje("Osada Goblinów", 120, 5, "orklewo", "orkgora", "orkdol");
         public Instancje jaskiniaWezy = new Instancje("Jaskinia Węży", 180, 10, "waz2lewo", "waz2lewo", "waz2lewo");
         public Instancje lodowaKraina = new Instancje("Lodowa kraina", 180, 10, "orklewo", "orkgora", "orkdol");
         //public Instancje zagadka = new Instancje();
 
-        public int czasGry;
+        public int i, j; // zmienne związane ze sprawdzaniem przepełnienia magazynu
         public int czasBudowy;
         public string notatkaZwiadowcy;
         public string zapisDoDziennika;
         public int zwiadowcaCzas;
+        public int czasDoZjedzenia;
+        public int czasDoPobraniaPodatkow;
+        public string nazwaBudowliBudowa;
+        public string nazwaBudowliUlepszenie;
 
         public Random losowa = new Random();
 
-        public Osada(Początek c)
+        public Osada(Poczatek c)
         {
             o = c;
             InitializeComponent();
-            // kontynuacja czasu rzeczywistego
-            czasGry = o.czasGry;
-            timerCzasGryMapa2.Start();
-            timerJedzenie.Start();
-            surowce.Add(o.drewno);
-            surowce.Add(o.siano);
-            surowce.Add(o.jedzenie);
-            surowce.Add(o.kamień);
-            surowce.Add(o.woda);
-            surowce.Add(zloto);
+            
+            timerCzasGry.Start();
 
-            o.drewno.ilosc = 1000;
-            o.kamień.ilosc = 1000;
-            o.siano.ilosc = 1000;
+            budynki.AddRange(new Budowle[] { tartak1, tartak2, kamieniolom1, kamieniolom2, kwateraRybacka, chataMaga, chatkaRolnika, hodowla, studnia, o.magazyn, targowisko, most, mur, koszary, budynekMieszkalny, kuznia });
+            surowce.AddRange(new Materialy[] { o.drewno, o.kamień, o.siano, o.skora, o.welna, o.jedzenie, o.woda, o.rudaZelaza, o.rudaObsydianu, o.zelazo, o.obsydian, o.skorzanyPasek, o.kawalekDrewna });
+
 
             //zagadka.obrazekLewo = "dinozaurmacius";
             //zagadka.obrazekDol = "dinozaurmacius";
 
             #region Przypisanie budowli do pictureBoxów
+
+            // nie mogłem wrzucić tego do konstruktora?
 
             tartak1.pictureBox = pictureBoxTartak1;
             tartak2.pictureBox = pictureBoxTartak2;
@@ -151,94 +125,60 @@ namespace Anteriora
             hodowla.pictureBox = pictureBoxHodowla;
             chataMaga.pictureBox = pictureBoxChataMaga;
             kuznia.pictureBox = pictureBoxKuznia;
-            magazyn.pictureBox = pictureBoxMagazyn;
+            o.magazyn.pictureBox = pictureBoxMagazyn;
             mur.pictureBox = pictureBoxMur;
-
 
             #endregion
 
             #region Przypisanie pozycji budowlom
 
-            tartak1.PrzypiszPozycjeBudowli();
-            tartak2.PrzypiszPozycjeBudowli();
-            kamieniolom1.PrzypiszPozycjeBudowli();
-            kamieniolom2.PrzypiszPozycjeBudowli();
-            chatkaRolnika.PrzypiszPozycjeBudowli();
-            kwateraRybacka.PrzypiszPozycjeBudowli();
-            most.PrzypiszPozycjeBudowli();
-            studnia.PrzypiszPozycjeBudowli();
-            koszary.PrzypiszPozycjeBudowli();
-            budynekMieszkalny.PrzypiszPozycjeBudowli();
-            targowisko.PrzypiszPozycjeBudowli();
-            hodowla.PrzypiszPozycjeBudowli();
-            chataMaga.PrzypiszPozycjeBudowli();
-            kuznia.PrzypiszPozycjeBudowli();
-            magazyn.PrzypiszPozycjeBudowli();
-            mur.PrzypiszPozycjeBudowli();
+            Budowle.PrzypiszPozycjeBudowli(budynki);
 
             #endregion
 
         }
 
 
-        private void timerCzasGryMapa2_Tick(object sender, EventArgs e)
+        private void timerCzasGry_Tick(object sender, EventArgs e)
         {
-            czasGry++;
-            // wrzucenie do labeli wartości surowców 
-            labelCzasMapa1.Text = "  Czas gry: " + czasGry.ToString() + " sekund(y)";
-            labelDrewno.Text = "Drewno: " + o.drewno.ilosc.ToString();
-            labelKamien.Text = "Kamień: " + o.kamień.ilosc.ToString();
-            labelSiano.Text = "Siano: " + o.siano.ilosc.ToString();
-            labelJedzenie.Text = "Jedzenie: " + o.jedzenie.ilosc.ToString();
-            labelWoda.Text = "Woda: " + o.woda.ilosc.ToString();
-            labelZloto.Text = "Złoto: " + zloto.ilosc.ToString();
-
-            ZmianaKoloruTekstuLabela(o.drewno, labelDrewno);
-            ZmianaKoloruTekstuLabela(o.kamień, labelKamien);
-            ZmianaKoloruTekstuLabela(o.siano, labelSiano);
-            ZmianaKoloruTekstuLabela(o.jedzenie, labelJedzenie);
-            ZmianaKoloruTekstuLabela(o.woda, labelWoda);
-            ZmianaKoloruTekstuLabela(zloto, labelZloto);
-
-            ZmienKolorLabelaPrzyGlodzie();
-
             PojemnośćMagazynu();
 
-            //wzrost wartosci surowców
-            o.drewno.ObliczPoziomUlepszenia(tartak1.poziomUlepszenia, tartak2.poziomUlepszenia, 0);
-            o.drewno.ZwiekszPrzyrostMaterialu(o.drewno.poziomEksploatacji);
-
-            o.kamień.ObliczPoziomUlepszenia(kamieniolom1.poziomUlepszenia, kamieniolom2.poziomUlepszenia, 0);
-            o.kamień.ZwiekszPrzyrostMaterialu(o.kamień.poziomEksploatacji);
-
-            o.siano.ObliczPoziomUlepszenia(chatkaRolnika.poziomUlepszenia, 0, 0);
-            o.siano.ZwiekszPrzyrostMaterialu(o.siano.poziomEksploatacji);
-
-            o.jedzenie.ObliczPoziomUlepszenia(hodowla.poziomUlepszenia, kwateraRybacka.poziomUlepszenia, 0);
-            o.jedzenie.ZwiekszPrzyrostMaterialu(o.jedzenie.poziomEksploatacji);
-
-            o.woda.ObliczPoziomUlepszenia(studnia.poziomUlepszenia, 0, 0);
-            o.woda.ZwiekszPrzyrostMaterialu(o.woda.poziomEksploatacji);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
 
             if (budynekMieszkalny.pictureBox.Visible == true)
             {
-                if (mieszkancy.czyPrzyrostMieszkancow == true)
+                if (o.mieszkancy.czyPrzyrostMieszkancow == true)
                 {
                     timerMieszkancy.Start();
                 }
-                else if (mieszkancy.czyPrzyrostMieszkancow == false)
+                else if (o.mieszkancy.czyPrzyrostMieszkancow == false)
                 {
                     timerMieszkancy.Stop();
                 }
             }
 
-           
+            WojnaAkcja(osadaGoblinow);
+            WojnaAkcja(jaskiniaWezy);
+
+            Zjedz();
+            PobierzPodatek();
 
         }
 
         private void timerMieszkancy_Tick(object sender, EventArgs e)
         {
-            mieszkancy.liczbaMieszkancow++;
+            if (o.ubraniaMieszkancow.ilosc >= 1 && o.lozko.ilosc >= 1)
+            {
+                o.ubraniaMieszkancow.ilosc--;
+                o.lozko.ilosc--;
+                o.mieszkancy.liczbaMieszkancow++;
+            }
+            else
+            {
+                new Wiadomosc("Brakuje ubrań lub łóżek dla mieszkańców.").ShowDialog();
+                o.mieszkancy.czyPrzyrostMieszkancow = false;
+                timerMieszkancy.Stop();
+            }
         }
 
         private void Osada_FormClosed(object sender, FormClosedEventArgs e)
@@ -258,8 +198,7 @@ namespace Anteriora
              }
               */
         }
-
-     
+        
         private void pictureBoxMiejsceNaNamiot_Click(object sender, EventArgs e)
         {
             pictureBoxMiejsceNaNamiot.Visible = false;
@@ -268,17 +207,15 @@ namespace Anteriora
             pictureBoxGraczPart5.Visible = false;
             //MessageBox.Show("Czas rozbudować osadę!");
         }
-
       
         private void pictureBoxNamiotPoziom1_Click(object sender, EventArgs e)
         {
             new Namiot(this, o).ShowDialog();
         }
-
         
         private void pictureBoxKoszary_Click(object sender, EventArgs e)
         {
-            new Koszary(this).Show();
+            new Koszary(o).ShowDialog();
         }
 
         /// <summary>
@@ -293,7 +230,7 @@ namespace Anteriora
 
         private void pictureBoxWarsztat_Click(object sender, EventArgs e)
         {
-            new Ulepszanie(this, o).ShowDialog();
+            new Kuznia(this, o).ShowDialog();
         }
 
         private void buttonCzyszczenie_Click(object sender, EventArgs e)
@@ -301,24 +238,20 @@ namespace Anteriora
             textBoxInformacja.Clear();
         }
 
-        private void pictureBoxHodowla_Click(object sender, EventArgs e)
-        {
-            new Hodowla(this, o).ShowDialog();
-        }
-
         #region Sprawdzenie czy magazyn przepełniony
+
         public void PojemnośćMagazynu()
         {
-            if (magazyn.poziomUlepszenia == 0)
+            if (o.magazyn.poziomUlepszenia == 0)
             {
                 foreach (var item in surowce)
                 {
-                    if (item.ilosc > 99)
+                    if (item.ilosc > 999)
                     {
                         i++;
-                        item.ilosc = 100;
+                        item.ilosc = 1000;
                     }
-                    else if (item.ilosc <= 99)
+                    else if (item.ilosc <= 999)
                     {
                         i = i + 0;
                     }
@@ -339,7 +272,7 @@ namespace Anteriora
                 i = 0;
 
             }
-            else if (magazyn.poziomUlepszenia == 1)
+            else if (o.magazyn.poziomUlepszenia == 1)
             {
                 foreach (var item in surowce)
                 {
@@ -367,7 +300,7 @@ namespace Anteriora
 
                 i = 0;
             }
-            else if (magazyn.poziomUlepszenia == 2)
+            else if (o.magazyn.poziomUlepszenia == 2)
             {
                 foreach (var item in surowce)
                 {
@@ -395,7 +328,7 @@ namespace Anteriora
 
                 i = 0;
             }
-            else if (magazyn.poziomUlepszenia == 3)
+            else if (o.magazyn.poziomUlepszenia == 3)
             {
                 foreach (var item in surowce)
                 {
@@ -428,90 +361,9 @@ namespace Anteriora
         }
         #endregion
 
-        #region Zmiana koloru tekstu labela przy przepełnieniu magazynu materiałami
-        public void ZmianaKoloruTekstuLabela(Materiały material, Label label)
-        {
-            if (magazyn.poziomUlepszenia == 0)
-            {
-                if (material.ilosc >= 99)
-                {
-                    label.ForeColor = Color.DimGray;
-                }
-                else if (material.ilosc < 99)
-                {
-                    label.ForeColor = Color.Black;
-                }
-            }
-            else if (magazyn.poziomUlepszenia == 1)
-            {
-                if (material.ilosc >= 999)
-                {
-                    label.ForeColor = Color.DarkGreen;
-                }
-                else if (material.ilosc < 999)
-                {
-                    label.ForeColor = Color.Black;
-                }
-            }
-            else if (magazyn.poziomUlepszenia == 2)
-            {
-                if (material.ilosc >= 1999)
-                {
-                    label.ForeColor = Color.DarkGreen;
-                }
-                else if (material.ilosc < 1999)
-                {
-                    label.ForeColor = Color.Black;
-                }
-            }
-            else if (magazyn.poziomUlepszenia == 3)
-            {
-                if (material.ilosc >= 2999)
-                {
-                    label.ForeColor = Color.DarkGreen;
-                }
-                else if (material.ilosc < 2999)
-                {
-                    label.ForeColor = Color.Black;
-                }
-            }
-        }
-        #endregion
-
-
-        #region Zmiana koloru labela jedzenia i wody podczas głodu
-        public void ZmienKolorLabelaPrzyGlodzie()
-        {
-            if(o.jedzenie.ilosc< 0)
-            {
-                labelJedzenie.ForeColor = Color.DarkRed;
-            }
-            else
-            {
-                labelJedzenie.ForeColor = Color.Black;
-            }
-
-            if(o.woda.ilosc< 0)
-            {
-                labelWoda.ForeColor = Color.DarkRed;
-            }
-            else
-            {
-                labelWoda.ForeColor = Color.Black;
-            }
-        }
-
-        #endregion
-
         private void pictureBoxMapa_Click(object sender, EventArgs e)
         {
             new EkranLadowania(o, this, "load").Show();                        
-        }
-
-        private void timerWojna_Tick(object sender, EventArgs e)
-        {
-            WojnaAkcja(osadaGoblinow);
-            WojnaAkcja(jaskiniaWezy);
         }
 
         private void buttonELO_Click(object sender, EventArgs e)
@@ -519,17 +371,17 @@ namespace Anteriora
             Application.Exit();
         }
 
-        public string InformacjaNaTematInstancji(Instancje instancja, Wrogowie wrog1, Wrogowie wrog2, Wrogowie wrog3, Wrogowie wrog4, Wrogowie wrog5)
+        public string InformacjaNaTematInstancji(Instancje instancja, Przeciwnicy wrog1, Przeciwnicy wrog2, Przeciwnicy wrog3, Przeciwnicy wrog4, Przeciwnicy wrog5)
         {
             return "W instancji " + instancja.nazwa + " znajdziesz przeciwników takich jak: " + wrog1.nazwa + ", " + wrog2.nazwa + ", " + wrog3.nazwa + ", " + wrog4.nazwa + ", "
                     + wrog5.nazwa + "." + Environment.NewLine + Environment.NewLine;
 
         }
 
-        public string InformacjaNaTematPrzeciwnika(Instancje instancja, int poziom, Wrogowie wrog, int ilosc, string styl)
+        public string InformacjaNaTematPrzeciwnika(Instancje instancja, int poziom, Przeciwnicy wrog, int ilosc, string styl)
         {
             return "W " + instancja.nazwa + " na poziomie " + poziom + " znajdziesz: " + Environment.NewLine + Environment.NewLine + wrog.nazwa + ":" + Environment.NewLine + "Sztuk: " + ilosc + Environment.NewLine +
-                   "Atak jednostkowy: " + wrog.atak + Environment.NewLine + "Obrona jednostkowa: " + wrog.obrona + Environment.NewLine + "PZ jednostkowe: " + wrog.PZ + Environment.NewLine +
+                   "Atak jednostkowy: " + wrog.atak + Environment.NewLine + "Obrona jednostkowa: " + wrog.obronaDomyslna + Environment.NewLine + "PZ jednostkowe: " + wrog.PZ + Environment.NewLine +
                    "Styl walki: " + styl + Environment.NewLine + Environment.NewLine;
 
         }
@@ -546,9 +398,9 @@ namespace Anteriora
                     int wylosowana;
                     wylosowana = losowa.Next(0, 101);
 
-                    if (wylosowana <= zwiadowca.atak)
+                    if (wylosowana <= o.zwiadowca.atak)
                     {
-                        MessageBox.Show("udalo sie" + wylosowana.ToString() + " " + zwiadowca.atak.ToString());
+                        MessageBox.Show("udalo sie" + wylosowana.ToString() + " " + o.zwiadowca.atak.ToString());
 
                         if (osadaGoblinow.licznikZwiadowca == 1)
                         {
@@ -571,7 +423,7 @@ namespace Anteriora
                     }
                     else
                     {
-                        MessageBox.Show("nie udalo sie" + wylosowana.ToString() + " " + zwiadowca.atak.ToString());
+                        MessageBox.Show("nie udalo sie" + wylosowana.ToString() + " " + o.zwiadowca.atak.ToString());
                         osadaGoblinow.czasZwiadowcy = 0;
                         osadaGoblinow.akcjaZwiadowca = false;
                         timerZwiadowca.Stop();
@@ -587,9 +439,9 @@ namespace Anteriora
                     int wylosowana;
                     wylosowana = losowa.Next(0, 101);
 
-                    if (wylosowana <= zwiadowca.atak)
+                    if (wylosowana <= o.zwiadowca.atak)
                     {
-                        MessageBox.Show("udalo sie" + wylosowana.ToString() + " " + zwiadowca.atak.ToString());
+                        MessageBox.Show("udalo sie" + wylosowana.ToString() + " " + o.zwiadowca.atak.ToString());
 
                         if (jaskiniaWezy.licznikZwiadowca == 1)
                         {
@@ -607,7 +459,7 @@ namespace Anteriora
                     }
                     else
                     {
-                        MessageBox.Show("nie udalo sie" + wylosowana.ToString() + " " + zwiadowca.atak.ToString());
+                        MessageBox.Show("nie udalo sie" + wylosowana.ToString() + " " + o.zwiadowca.atak.ToString());
                         jaskiniaWezy.czasZwiadowcy = 0;
                         jaskiniaWezy.akcjaZwiadowca = false;
                         timerZwiadowca.Stop();
@@ -643,45 +495,532 @@ namespace Anteriora
             }
         }
 
+        #region Konsumpcja jedzenia i wody
+
+        // metoda Zjedz() określa czynności związane z konsumpcją jedzenia i wody przez mieszkańców
         public void Zjedz()
+
         {
-            if ((o.jedzenie.ilosc < (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow) || (o.woda.ilosc < (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow))
+            if(czasDoZjedzenia == 10)
             {
-                mieszkancy.poziomZadowolenia = 0;
-                ZmienNaGlod();
+                int iloscDoSpozycia = (o.mieszkancy.liczbaPracujacychMieszkancow * o.mieszkancy.poziomPodatkow) + (o.mieszkancy.liczbaBezrobotnychMieszkancow * o.mieszkancy.poziomPodatkow / 2);
+                
+
+                if (o.jedzenie.ilosc < iloscDoSpozycia || o.woda.ilosc < iloscDoSpozycia)
+                {
+                    o.mieszkancy.poziomZadowolenia = 1;
+                    o.mieszkancy.poziomPodatkow = 1;
+                    ZmienNaGlod();
+                }
+                else
+                {
+                    if (Materialy.glod == 2)
+                    {
+                        ZmienNaDostatek();
+                    }
+                }
+
+                o.jedzenie.ilosc -= iloscDoSpozycia;
+                o.woda.ilosc -= iloscDoSpozycia;
+                czasDoZjedzenia = 0;
             }
             else
             {
-                ZmienNaDostatek();  
+                czasDoZjedzenia++;
             }
-
-            o.jedzenie.ilosc -= (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow;
-            o.woda.ilosc -= (mieszkancy.liczbaPracujacychMieszkancow * 2) + mieszkancy.liczbaBezrobotnychMieszkancow;
         }
+
+        #endregion
 
         public static void ZmienNaGlod()
         {
-            Materiały.glod = 2;
-
+            Materialy.glod = 2;
         }
 
         public static void ZmienNaDostatek()
         {
-            Materiały.glod = 1;
+            Materialy.glod = 1;
         }
-
-
-
+               
         private void pictureBoxBudynekMieszkalny_Click(object sender, EventArgs e)
         {
             new BudynekMieszkalny(this,o).ShowDialog();
         }
 
-        private void timerJedzenie_Tick(object sender, EventArgs e)
+        private void timerPrzyrostDrewna_Tick(object sender, EventArgs e)
         {
-            Zjedz();
+            o.drewno.ObliczPoziomUlepszenia(tartak1.poziomUlepszenia, tartak2.poziomUlepszenia);
+            o.drewno.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void timerPrzyrostKamienia_Tick(object sender, EventArgs e)
+        {
+            o.kamień.ObliczPoziomUlepszenia(kamieniolom1.poziomUlepszenia, kamieniolom2.poziomUlepszenia, kopalniaKamienia.poziomUlepszenia);
+            o.kamień.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void timerPrzyrostSiana_Tick(object sender, EventArgs e)
+        {
+            o.siano.ObliczPoziomUlepszenia(chatkaRolnika.poziomUlepszenia, 0);
+            o.siano.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void timerPrzyrostSkory_Tick(object sender, EventArgs e)
+        {
+            o.skora.ObliczPoziomUlepszenia(hodowla.poziomUlepszenia, 0);
+            o.skora.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void TimerPrzyrostWelny_Tick(object sender, EventArgs e)
+        {
+            o.welna.ObliczPoziomUlepszenia(hodowla.poziomUlepszenia, 0);
+            o.welna.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void timerPrzyrostJedzenia_Tick(object sender, EventArgs e)
+        {
+            o.jedzenie.ObliczPoziomUlepszenia(hodowla.poziomUlepszenia, kwateraRybacka.poziomUlepszenia);
+            o.jedzenie.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void timerPrzyrostWody_Tick(object sender, EventArgs e)
+        {
+            o.woda.ObliczPoziomUlepszenia(studnia.poziomUlepszenia, 0);
+            o.woda.ZwiekszPrzyrostMaterialu();
+        }
+
+        private void TimerPrzyrostRudyZelaza_Tick(object sender, EventArgs e)
+        {
+            o.rudaZelaza.ObliczPoziomUlepszenia(kopalniaRudyZelaza1.poziomUlepszenia, kopalniaRudyZelaza2.poziomUlepszenia);
+            o.rudaZelaza.ZwiekszPrzyrostMaterialu();
+        }
+
+        public void PobierzPodatek()
+        {
+            if(czasDoPobraniaPodatkow == 10)
+            {
+                if(Materialy.glod == 1)
+                {
+                    o.zloto.ilosc += (o.mieszkancy.liczbaMieszkancow * o.mieszkancy.poziomPodatkow);
+                }
+                else if(Materialy.glod == 2)
+                {
+                    o.zloto.ilosc += 0;
+                }
+                
+                czasDoPobraniaPodatkow = 0;
+            }
+            else
+            {
+                czasDoPobraniaPodatkow++;
+            }
+        }
+
+        public void Budowa2(Budowle budowle, Timer timerSurowiec)
+        {
+            if (progressBar.Value == progressBar.Maximum)
+            {
+                timerCzasBudowy.Stop();
+                progressBar.Visible = false;
+                budowle.pictureBox.Visible = true;
+                budowle.poziomUlepszenia = 1;
+                progressBar.Value = 0;
+                textBoxInformacja.AppendText("Wybudowano " + budowle.nazwa + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+                timerSurowiec.Start();
+            }
+            else
+            {
+                progressBar.Increment(5);
+            }
+        }
+
+        public void Budowa2(Budowle budowle)
+        {
+            if (progressBar.Value == progressBar.Maximum)
+            {
+                timerCzasBudowy.Stop();
+                progressBar.Visible = false;
+                budowle.pictureBox.Visible = true;
+                budowle.poziomUlepszenia = 1;
+                progressBar.Value = 0;
+                textBoxInformacja.AppendText("Wybudowano " + budowle.nazwa + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+            }
+            else
+            {
+                progressBar.Increment(5);
+
+            }
+        }
+
+        //public void Budowa2(Budowle budowle, Timer timerSurowiec1, Timer timerSurowiec2)
+        //{
+        //    if (progressBar.Value == progressBar.Maximum)
+        //    {
+        //        timerCzasBudowy.Stop();
+        //        progressBar.Visible = false;
+        //        budowle.pictureBox.Visible = true;
+        //        budowle.poziomUlepszenia = 1;
+        //        progressBar.Value = 0;
+        //        textBoxInformacja.AppendText("Wybudowano " + budowle.nazwa + "!");
+        //        textBoxInformacja.AppendText(Environment.NewLine);
+        //        timerSurowiec1.Start();
+        //        timerSurowiec2.Start();
+        //    }
+        //    else
+        //    {
+        //        progressBar.Increment(5);
+        //    }
+        //}
+
+        public void Budowa2(Budowle budowle, Timer timerSurowiec1, Timer timerSurowiec2, Timer timerSurowiec3)
+        {
+            if (progressBar.Value == progressBar.Maximum)
+            {
+                timerCzasBudowy.Stop();
+                progressBar.Visible = false;
+                budowle.pictureBox.Visible = true;
+                budowle.poziomUlepszenia = 1;
+                progressBar.Value = 0;
+                textBoxInformacja.AppendText("Wybudowano " + budowle.nazwa + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+                timerSurowiec1.Start();
+                timerSurowiec2.Start();
+                timerSurowiec3.Start();
+            }
+            else
+            {
+                progressBar.Increment(5);
+            }
+        }
+
+
+
+        public void BudowaInstancje(Budowle budowla, Timer timerSurowiec)
+        {
+            if(budowla.progressBarBudowa.Value == budowla.progressBarBudowa.Maximum)
+            {
+                timerCzasBudowy.Stop();
+                budowla.progressBarBudowa.Visible = false;
+                budowla.pictureBox.Visible = true;
+                budowla.czyBudowlaIstnieje = true;
+                budowla.pictureBox.BackgroundImage = budowla.bitmap;
+                budowla.poziomUlepszenia = 1;
+                budowla.progressBarBudowa.Value = 0;
+                textBoxInformacja.AppendText("Wybudowano " + budowla.nazwa + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+                timerSurowiec.Start();
+            }
+            else
+            {
+                budowla.progressBarBudowa.Increment(5);
+            }
+        }
+
+        private void TimerCzasBudowy_Tick(object sender, EventArgs e)
+        {
+            switch (nazwaBudowliBudowa)
+            {
+                case "pierwszy tartak":
+                    Budowa2(tartak1, timerPrzyrostDrewna);
+                    break;
+                case "drugi tartak":
+                    Budowa2(tartak2, timerPrzyrostDrewna);
+                    break;
+                case "pierwszy kamieniołom":
+                    Budowa2(kamieniolom1, timerPrzyrostKamienia);
+                    break;
+                case "drugi kamieniołom":
+                    Budowa2(kamieniolom2, timerPrzyrostKamienia);
+                    break;
+                case "chatka rolnika":
+                    Budowa2(chatkaRolnika, timerPrzyrostSiana);
+                    break;
+                case "magazyn":
+                    Budowa2(o.magazyn);
+                    break;
+                case "budynek mieszkalny":
+                    Budowa2(budynekMieszkalny);
+                    break;
+                case "koszary":
+                    Budowa2(koszary);
+                    break;
+                case "targowisko":
+                    Budowa2(targowisko);
+                    break;
+                case "kuznia":
+                    Budowa2(kuznia);
+                    break;
+                case "chata maga":
+                    Budowa2(chataMaga);
+                    break;
+                case "kwatera rybacka":
+                    Budowa2(kwateraRybacka, timerPrzyrostJedzenia);
+                    break;
+                case "most":
+                    Budowa2(most);
+                    break;
+                case "mur":
+                    Budowa2(mur);
+                    break;
+                case "hodowla":
+                    Budowa2(hodowla, timerPrzyrostJedzenia, timerPrzyrostSkory, timerPrzyrostWelny);
+                    break;
+                case "studnia":
+                    Budowa2(studnia, timerPrzyrostWody);
+                    break;
+                case "kopalnia kamienia":
+                    BudowaInstancje(kopalniaKamienia, timerPrzyrostKamienia);
+                    break;
+                case "pierwsza kopalnia rudy zelaza":
+                    BudowaInstancje(kopalniaRudyZelaza1, timerPrzyrostRudyZelaza);
+                    break;
+                case "druga kopalnia rudy zelaza":
+                    BudowaInstancje(kopalniaRudyZelaza2, timerPrzyrostRudyZelaza);
+                    break;
+            }
+
+        }
+
+        public void KosztBudowyOsada(Materialy material, int ilosc, Materialy material2, int ilosc2, Budowle budowle)
+        {
+            if (budowle.pictureBox.Visible == false)
+            {
+                if (budowle.liczbaPracownikowPotrzebnychDoBudowy <= o.mieszkancy.liczbaBezrobotnychMieszkancow)
+                {
+                    if (material.ilosc >= ilosc && material2.ilosc >= ilosc2)
+                    {
+                        if (progressBar.Visible == false)
+                        {
+                            material.ilosc -= ilosc;
+                            material2.ilosc -= ilosc2;
+                            o.mieszkancy.liczbaPracujacychMieszkancow += budowle.liczbaPracownikowPotrzebnychDoBudowy;
+                            progressBar.Location = budowle.punkt;
+                            progressBar.Visible = true;
+                            progressBar.Maximum = budowle.ZwrocCzasTrwaniaBudowy();
+                            nazwaBudowliBudowa = budowle.nazwa;
+                            timerCzasBudowy.Start();
+                        }
+                        else
+                        {
+                            MessageBox.Show("W jednym momencie możesz budować tylko jeden obiekt!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Brak odpowiednich surowców!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Brak pracowników!");
+                }
+            }
+            else if (budowle.pictureBox.Visible == true)
+            {
+                MessageBox.Show("Budynek został już wybudowany!");
+            }
+
+        }
+
+        public void KosztBudowyInstancje(Materialy material, int ilosc, Materialy material2, int ilosc2, Budowle budowla)
+        {
+            if (budowla.liczbaPracownikowPotrzebnychDoBudowy <= o.mieszkancy.liczbaBezrobotnychMieszkancow)
+            {
+                if (material.ilosc >= ilosc && material2.ilosc >= ilosc2)
+                {
+                    // gdy czas jest równy 0, czyli na początku
+                    if (budowla.progressBarBudowa.Visible == false)
+                    {
+                        material.ilosc -= ilosc;
+                        material2.ilosc -= ilosc2;
+                        o.mieszkancy.liczbaPracujacychMieszkancow += budowla.liczbaPracownikowPotrzebnychDoBudowy;
+                        budowla.progressBarBudowa.Location = budowla.punkt;
+                        budowla.progressBarBudowa.Visible = true;
+                        budowla.progressBarBudowa.Maximum = budowla.ZwrocCzasTrwaniaBudowy();
+                        budowla.pictureBox.Visible = false;
+                        nazwaBudowliBudowa = budowla.nazwa;
+                        timerCzasBudowy.Start();
+                    }
+                    else
+                    {
+                        MessageBox.Show("W jednym momencie możesz budować tylko jeden obiekt!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Brak odpowiednich surowców!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Brak pracowników!");
+            }
+        }
+
+        public void UlepszanieBudynkuOsada1(Materialy material, int ilosc, Materialy material2, int ilosc2, Budowle budowle)
+        {
+            if (progressBar2.Visible == false)
+            {
+                if (budowle.pictureBox.Visible == true)
+                {
+                    if (material.ilosc >= (ilosc * budowle.poziomUlepszenia^2) && material2.ilosc >= (ilosc2 * budowle.poziomUlepszenia^2))
+                    {
+                        if (budowle.poziomUlepszenia < 3)
+                        {
+                            material.ilosc -= ilosc;
+                            material2.ilosc -= ilosc2;
+                            progressBar2.Location = budowle.punkt;
+                            progressBar2.Visible = true;
+                            progressBar2.Maximum = budowle.ZwrocCzasTrwaniaUlepszania();
+                            nazwaBudowliUlepszenie = budowle.nazwa;
+                            timerCzasUlepszenia.Start();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Maksymalny poziom ulepszenia!");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Brak określonych surowców!");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Budynek nie jest wybudowany!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("W jednym momencie możesz ulepszać tylko jeden budynek!");
+            }
+        }
+
+        public void UlepszanieBudynkuInstancja1(Materialy material, int ilosc, Materialy material2, int ilosc2, Budowle budowla)
+        {
+            if (budowla.progressBarUlepszanie.Visible == false)
+            {
+                if (material.ilosc >= (ilosc * budowla.poziomUlepszenia ^ 2) && material2.ilosc >= (ilosc2 * budowla.poziomUlepszenia ^ 2))
+                {
+                    material.ilosc -= ilosc;
+                    material2.ilosc -= ilosc2;
+                    budowla.progressBarUlepszanie.Location = budowla.punkt;
+                    budowla.pictureBox.Visible = false;
+                    budowla.progressBarUlepszanie.Visible = true;
+                    budowla.progressBarUlepszanie.Maximum = budowla.ZwrocCzasTrwaniaUlepszania();
+                    nazwaBudowliUlepszenie = budowla.nazwa;
+                    timerCzasUlepszenia.Start();
+                }
+                else
+                {
+                    MessageBox.Show("Brak określonych surowców");
+                }
+            }
+            else
+            {
+                MessageBox.Show("W jednym momencie możesz ulepszać tylko jeden budynek");
+            }
+        }
+
+        public void UlepszanieBudynkuOsada2(Budowle budowle)
+        {
+            if (progressBar2.Value == progressBar2.Maximum)
+            {
+                timerCzasUlepszenia.Stop();
+                budowle.poziomUlepszenia++;
+                progressBar2.Visible = false;
+                progressBar2.Value = 0;
+                textBoxInformacja.AppendText("Ulepszono " + budowle.nazwa + " do poziomu " + budowle.poziomUlepszenia + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+            }
+            else
+            {
+                progressBar2.Increment(10);
+            }
+        }
+
+        public void UlepszanieBudynkuInstancja2(Budowle budowla)
+        {
+            if(budowla.progressBarUlepszanie.Value == budowla.progressBarUlepszanie.Maximum)
+            {
+                timerCzasUlepszenia.Stop();
+                budowla.poziomUlepszenia++;
+                budowla.pictureBox.Visible = true;
+                budowla.progressBarUlepszanie.Visible = false;
+                budowla.progressBarUlepszanie.Value = 0;
+                textBoxInformacja.AppendText("Ulepszono " + budowla.nazwa + " do poziomu " + budowla.poziomUlepszenia + "!");
+                textBoxInformacja.AppendText(Environment.NewLine);
+            }
+            else
+            {
+                budowla.progressBarUlepszanie.Increment(10);
+            }
+        }       
+
+        private void TimerCzasUlepszenia_Tick(object sender, EventArgs e)
+        {
+            switch (nazwaBudowliUlepszenie)
+            {
+                case "pierwszy tartak":
+                    UlepszanieBudynkuOsada2(tartak1);
+                    break;
+                case "drugi tartak":
+                    UlepszanieBudynkuOsada2(tartak2);
+                    break;
+                case "pierwszy kamieniołom":
+                    UlepszanieBudynkuOsada2(kamieniolom1);
+                    break;
+                case "drugi kamieniołom":
+                    UlepszanieBudynkuOsada2(kamieniolom2);
+                    break;
+                case "chatka rolnika":
+                    UlepszanieBudynkuOsada2(chatkaRolnika);
+                    break;
+                case "magazyn":
+                    UlepszanieBudynkuOsada2(o.magazyn);
+                    break;
+                case "budynek mieszkalny":
+                    UlepszanieBudynkuOsada2(budynekMieszkalny);
+                    break;
+                case "koszary":
+                    UlepszanieBudynkuOsada2(koszary);
+                    break;
+                case "targowisko":
+                    UlepszanieBudynkuOsada2(targowisko);
+                    break;
+                case "kuznia":
+                    UlepszanieBudynkuOsada2(kuznia);
+                    break;
+                case "sad":
+                    UlepszanieBudynkuOsada2(chataMaga);
+                    break;
+                case "kwatera rybacka":
+                    UlepszanieBudynkuOsada2(kwateraRybacka);
+                    break;
+                case "most":
+                    UlepszanieBudynkuOsada2(most);
+                    break;
+                case "mur":
+                    UlepszanieBudynkuOsada2(mur);
+                    break;
+                case "hodowla":
+                    UlepszanieBudynkuOsada2(hodowla);
+                    break;
+                case "studnia":
+                    UlepszanieBudynkuOsada2(studnia);
+                    break;
+                case "kopalnia kamienia":
+                    UlepszanieBudynkuInstancja2(kopalniaKamienia);
+                    break;
+                case "pierwsza kopalnia rudy zelaza":
+                    UlepszanieBudynkuInstancja2(kopalniaRudyZelaza1);
+                    break;
+                case "druga kopalnia rudy zelaza":
+                    UlepszanieBudynkuInstancja2(kopalniaRudyZelaza2);
+                    break;
+            }
         }
     }
 }
-
-

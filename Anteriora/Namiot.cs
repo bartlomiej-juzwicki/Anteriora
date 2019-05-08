@@ -13,8 +13,8 @@ namespace Anteriora
     public partial class Namiot : Form
     {
         Osada o1;
-        Początek o2;
-        public Namiot(Osada c1, Początek c2)
+        Poczatek o2;
+        public Namiot(Osada c1, Poczatek c2)
         {
             o1 = c1;
             o2 = c2;

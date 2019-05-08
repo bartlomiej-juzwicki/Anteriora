@@ -30,10 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KoszaryZwiadowca));
-            this.buttonZamiana2 = new System.Windows.Forms.Button();
             this.buttonUlepszZwiadowca = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonZamiana = new System.Windows.Forms.Button();
             this.buttonZwiadowca = new System.Windows.Forms.Button();
             this.buttonAnuluj = new System.Windows.Forms.Button();
             this.labelZwiadowcaPoziomUlepszenia = new System.Windows.Forms.Label();
@@ -48,22 +46,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // buttonZamiana2
-            // 
-            this.buttonZamiana2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonZamiana2.BackgroundImage")));
-            this.buttonZamiana2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonZamiana2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonZamiana2.FlatAppearance.BorderSize = 0;
-            this.buttonZamiana2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonZamiana2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonZamiana2.Location = new System.Drawing.Point(292, 25);
-            this.buttonZamiana2.Name = "buttonZamiana2";
-            this.buttonZamiana2.Size = new System.Drawing.Size(123, 49);
-            this.buttonZamiana2.TabIndex = 104;
-            this.buttonZamiana2.Text = "Jednostki defensywne";
-            this.buttonZamiana2.UseVisualStyleBackColor = true;
-            this.buttonZamiana2.Click += new System.EventHandler(this.buttonZamiana2_Click);
             // 
             // buttonUlepszZwiadowca
             // 
@@ -93,22 +75,6 @@
             this.label1.Size = new System.Drawing.Size(275, 31);
             this.label1.TabIndex = 102;
             this.label1.Text = "Jednostki zwiadowcze";
-            // 
-            // buttonZamiana
-            // 
-            this.buttonZamiana.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonZamiana.BackgroundImage")));
-            this.buttonZamiana.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonZamiana.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonZamiana.FlatAppearance.BorderSize = 0;
-            this.buttonZamiana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonZamiana.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonZamiana.Location = new System.Drawing.Point(421, 25);
-            this.buttonZamiana.Name = "buttonZamiana";
-            this.buttonZamiana.Size = new System.Drawing.Size(123, 49);
-            this.buttonZamiana.TabIndex = 101;
-            this.buttonZamiana.Text = "Jednostki ofensywne";
-            this.buttonZamiana.UseVisualStyleBackColor = true;
-            this.buttonZamiana.Click += new System.EventHandler(this.buttonZamiana_Click);
             // 
             // buttonZwiadowca
             // 
@@ -275,10 +241,8 @@
             this.Controls.Add(this.labelZwiadowcaAtak);
             this.Controls.Add(this.labelZwiadowcaIlosc);
             this.Controls.Add(this.buttonAnuluj);
-            this.Controls.Add(this.buttonZamiana2);
             this.Controls.Add(this.buttonUlepszZwiadowca);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonZamiana);
             this.Controls.Add(this.buttonZwiadowca);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -298,11 +262,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonZamiana2;
         private System.Windows.Forms.Button buttonUlepszZwiadowca;
         public System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonZamiana;
         private System.Windows.Forms.Button buttonZwiadowca;
         private System.Windows.Forms.Button buttonAnuluj;
         public System.Windows.Forms.Label labelZwiadowcaPoziomUlepszenia;

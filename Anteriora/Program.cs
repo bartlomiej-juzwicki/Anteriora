@@ -11,12 +11,13 @@ namespace Anteriora
         /// <summary>
         /// Główny punkt wejścia dla aplikacji.
         /// </summary>
+        
         [STAThread]
         static void Main()
         {
-            
+           
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Początek());
+            Application.Run(new Poczatek());
         }
     }
 }

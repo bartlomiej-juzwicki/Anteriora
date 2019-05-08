@@ -13,17 +13,18 @@ namespace Anteriora
     public partial class KoszaryZwiadowca : Form
     {
         Osada o1;
-        Koszary o2;
-       
-        public KoszaryZwiadowca(Osada c1)
+        Poczatek o2;
+
+        public KoszaryZwiadowca(Osada c1, Poczatek c2)
         {
             o1 = c1;
+            o2 = c2;
             
             InitializeComponent();
             textBoxNotatkaZwiadowcy.Text = o1.notatkaZwiadowcy;
-            labelZwiadowcaIlosc.Text = "Ilość zwiadowców: "+ o1.zwiadowca.ilosc.ToString();
+            labelZwiadowcaIlosc.Text = "Ilość zwiadowców: "+ o2.zwiadowca.ilosc.ToString();
             labelZwiadowcaAtak.Text = "Szansa na powodzenie: 0%";
-            labelZwiadowcaPoziomUlepszenia.Text ="Poziom zwiadowców: " + o1.zwiadowca.poziomUlepszenia.ToString();
+            labelZwiadowcaPoziomUlepszenia.Text ="Poziom zwiadowców: " + o2.zwiadowca.poziomUlepszenia.ToString();
             timerZwiadowcaTekst.Start();
             //textBoxNotatkaZwiadowcy.Text = o1.InformacjaNaTematPrzeciwnika(o1.osadaGoblinow,1, o1.nietoperzDuzy, 6);
             
@@ -40,14 +41,13 @@ namespace Anteriora
         {
             timerZwiadowcaTekst.Stop();
             this.Close();
-            new Koszary2(o1, o2).Show();
         }
 
         private void buttonZamiana_Click(object sender, EventArgs e)
         {
             this.Close();
             timerZwiadowcaTekst.Stop();
-            new Koszary(o1).Show();
+            new Koszary(o2).Show();
         }
 
         private void buttonDziennik_Click(object sender, EventArgs e)
@@ -62,15 +62,15 @@ namespace Anteriora
 
         private void buttonZwiadowca_Click(object sender, EventArgs e)
         {
-            if(o1.zwiadowca.ilosc < 1 )
+            if(o2.zwiadowca.ilosc < 1 )
             {
-                if (o1.zloto.ilosc >= 1)
+                if (o2.zloto.ilosc >= 1)
                 {
-                    o1.zloto.ilosc -= 1;
-                    o1.zwiadowca.ilosc++;
-                    labelZwiadowcaIlosc.Text = "Ilość zwiadowców: " + o1.zwiadowca.ilosc.ToString();
-                    labelZwiadowcaAtak.Text = "Szansa na powodzenie: " + o1.zwiadowca.ObliczAtakJednostki().ToString() + "%";
-                    MessageBox.Show(o1.zwiadowca.ilosc.ToString());
+                    o2.zloto.ilosc -= 1;
+                    o2.zwiadowca.ilosc++;
+                    labelZwiadowcaIlosc.Text = "Ilość zwiadowców: " + o2.zwiadowca.ilosc.ToString();
+                    labelZwiadowcaAtak.Text = "Szansa na powodzenie: " + o2.zwiadowca.ObliczAtakJednostki().ToString() + "%";
+                    MessageBox.Show(o2.zwiadowca.ilosc.ToString());
                 }
                 else
                 {
@@ -86,11 +86,11 @@ namespace Anteriora
 
         private void buttonUlepszZwiadowca_Click(object sender, EventArgs e)
         {
-            if(o1.zwiadowca.poziomUlepszenia < 3)
+            if(o2.zwiadowca.poziomUlepszenia < 3)
             {
-                o1.zwiadowca.poziomUlepszenia++;
-                labelZwiadowcaAtak.Text = "Szansa na powodzenie: " + o1.zwiadowca.ObliczAtakJednostki().ToString() + "%";
-                labelZwiadowcaPoziomUlepszenia.Text = "Poziom zwiadowców: " + o1.zwiadowca.poziomUlepszenia.ToString();
+                o2.zwiadowca.poziomUlepszenia++;
+                labelZwiadowcaAtak.Text = "Szansa na powodzenie: " + o2.zwiadowca.ObliczAtakJednostki().ToString() + "%";
+                labelZwiadowcaPoziomUlepszenia.Text = "Poziom zwiadowców: " + o2.zwiadowca.poziomUlepszenia.ToString();
             }
             else
             {

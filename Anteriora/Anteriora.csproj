@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AlphaBlendTextBox">
+      <HintPath>..\..\AlphaBlendTextBox.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bronie.cs" />
     <Compile Include="Budowa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,12 +75,7 @@
     <Compile Include="EkranLadowania.Designer.cs">
       <DependentUpon>EkranLadowania.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hodowla.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hodowla.Designer.cs">
-      <DependentUpon>Hodowla.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Inne.cs" />
     <Compile Include="Instancje.cs" />
     <Compile Include="JaskiniaWezy.cs">
       <SubType>Form</SubType>
@@ -93,17 +92,17 @@
     <Compile Include="Koszary.Designer.cs">
       <DependentUpon>Koszary.cs</DependentUpon>
     </Compile>
-    <Compile Include="Koszary2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Koszary2.Designer.cs">
-      <DependentUpon>Koszary2.cs</DependentUpon>
-    </Compile>
     <Compile Include="KoszaryZwiadowca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="KoszaryZwiadowca.Designer.cs">
       <DependentUpon>KoszaryZwiadowca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kuznia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kuznia.Designer.cs">
+      <DependentUpon>Kuznia.cs</DependentUpon>
     </Compile>
     <Compile Include="Mapa.cs">
       <SubType>Form</SubType>
@@ -111,7 +110,7 @@
     <Compile Include="Mapa.Designer.cs">
       <DependentUpon>Mapa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Materiały.cs" />
+    <Compile Include="Materialy.cs" />
     <Compile Include="MechanizmJaskiniaWezy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +124,7 @@
     <Compile Include="Namiot.Designer.cs">
       <DependentUpon>Namiot.cs</DependentUpon>
     </Compile>
+    <Compile Include="ObszaryInstancji.cs" />
     <Compile Include="Osada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,29 +137,59 @@
     <Compile Include="OsadaGoblinow.Designer.cs">
       <DependentUpon>OsadaGoblinow.cs</DependentUpon>
     </Compile>
-    <Compile Include="PoleBitwy.cs">
+    <Compile Include="Panel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PoleBitwy.Designer.cs">
-      <DependentUpon>PoleBitwy.cs</DependentUpon>
+    <Compile Include="Panel.Designer.cs">
+      <DependentUpon>Panel.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPolaBitwy.cs">
+    <Compile Include="Panel2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPolaBitwy.Designer.cs">
-      <DependentUpon>MenuPolaBitwy.cs</DependentUpon>
+    <Compile Include="Panel2.Designer.cs">
+      <DependentUpon>Panel2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Początek.cs">
+    <Compile Include="Panel3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Początek.Designer.cs">
-      <DependentUpon>Początek.cs</DependentUpon>
+    <Compile Include="Panel3.Designer.cs">
+      <DependentUpon>Panel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel4.Designer.cs">
+      <DependentUpon>Panel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel5.Designer.cs">
+      <DependentUpon>Panel5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel6.Designer.cs">
+      <DependentUpon>Panel6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Poczatek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Poczatek.Designer.cs">
+      <DependentUpon>Poczatek.cs</DependentUpon>
     </Compile>
     <Compile Include="LodowaKraina.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LodowaKraina.Designer.cs">
       <DependentUpon>LodowaKraina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PoleBitwy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PoleBitwy.Designer.cs">
+      <DependentUpon>PoleBitwy.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -168,7 +198,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Wrogowie.cs" />
+    <Compile Include="Uzbrojenie.cs" />
+    <Compile Include="Przeciwnicy.cs" />
     <Compile Include="Targowisko.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +212,13 @@
     <Compile Include="Ulepszanie.Designer.cs">
       <DependentUpon>Ulepszanie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Wiadomosc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wiadomosc.Designer.cs">
+      <DependentUpon>Wiadomosc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wyposazenie.cs" />
     <Compile Include="Zarzadzanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,20 +237,17 @@
     <EmbeddedResource Include="EkranLadowania.resx">
       <DependentUpon>EkranLadowania.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hodowla.resx">
-      <DependentUpon>Hodowla.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="JaskiniaWezy.resx">
       <DependentUpon>JaskiniaWezy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Koszary.resx">
       <DependentUpon>Koszary.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Koszary2.resx">
-      <DependentUpon>Koszary2.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="KoszaryZwiadowca.resx">
       <DependentUpon>KoszaryZwiadowca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kuznia.resx">
+      <DependentUpon>Kuznia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mapa.resx">
       <DependentUpon>Mapa.cs</DependentUpon>
@@ -229,17 +264,32 @@
     <EmbeddedResource Include="OsadaGoblinow.resx">
       <DependentUpon>OsadaGoblinow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PoleBitwy.resx">
-      <DependentUpon>PoleBitwy.cs</DependentUpon>
+    <EmbeddedResource Include="Panel.resx">
+      <DependentUpon>Panel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPolaBitwy.resx">
-      <DependentUpon>MenuPolaBitwy.cs</DependentUpon>
+    <EmbeddedResource Include="Panel2.resx">
+      <DependentUpon>Panel2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Początek.resx">
-      <DependentUpon>Początek.cs</DependentUpon>
+    <EmbeddedResource Include="Panel3.resx">
+      <DependentUpon>Panel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel4.resx">
+      <DependentUpon>Panel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel5.resx">
+      <DependentUpon>Panel5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel6.resx">
+      <DependentUpon>Panel6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Poczatek.resx">
+      <DependentUpon>Poczatek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LodowaKraina.resx">
       <DependentUpon>LodowaKraina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PoleBitwy.resx">
+      <DependentUpon>PoleBitwy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -251,6 +301,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ulepszanie.resx">
       <DependentUpon>Ulepszanie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wiadomosc.resx">
+      <DependentUpon>Wiadomosc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Zarzadzanie.resx">
       <DependentUpon>Zarzadzanie.cs</DependentUpon>
@@ -518,12 +571,6 @@
     <None Include="Resources\nietoperzmalyprawo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\waz1prawo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\waz2lewo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\waz2prawo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -531,9 +578,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\waz3prawo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\waz4lewo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\waz1lewo.png" />
@@ -849,6 +893,246 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\strzalka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zloto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zegar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drewno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kamien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siano.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drewno2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jedzenie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kowadlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kowadlo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kowadlo2a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorzana zbroja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorzane spodnie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorzany helm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorzane buty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazna zbroja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazne buty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazne spodnie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazny helm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowa zbroja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowe buty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowe spodnie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowy helm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydian.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruda obsydianu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruda zelaza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kamienny miecz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazny miecz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowy miecz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patyk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skorzany pasek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OGFULL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OG14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadaGoblinowObrazek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnylucznikdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnylucznikgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnyluczniklewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnylucznikprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnyrycerzdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnyrycerzgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnyrycerzlewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\czarnyrycerzprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rycerzdol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rycerzgora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rycerzlewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rycerzprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zwiadowcadol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zwiadowcagora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zwiadowcalewo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zwiadowcaprawo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\osadagoblinowmapka1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obsydianowa tarcza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zelazna tarcza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\łóżko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubrania mieszkanców.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

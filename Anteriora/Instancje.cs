@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Anteriora
 {
@@ -30,8 +30,7 @@ namespace Anteriora
         public bool czyBudowlaIstnieje1 { get; set; }
         public bool czyBudowlaIstnieje2 { get; set; }
         public bool czyBudowlaIstnieje3 { get; set; }
-
-
+        public Timer timerMapa { get; set; }
 
         public Instancje(string nazwa, int czasRuchuWrogow, int czasRuchuZwiadowcy, string obrazekLewo, string obrazekGora, string obrazekDol)
         {
@@ -51,8 +50,8 @@ namespace Anteriora
             czasWroga = 0;
             czasZwiadowcy = 0;
             licznikZwiadowca = 1;
-            postep = 1;
             akcjaWrog = false;
+            postep = 0;
             akcjaZwiadowca = false;
             enablePoziom1 = true;
             enablePoziom2 = false;
@@ -61,10 +60,4 @@ namespace Anteriora
             enablePoziom5 = false;
         }
     }
-
-    
-
-
-
-
 }

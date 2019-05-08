@@ -1,61 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Anteriora
 {
-    /// <summary>
-    ///  klasa JednostkiOfensywne dziedzicząca cechy z JednostkiMilitarne określa potencjał ataku składający się z cech jednostki
-    /// </summary>
     public class JednostkiGracza : JednostkiMilitarne
     {
-        // potencjał ataku dla określonego typu jednostki
-        public int potencjalAtaku { get; set; }
-        // potencjał ataku dla wszystkich jednostek offensywnych
-        public int potencjalAtakuOgolnie { get; set; }
+        public int liczebnoscWojsk { get; set; }
 
-        // potencjał ataku określonej jednostki
-        public int ObliczPotencjalAtaku(int ilosc,int atak, int poziomUlepszenia)
-        {
-            return potencjalAtaku = ilosc * atak * poziomUlepszenia;
-        }
+        readonly Poczatek o;
 
-        // suma wszystkich potencjałów
-        public int ObliczPotencjalAtakuWszystkichJednostek(int potencjalAtaku1, int potencjalAtaku2, int potencjalAtaku3)
-        {
-            return potencjalAtakuOgolnie = potencjalAtaku1 + potencjalAtaku2 + potencjalAtaku3; 
-        }
-
-        public JednostkiGracza(string nazwa, int poziomUlepszenia, int atakDomyslny, int obrona, int PZDomyslne, int ilosc, int odlegloscRuch,
-               int odlegloscAtak, string obrazekPrawo, string obrazekLewo, string obrazekGora, string obrazekDol)
+        public JednostkiGracza(string nazwa, int atakDomyslny, int obronaDomyslna, int PZDomyslne, int ilosc, int odlegloscAtaku, bool czyAtakNaBliskiDystans,
+                                Bitmap obrazekPrawo, Bitmap obrazekLewo, Bitmap obrazekGora, Bitmap obrazekDol)
         {
             this.nazwa = nazwa;
-            this.poziomUlepszenia = poziomUlepszenia;
+            this.poziomUlepszenia = 1;
             this.atakDomyslny = atakDomyslny;
-            this.obrona = obrona;
+            this.obronaDomyslna = obronaDomyslna;
             this.PZDomyslne = PZDomyslne;
             this.ilosc = ilosc;
-            this.odlegloscRuch = odlegloscRuch;
-            this.odlegloscAtak = odlegloscAtak;
+            this.odlegloscAtaku = odlegloscAtaku;
+            this.czyAtakNaBliskiDystans = czyAtakNaBliskiDystans;
             this.obrazekPrawo = obrazekPrawo;
             this.obrazekLewo = obrazekLewo;
             this.obrazekGora = obrazekGora;
             this.obrazekDol = obrazekDol;
-            
         }
 
+        //zwiadowca
         public JednostkiGracza()
         {
-
+            this.atakDomyslny = 30;
+            this.poziomUlepszenia = 1;
         }
 
-        public JednostkiGracza(int ilosc, int poziomUlepszenia, int atakDomyslny)
+        public int ObliczLiczebnoscWojsk()
         {
-            this.ilosc = ilosc;
-            this.poziomUlepszenia = poziomUlepszenia;
-            this.atakDomyslny = atakDomyslny;
+            return liczebnoscWojsk = o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc;
         }
     }
 }

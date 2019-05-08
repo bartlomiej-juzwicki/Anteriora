@@ -234,6 +234,7 @@
             this.MinimizeBox = false;
             this.Name = "Targowisko";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Targowisko";
             this.ResumeLayout(false);

@@ -112,7 +112,11 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(1475, 235);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Dziennik";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Dziennik";
             this.tableLayoutPanel1.ResumeLayout(false);

@@ -12,11 +12,13 @@ namespace Anteriora
 {
     public partial class EkranLadowania : Form
     {
-        Początek o1;
+        Poczatek o1;
         Osada o2;
+        Mapa o3;
+
         public int ktoryEkranLadowania = 0;
 
-        public EkranLadowania(Początek c1,Osada c2,string nazwaObrazu)
+        public EkranLadowania(Poczatek c1,Osada c2,string nazwaObrazu)
         {
 
             o1 = c1;
@@ -40,7 +42,36 @@ namespace Anteriora
             timerLadowanie.Start();
         }
 
-    
+        public EkranLadowania(Poczatek c1, Osada c2,Mapa c3, string nazwaObrazu)
+        {
+
+            o1 = c1;
+            o2 = c2;
+            o3 = c3;
+
+            var o = Properties.Resources.ResourceManager.GetObject(nazwaObrazu);
+
+            if (nazwaObrazu == "load2")
+            {
+                ktoryEkranLadowania = 1;
+            }
+            else if (nazwaObrazu == "load")
+            {
+                ktoryEkranLadowania = 2;
+            }
+            else if(nazwaObrazu == "osadaGoblinowObrazek")
+            {
+                ktoryEkranLadowania = 3;
+            }
+
+
+
+            InitializeComponent();
+            this.BackgroundImage = (Image)o;
+            timerLadowanie.Start();
+        }
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,20 +85,23 @@ namespace Anteriora
             if(progressBar1.Value == 50 && ktoryEkranLadowania == 1)
             {
                 new Osada(o1).Show();
+                
                 o1.Hide();
             }
-            else if (progressBar1.Value == 100 && ktoryEkranLadowania == 1)
-            {               
-                this.Close();
-            }
-            else if(progressBar1.Value == 50 && ktoryEkranLadowania == 2)
+            else if (progressBar1.Value == 50 && ktoryEkranLadowania == 2)
             {
-                new Mapa(o2, o1).Show();                                 
+                new Mapa(o2, o1).Show();
             }
-            else if (progressBar1.Value == 100 && ktoryEkranLadowania == 2)
-            {             
+            else if (progressBar1.Value == 50 && ktoryEkranLadowania == 3)
+            {
+                new OsadaGoblinow(o2, o1, o3).Show();
+            }
+            else if (progressBar1.Value == 100 && (ktoryEkranLadowania == 1 || ktoryEkranLadowania == 2 || ktoryEkranLadowania == 3))
+            {
                 this.Close();
             }
+           
+            
         }
     }
 }

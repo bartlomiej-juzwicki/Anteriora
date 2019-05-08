@@ -13,10 +13,7 @@ namespace Anteriora
     public partial class Mapa : Form
     {
         Osada o1;
-        Początek o2;
-
-        public int czasGry;
-      
+        Poczatek o2;
 
         #region punkty ruchu wroga
 
@@ -35,14 +32,12 @@ namespace Anteriora
 
         #endregion punkty ruchu wroga
 
-        public Mapa(Osada c1, Początek c2)
+        public Mapa(Osada c1, Poczatek c2)
         {
             o1 = c1;
             o2 = c2;
             InitializeComponent();
-            czasGry = o1.czasGry;
             timerPoruszanieWroga.Start();
-            timerMapa.Start();
         }
 
         
@@ -57,7 +52,8 @@ namespace Anteriora
         {
             //new OsadaGoblinow1(o1).ShowDialog();
             //new MenuPolaBitwy(o1, this, 1).ShowDialog();
-            new OsadaGoblinow(o1, o2, this).Show();
+            //new OsadaGoblinow(o1, o2, this).Show();
+            new EkranLadowania(o2, o1, this, "osadaGoblinowObrazek").Show();
         }
 
         private void pictureBoxJaskiniaWezy_Click(object sender, EventArgs e)
@@ -129,9 +125,9 @@ namespace Anteriora
             {
                 if (instancja.licznikZwiadowca < licznik)
                 {
-                    if (o1.zwiadowca.ilosc == 1)
+                    if (o2.zwiadowca.ilosc == 1)
                     {
-                        o1.zwiadowca.ilosc--;
+                        o2.zwiadowca.ilosc--;
                         instancja.akcjaZwiadowca = true;
                         o1.timerZwiadowca.Start();
                         MessageBox.Show("Wysłałeś zwiadowcę.");
@@ -166,26 +162,6 @@ namespace Anteriora
         private void pictureBoxLodowaKraina_Click(object sender, EventArgs e)
         {
             new LodowaKraina(o1, o2, this).Show();
-        }
-
-        private void timerMapa_Tick(object sender, EventArgs e)
-        {
-            czasGry++;
-            labelCzasMapa1.Text = "  Czas gry: " + czasGry.ToString() + " sekund(y)";
-            labelDrewno.Text = "Drewno: " + o2.drewno.ilosc.ToString();
-            labelKamien.Text = "Kamień: " + o2.kamień.ilosc.ToString();
-            labelSiano.Text = "Siano: " + o2.siano.ilosc.ToString();
-            labelJedzenie.Text = "Jedzenie: " + o2.jedzenie.ilosc.ToString();
-            labelWoda.Text = "Woda: " + o2.woda.ilosc.ToString();
-            labelZloto.Text = "Złoto: " + o1.zloto.ilosc.ToString();
-
-            o1.ZmianaKoloruTekstuLabela(o2.drewno, labelDrewno);
-            o1.ZmianaKoloruTekstuLabela(o2.kamień, labelKamien);
-            o1.ZmianaKoloruTekstuLabela(o2.siano, labelSiano);
-            o1.ZmianaKoloruTekstuLabela(o2.jedzenie, labelJedzenie);
-            o1.ZmianaKoloruTekstuLabela(o2.woda, labelWoda);
-            o1.ZmianaKoloruTekstuLabela(o1.zloto, labelZloto);
-            o1.PojemnośćMagazynu();
         }
 
         private void pictureBoxOgnistaKraina_Click(object sender, EventArgs e)

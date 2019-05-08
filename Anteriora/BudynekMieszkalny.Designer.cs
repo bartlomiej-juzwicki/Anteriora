@@ -110,6 +110,7 @@
             this.buttonSpelnijZyczenia.TabIndex = 7;
             this.buttonSpelnijZyczenia.Text = "Spełnij życzenia mieszkańców";
             this.buttonSpelnijZyczenia.UseVisualStyleBackColor = true;
+            this.buttonSpelnijZyczenia.Click += new System.EventHandler(this.buttonSpelnijZyczenia_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -365,6 +366,8 @@
             this.Controls.Add(this.buttonOtwarty);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "BudynekMieszkalny";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Budowa));
             this.buttonTartakBudowa = new System.Windows.Forms.Button();
             this.buttonMagazynBudowa = new System.Windows.Forms.Button();
@@ -59,7 +58,6 @@
             this.buttonMostOpis = new System.Windows.Forms.Button();
             this.buttonMurOpis = new System.Windows.Forms.Button();
             this.buttonAnulujBudowa = new System.Windows.Forms.Button();
-            this.timerCzasBudowy = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // buttonTartakBudowa
@@ -528,11 +526,6 @@
             this.buttonAnulujBudowa.UseVisualStyleBackColor = false;
             this.buttonAnulujBudowa.Click += new System.EventHandler(this.buttonAnulujBudowa_Click);
             // 
-            // timerCzasBudowy
-            // 
-            this.timerCzasBudowy.Interval = 1000;
-            this.timerCzasBudowy.Tick += new System.EventHandler(this.timerCzasBudowy_Tick);
-            // 
             // Budowa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -576,6 +569,7 @@
             this.MinimizeBox = false;
             this.Name = "Budowa";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Budowa";
             this.ResumeLayout(false);
@@ -613,6 +607,5 @@
         private System.Windows.Forms.Button buttonMostOpis;
         private System.Windows.Forms.Button buttonMurOpis;
         private System.Windows.Forms.Button buttonAnulujBudowa;
-        public System.Windows.Forms.Timer timerCzasBudowy;
     }
 }

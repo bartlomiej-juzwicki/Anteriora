@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ulepszanie));
             this.buttonUlepszTartakPierwszy = new System.Windows.Forms.Button();
-            this.timerCzasUlepszenia = new System.Windows.Forms.Timer(this.components);
             this.buttonUlepszTartakDrugi = new System.Windows.Forms.Button();
             this.buttonUlepszKamieniolomPierwszy = new System.Windows.Forms.Button();
             this.buttonUlepszKamieniolomDrugi = new System.Windows.Forms.Button();
@@ -78,11 +77,6 @@
             this.buttonUlepszTartakPierwszy.Text = "Ulepsz pierwszy tartak";
             this.buttonUlepszTartakPierwszy.UseVisualStyleBackColor = true;
             this.buttonUlepszTartakPierwszy.Click += new System.EventHandler(this.buttonUlepszTartak_Click);
-            // 
-            // timerCzasUlepszenia
-            // 
-            this.timerCzasUlepszenia.Interval = 1000;
-            this.timerCzasUlepszenia.Tick += new System.EventHandler(this.timerCzasUlepszenia_Tick);
             // 
             // buttonUlepszTartakDrugi
             // 
@@ -566,8 +560,9 @@
             this.MinimizeBox = false;
             this.Name = "Ulepszanie";
             this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ulepszanie";
+            this.Text = "ddd";
             this.ResumeLayout(false);
 
         }
@@ -575,7 +570,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonUlepszTartakPierwszy;
-        public System.Windows.Forms.Timer timerCzasUlepszenia;
         private System.Windows.Forms.Button buttonUlepszTartakDrugi;
         private System.Windows.Forms.Button buttonUlepszKamieniolomPierwszy;
         private System.Windows.Forms.Button buttonUlepszKamieniolomDrugi;

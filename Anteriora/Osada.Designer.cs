@@ -30,12 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Osada));
-            this.labelCzasMapa1 = new System.Windows.Forms.Label();
-            this.timerCzasGryMapa2 = new System.Windows.Forms.Timer(this.components);
+            this.timerCzasGry = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxGraczPart5 = new System.Windows.Forms.PictureBox();
             this.pictureBoxGraczPart6 = new System.Windows.Forms.PictureBox();
             this.pictureBoxMiejsceNaNamiot = new System.Windows.Forms.PictureBox();
-            this.labelDrewno = new System.Windows.Forms.Label();
             this.pictureBoxNamiot = new System.Windows.Forms.PictureBox();
             this.pictureBoxTartak1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxTartak2 = new System.Windows.Forms.PictureBox();
@@ -53,10 +51,6 @@
             this.pictureBoxBudynekMieszkalny = new System.Windows.Forms.PictureBox();
             this.pictureBoxKamieniolom2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxKamieniolom1 = new System.Windows.Forms.PictureBox();
-            this.labelKamien = new System.Windows.Forms.Label();
-            this.labelSiano = new System.Windows.Forms.Label();
-            this.labelJedzenie = new System.Windows.Forms.Label();
-            this.labelWoda = new System.Windows.Forms.Label();
             this.timerBudowa = new System.Windows.Forms.Timer(this.components);
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
@@ -65,14 +59,21 @@
             this.buttonCzyszczenie = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBoxMapa = new System.Windows.Forms.PictureBox();
-            this.timerWojna = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxWrog = new System.Windows.Forms.PictureBox();
             this.buttonELO = new System.Windows.Forms.Button();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelZloto = new System.Windows.Forms.Label();
             this.timerZwiadowca = new System.Windows.Forms.Timer(this.components);
             this.timerMieszkancy = new System.Windows.Forms.Timer(this.components);
-            this.timerJedzenie = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostJedzenia = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostDrewna = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostKamienia = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostSiana = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostSkory = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostWody = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostZlota = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostRudyZelaza = new System.Windows.Forms.Timer(this.components);
+            this.timerCzasBudowy = new System.Windows.Forms.Timer(this.components);
+            this.timerCzasUlepszenia = new System.Windows.Forms.Timer(this.components);
+            this.timerPrzyrostWelny = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGraczPart5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGraczPart6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiejsceNaNamiot)).BeginInit();
@@ -97,26 +98,12 @@
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMapa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWrog)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // labelCzasMapa1
+            // timerCzasGry
             // 
-            this.labelCzasMapa1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelCzasMapa1.AutoSize = true;
-            this.labelCzasMapa1.BackColor = System.Drawing.Color.Transparent;
-            this.labelCzasMapa1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelCzasMapa1.ForeColor = System.Drawing.Color.Black;
-            this.labelCzasMapa1.Location = new System.Drawing.Point(3, 2);
-            this.labelCzasMapa1.Name = "labelCzasMapa1";
-            this.labelCzasMapa1.Size = new System.Drawing.Size(173, 15);
-            this.labelCzasMapa1.TabIndex = 31;
-            this.labelCzasMapa1.Text = "  Czas:";
-            // 
-            // timerCzasGryMapa2
-            // 
-            this.timerCzasGryMapa2.Interval = 1000;
-            this.timerCzasGryMapa2.Tick += new System.EventHandler(this.timerCzasGryMapa2_Tick);
+            this.timerCzasGry.Interval = 1000;
+            this.timerCzasGry.Tick += new System.EventHandler(this.timerCzasGry_Tick);
             // 
             // pictureBoxGraczPart5
             // 
@@ -151,19 +138,6 @@
             this.pictureBoxMiejsceNaNamiot.TabIndex = 34;
             this.pictureBoxMiejsceNaNamiot.TabStop = false;
             this.pictureBoxMiejsceNaNamiot.Click += new System.EventHandler(this.pictureBoxMiejsceNaNamiot_Click);
-            // 
-            // labelDrewno
-            // 
-            this.labelDrewno.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelDrewno.AutoSize = true;
-            this.labelDrewno.BackColor = System.Drawing.Color.Transparent;
-            this.labelDrewno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelDrewno.ForeColor = System.Drawing.Color.Black;
-            this.labelDrewno.Location = new System.Drawing.Point(182, 2);
-            this.labelDrewno.Name = "labelDrewno";
-            this.labelDrewno.Size = new System.Drawing.Size(134, 15);
-            this.labelDrewno.TabIndex = 35;
-            this.labelDrewno.Text = "Drewno:";
             // 
             // pictureBoxNamiot
             // 
@@ -339,7 +313,6 @@
             this.pictureBoxHodowla.TabIndex = 49;
             this.pictureBoxHodowla.TabStop = false;
             this.pictureBoxHodowla.Visible = false;
-            this.pictureBoxHodowla.Click += new System.EventHandler(this.pictureBoxHodowla_Click);
             // 
             // pictureBoxBudynekMieszkalny
             // 
@@ -356,79 +329,29 @@
             // 
             // pictureBoxKamieniolom2
             // 
-            this.pictureBoxKamieniolom2.BackgroundImage = global::Anteriora.Properties.Resources.Kamieniołom1;
+            this.pictureBoxKamieniolom2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxKamieniolom2.BackgroundImage = global::Anteriora.Properties.Resources.Kamieniołom;
             this.pictureBoxKamieniolom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKamieniolom2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxKamieniolom2.Location = new System.Drawing.Point(197, -4);
+            this.pictureBoxKamieniolom2.Location = new System.Drawing.Point(213, 12);
             this.pictureBoxKamieniolom2.Name = "pictureBoxKamieniolom2";
-            this.pictureBoxKamieniolom2.Size = new System.Drawing.Size(206, 219);
+            this.pictureBoxKamieniolom2.Size = new System.Drawing.Size(200, 220);
             this.pictureBoxKamieniolom2.TabIndex = 51;
             this.pictureBoxKamieniolom2.TabStop = false;
             this.pictureBoxKamieniolom2.Visible = false;
             // 
             // pictureBoxKamieniolom1
             // 
-            this.pictureBoxKamieniolom1.BackgroundImage = global::Anteriora.Properties.Resources.Kamieniołom2;
+            this.pictureBoxKamieniolom1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxKamieniolom1.BackgroundImage = global::Anteriora.Properties.Resources.Kamieniołom;
             this.pictureBoxKamieniolom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBoxKamieniolom1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxKamieniolom1.Location = new System.Drawing.Point(3, 70);
+            this.pictureBoxKamieniolom1.Location = new System.Drawing.Point(3, 92);
             this.pictureBoxKamieniolom1.Name = "pictureBoxKamieniolom1";
-            this.pictureBoxKamieniolom1.Size = new System.Drawing.Size(194, 253);
+            this.pictureBoxKamieniolom1.Size = new System.Drawing.Size(200, 220);
             this.pictureBoxKamieniolom1.TabIndex = 52;
             this.pictureBoxKamieniolom1.TabStop = false;
             this.pictureBoxKamieniolom1.Visible = false;
-            // 
-            // labelKamien
-            // 
-            this.labelKamien.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelKamien.AutoSize = true;
-            this.labelKamien.BackColor = System.Drawing.Color.Transparent;
-            this.labelKamien.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelKamien.ForeColor = System.Drawing.Color.Black;
-            this.labelKamien.Location = new System.Drawing.Point(322, 2);
-            this.labelKamien.Name = "labelKamien";
-            this.labelKamien.Size = new System.Drawing.Size(134, 15);
-            this.labelKamien.TabIndex = 53;
-            this.labelKamien.Text = "Kamień:";
-            // 
-            // labelSiano
-            // 
-            this.labelSiano.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSiano.AutoSize = true;
-            this.labelSiano.BackColor = System.Drawing.Color.Transparent;
-            this.labelSiano.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSiano.ForeColor = System.Drawing.Color.Black;
-            this.labelSiano.Location = new System.Drawing.Point(462, 2);
-            this.labelSiano.Name = "labelSiano";
-            this.labelSiano.Size = new System.Drawing.Size(134, 15);
-            this.labelSiano.TabIndex = 54;
-            this.labelSiano.Text = "Siano:";
-            // 
-            // labelJedzenie
-            // 
-            this.labelJedzenie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelJedzenie.AutoSize = true;
-            this.labelJedzenie.BackColor = System.Drawing.Color.Transparent;
-            this.labelJedzenie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelJedzenie.ForeColor = System.Drawing.Color.Black;
-            this.labelJedzenie.Location = new System.Drawing.Point(602, 2);
-            this.labelJedzenie.Name = "labelJedzenie";
-            this.labelJedzenie.Size = new System.Drawing.Size(127, 15);
-            this.labelJedzenie.TabIndex = 55;
-            this.labelJedzenie.Text = "Jedzenie:";
-            // 
-            // labelWoda
-            // 
-            this.labelWoda.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelWoda.AutoSize = true;
-            this.labelWoda.BackColor = System.Drawing.Color.Transparent;
-            this.labelWoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelWoda.ForeColor = System.Drawing.Color.Black;
-            this.labelWoda.Location = new System.Drawing.Point(735, 2);
-            this.labelWoda.Name = "labelWoda";
-            this.labelWoda.Size = new System.Drawing.Size(119, 15);
-            this.labelWoda.TabIndex = 56;
-            this.labelWoda.Text = "Woda:";
             // 
             // progressBar
             // 
@@ -535,11 +458,6 @@
             this.pictureBoxMapa.TabStop = false;
             this.pictureBoxMapa.Click += new System.EventHandler(this.pictureBoxMapa_Click);
             // 
-            // timerWojna
-            // 
-            this.timerWojna.Interval = 1000;
-            this.timerWojna.Tick += new System.EventHandler(this.timerWojna_Tick);
-            // 
             // pictureBoxWrog
             // 
             this.pictureBoxWrog.BackColor = System.Drawing.Color.Transparent;
@@ -568,47 +486,6 @@
             this.buttonELO.UseVisualStyleBackColor = false;
             this.buttonELO.Click += new System.EventHandler(this.buttonELO_Click);
             // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Black;
-            this.tableLayoutPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel2.BackgroundImage")));
-            this.tableLayoutPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel2.ColumnCount = 7;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
-            this.tableLayoutPanel2.Controls.Add(this.labelCzasMapa1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelDrewno, 1, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelKamien, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelSiano, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelWoda, 5, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelZloto, 6, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelJedzenie, 4, 0);
-            this.tableLayoutPanel2.ForeColor = System.Drawing.Color.DimGray;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(460, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1000, 20);
-            this.tableLayoutPanel2.TabIndex = 65;
-            // 
-            // labelZloto
-            // 
-            this.labelZloto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelZloto.AutoSize = true;
-            this.labelZloto.BackColor = System.Drawing.Color.Transparent;
-            this.labelZloto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZloto.ForeColor = System.Drawing.Color.Black;
-            this.labelZloto.Location = new System.Drawing.Point(860, 2);
-            this.labelZloto.Name = "labelZloto";
-            this.labelZloto.Size = new System.Drawing.Size(156, 15);
-            this.labelZloto.TabIndex = 58;
-            this.labelZloto.Text = "Złoto:";
-            // 
             // timerZwiadowca
             // 
             this.timerZwiadowca.Interval = 1000;
@@ -619,10 +496,59 @@
             this.timerMieszkancy.Interval = 10000;
             this.timerMieszkancy.Tick += new System.EventHandler(this.timerMieszkancy_Tick);
             // 
-            // timerJedzenie
+            // timerPrzyrostJedzenia
             // 
-            this.timerJedzenie.Interval = 30000;
-            this.timerJedzenie.Tick += new System.EventHandler(this.timerJedzenie_Tick);
+            this.timerPrzyrostJedzenia.Interval = 1000;
+            this.timerPrzyrostJedzenia.Tick += new System.EventHandler(this.timerPrzyrostJedzenia_Tick);
+            // 
+            // timerPrzyrostDrewna
+            // 
+            this.timerPrzyrostDrewna.Interval = 1000;
+            this.timerPrzyrostDrewna.Tick += new System.EventHandler(this.timerPrzyrostDrewna_Tick);
+            // 
+            // timerPrzyrostKamienia
+            // 
+            this.timerPrzyrostKamienia.Interval = 1000;
+            this.timerPrzyrostKamienia.Tick += new System.EventHandler(this.timerPrzyrostKamienia_Tick);
+            // 
+            // timerPrzyrostSiana
+            // 
+            this.timerPrzyrostSiana.Interval = 1000;
+            this.timerPrzyrostSiana.Tick += new System.EventHandler(this.timerPrzyrostSiana_Tick);
+            // 
+            // timerPrzyrostSkory
+            // 
+            this.timerPrzyrostSkory.Interval = 1000;
+            this.timerPrzyrostSkory.Tick += new System.EventHandler(this.timerPrzyrostSkory_Tick);
+            // 
+            // timerPrzyrostWody
+            // 
+            this.timerPrzyrostWody.Interval = 1000;
+            this.timerPrzyrostWody.Tick += new System.EventHandler(this.timerPrzyrostWody_Tick);
+            // 
+            // timerPrzyrostZlota
+            // 
+            this.timerPrzyrostZlota.Interval = 1000;
+            // 
+            // timerPrzyrostRudyZelaza
+            // 
+            this.timerPrzyrostRudyZelaza.Interval = 1000;
+            this.timerPrzyrostRudyZelaza.Tick += new System.EventHandler(this.TimerPrzyrostRudyZelaza_Tick);
+            // 
+            // timerCzasBudowy
+            // 
+            this.timerCzasBudowy.Interval = 1000;
+            this.timerCzasBudowy.Tick += new System.EventHandler(this.TimerCzasBudowy_Tick);
+            // 
+            // timerCzasUlepszenia
+            // 
+            this.timerCzasUlepszenia.Interval = 1000;
+            this.timerCzasUlepszenia.Tick += new System.EventHandler(this.TimerCzasUlepszenia_Tick);
+            // 
+            // timerPrzyrostWelny
+            // 
+            this.timerPrzyrostWelny.Interval = 1000;
+            this.timerPrzyrostWelny.Tick += new System.EventHandler(this.TimerPrzyrostWelny_Tick);
             // 
             // Osada
             // 
@@ -632,7 +558,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);
             this.Controls.Add(this.progressBar2);
-            this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.pictureBoxWrog);
             this.Controls.Add(this.pictureBoxMapa);
             this.Controls.Add(this.buttonELO);
@@ -695,20 +620,15 @@
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMapa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWrog)).EndInit();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        public System.Windows.Forms.Label labelCzasMapa1;
-        public System.Windows.Forms.Timer timerCzasGryMapa2;
+        public System.Windows.Forms.Timer timerCzasGry;
         public System.Windows.Forms.PictureBox pictureBoxGraczPart5;
         public System.Windows.Forms.PictureBox pictureBoxGraczPart6;
         public System.Windows.Forms.PictureBox pictureBoxMiejsceNaNamiot;
-        public System.Windows.Forms.Label labelDrewno;
         public System.Windows.Forms.PictureBox pictureBoxNamiot;
         public System.Windows.Forms.PictureBox pictureBoxTartak1;
         public System.Windows.Forms.PictureBox pictureBoxTartak2;
@@ -726,10 +646,6 @@
         public System.Windows.Forms.PictureBox pictureBoxBudynekMieszkalny;
         public System.Windows.Forms.PictureBox pictureBoxKamieniolom2;
         public System.Windows.Forms.PictureBox pictureBoxKamieniolom1;
-        public System.Windows.Forms.Label labelKamien;
-        public System.Windows.Forms.Label labelSiano;
-        public System.Windows.Forms.Label labelJedzenie;
-        public System.Windows.Forms.Label labelWoda;
         public System.Windows.Forms.Timer timerBudowa;
         public System.Windows.Forms.ProgressBar progressBar;
         public System.Windows.Forms.ProgressBar progressBar2;
@@ -737,14 +653,21 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button buttonCzyszczenie;
         public System.Windows.Forms.PictureBox pictureBoxMapa;
-        public System.Windows.Forms.Timer timerWojna;
         public System.Windows.Forms.PictureBox pictureBoxWrog;
         private System.Windows.Forms.Button buttonELO;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        public System.Windows.Forms.Label labelZloto;
         public System.Windows.Forms.Timer timerZwiadowca;
         public System.Windows.Forms.Timer timerMieszkancy;
-        private System.Windows.Forms.Timer timerJedzenie;
+        public System.Windows.Forms.Timer timerPrzyrostDrewna;
+        public System.Windows.Forms.Timer timerPrzyrostKamienia;
+        public System.Windows.Forms.Timer timerPrzyrostSiana;
+        public System.Windows.Forms.Timer timerPrzyrostSkory;
+        public System.Windows.Forms.Timer timerPrzyrostZlota;
+        public System.Windows.Forms.Timer timerPrzyrostJedzenia;
+        public System.Windows.Forms.Timer timerPrzyrostWody;
+        public System.Windows.Forms.Timer timerPrzyrostRudyZelaza;
+        public System.Windows.Forms.Timer timerCzasBudowy;
+        public System.Windows.Forms.Timer timerCzasUlepszenia;
+        public System.Windows.Forms.Timer timerPrzyrostWelny;
     }
 }

@@ -12,2196 +12,1874 @@ namespace Anteriora
 {
     public partial class PoleBitwy : Form
     {
-        #region Points
-        Point A1 = new Point(49, 49);
-        Point A2 = new Point(145, 49);
-        Point A3 = new Point(241, 49);
-        Point A4 = new Point(337, 49);
-        Point A5 = new Point(433, 49);
-        Point A6 = new Point(529, 49);
-        Point A7 = new Point(625, 49);
-        Point A8 = new Point(721, 49);
-        Point A9 = new Point(817, 49);
+        Poczatek o1;
 
-        Point B1 = new Point(49, 145);
-        Point B2 = new Point(145, 145);
-        Point B3 = new Point(241, 145);
-        Point B4 = new Point(337, 145);
-        Point B5 = new Point(433, 145);
-        Point B6 = new Point(529, 145);
-        Point B7 = new Point(625, 145);
-        Point B8 = new Point(721, 145);
-        Point B9 = new Point(817, 145);
+        Instancje instancje;
 
-        Point C1 = new Point(49, 241);
-        Point C2 = new Point(145, 241);
-        Point C3 = new Point(241, 241);
-        Point C4 = new Point(337, 241);
-        Point C5 = new Point(433, 241);
-        Point C6 = new Point(529, 241);
-        Point C7 = new Point(625, 241);
-        Point C8 = new Point(721, 241);
-        Point C9 = new Point(817, 241);
+        Przeciwnicy przeciwnik0;
+        Przeciwnicy przeciwnik1;
+        Przeciwnicy przeciwnik2;
+        Przeciwnicy przeciwnik3;
+        Przeciwnicy przeciwnik4;
+        Przeciwnicy przeciwnik5;
+        Przeciwnicy przeciwnik6;
+        ObszaryInstancji obszaryInstancji;
 
-        Point D1 = new Point(49, 337);
-        Point D2 = new Point(145, 337);
-        Point D3 = new Point(241, 337);
-        Point D4 = new Point(337, 337);
-        Point D5 = new Point(433, 337);
-        Point D6 = new Point(529, 337);
-        Point D7 = new Point(625, 337);
-        Point D8 = new Point(721, 337);
-        Point D9 = new Point(817, 337);
+        #region Punkty
 
-        Point E1 = new Point(49, 433);
-        Point E2 = new Point(145, 433);
-        Point E3 = new Point(241, 433);
-        Point E4 = new Point(337, 433);
-        Point E5 = new Point(433, 433);
-        Point E6 = new Point(529, 433);
-        Point E7 = new Point(625, 433);
-        Point E8 = new Point(721, 433);
-        Point E9 = new Point(817, 433);
+        #region A
 
-        #endregion  
+        Point A1 = new Point(210, 100);
+        Point A2 = new Point(310, 100);
+        Point A3 = new Point(410, 100);
+        Point A4 = new Point(510, 100);
+        Point A5 = new Point(610, 100);
+        Point A6 = new Point(710, 100);
+        Point A7 = new Point(810, 100);
+        Point A8 = new Point(910, 100);
+        Point A9 = new Point(1010, 100);
+        Point A10 = new Point(1110, 100);
+        Point A11 = new Point(1210, 100);
+        Point A12 = new Point(1310, 100);
+        Point A13 = new Point(1410, 100);
+        Point A14 = new Point(1510, 100);
+        Point A15 = new Point(1610, 100);
 
-        List<Button> buttons = new List<Button>();
-        List<JednostkiGracza> wojska = new List<JednostkiGracza>();
-        List<Wrogowie> wrogowie = new List<Wrogowie>();
+        #endregion A
 
-        Osada o;
-        Mapa o2;
-        public int rundaTwoja = 1;
-        public int rundaPrzeciwnika;
-        public double ktoraMapa;
+        #region B
 
-        public PoleBitwy(Osada c, Mapa c2, double numerMapy, int iloscPrzeciwnik1, int iloscPrzeciwnik2, int iloscPrzeciwnik3, string tlo)
+        Point B1 = new Point(210, 200);
+        Point B2 = new Point(310, 200);
+        Point B3 = new Point(410, 200);
+        Point B4 = new Point(510, 200);
+        Point B5 = new Point(610, 200);
+        Point B6 = new Point(710, 200);
+        Point B7 = new Point(810, 200);
+        Point B8 = new Point(910, 200);
+        Point B9 = new Point(1010, 200);
+        Point B10 = new Point(1110, 200);
+        Point B11 = new Point(1210, 200);
+        Point B12 = new Point(1310, 200);
+        Point B13 = new Point(1410, 200);
+        Point B14 = new Point(1510, 200);
+        Point B15 = new Point(1610, 200);
+
+        #endregion B
+
+        #region C
+
+        Point C1 = new Point(210, 300);
+        Point C2 = new Point(310, 300);
+        Point C3 = new Point(410, 300);
+        Point C4 = new Point(510, 300);
+        Point C5 = new Point(610, 300);
+        Point C6 = new Point(710, 300);
+        Point C7 = new Point(810, 300);
+        Point C8 = new Point(910, 300);
+        Point C9 = new Point(1010, 300);
+        Point C10 = new Point(1110, 300);
+        Point C11 = new Point(1210, 300);
+        Point C12 = new Point(1310, 300);
+        Point C13 = new Point(1410, 300);
+        Point C14 = new Point(1510, 300);
+        Point C15 = new Point(1610, 300);
+
+        #endregion C
+
+        #region D
+
+        Point D1 = new Point(210, 400);
+        Point D2 = new Point(310, 400);
+        Point D3 = new Point(410, 400);
+        Point D4 = new Point(510, 400);
+        Point D5 = new Point(610, 400);
+        Point D6 = new Point(710, 400);
+        Point D7 = new Point(810, 400);
+        Point D8 = new Point(910, 400);
+        Point D9 = new Point(1010, 400);
+        Point D10 = new Point(1110, 400);
+        Point D11 = new Point(1210, 400);
+        Point D12 = new Point(1310, 400);
+        Point D13 = new Point(1410, 400);
+        Point D14 = new Point(1510, 400);
+        Point D15 = new Point(1610, 400);
+
+        #endregion D
+
+        #region E
+
+        Point E1 = new Point(210, 500);
+        Point E2 = new Point(310, 500);
+        Point E3 = new Point(410, 500);
+        Point E4 = new Point(510, 500);
+        Point E5 = new Point(610, 500);
+        Point E6 = new Point(710, 500);
+        Point E7 = new Point(810, 500);
+        Point E8 = new Point(910, 500);
+        Point E9 = new Point(1010, 500);
+        Point E10 = new Point(1110, 500);
+        Point E11 = new Point(1210, 500);
+        Point E12 = new Point(1310, 500);
+        Point E13 = new Point(1410, 500);
+        Point E14 = new Point(1510, 500);
+        Point E15 = new Point(1610, 500);
+
+        #endregion E
+
+        #region F
+
+        Point F1 = new Point(210, 600);
+        Point F2 = new Point(310, 600);
+        Point F3 = new Point(410, 600);
+        Point F4 = new Point(510, 600);
+        Point F5 = new Point(610, 600);
+        Point F6 = new Point(710, 600);
+        Point F7 = new Point(810, 600);
+        Point F8 = new Point(910, 600);
+        Point F9 = new Point(1010, 600);
+        Point F10 = new Point(1110, 600);
+        Point F11 = new Point(1210, 600);
+        Point F12 = new Point(1310, 600);
+        Point F13 = new Point(1410, 600);
+        Point F14 = new Point(1510, 600);
+        Point F15 = new Point(1610, 600);
+
+        #endregion F
+
+        #region G
+
+        Point G1 = new Point(210, 700);
+        Point G2 = new Point(310, 700);
+        Point G3 = new Point(410, 700);
+        Point G4 = new Point(510, 700);
+        Point G5 = new Point(610, 700);
+        Point G6 = new Point(710, 700);
+        Point G7 = new Point(810, 700);
+        Point G8 = new Point(910, 700);
+        Point G9 = new Point(1010, 700);
+        Point G10 = new Point(1110, 700);
+        Point G11 = new Point(1210, 700);
+        Point G12 = new Point(1310, 700);
+        Point G13 = new Point(1410, 700);
+        Point G14 = new Point(1510, 700);
+        Point G15 = new Point(1610, 700);
+
+
+        #endregion G
+
+
+        #endregion  Punty
+        
+        List<Button> buttonsLista = new List<Button>();
+
+        List<JednostkiGracza> jednostkiGraczaLista = new List<JednostkiGracza>();        
+        List<Label> nazwaJednostkiGraczaLista = new List<Label>();
+        List<Label> iloscPZJednostkiGraczaLista = new List<Label>();
+        List<Label> liczebnoscJednostkiGraczaLista = new List<Label>();
+        List<Label> atakJednostkiGraczaLista = new List<Label>();
+        List<Label> obronaJednostkiGraczaLista = new List<Label>();
+        List<ProgressBar> progressBarPZGraczaLista = new List<ProgressBar>();
+        List<PictureBox> pictureBoxJednostekGraczaLista = new List<PictureBox>();
+
+        List<Przeciwnicy> przeciwnicyLista = new List<Przeciwnicy>();
+        List<Label> nazwaPrzeciwnicyLista = new List<Label>();
+        List<Label> iloscPZPrzeciwnikaLista = new List<Label>();
+        List<Label> liczebnoscPrzeciwnikaLista = new List<Label>();
+        List<Label> atakPrzeciwnikaLista = new List<Label>();
+        List<Label> obronaPrzeciwnikaLista = new List<Label>();
+        List<ProgressBar> progressBarPZPrzeciwnikaLista = new List<ProgressBar>();
+        List<PictureBox> pictureBoxPrzeciwnicyLista = new List<PictureBox>();
+
+        private bool czyRundaGracza = true;
+        private int rundaGracza;
+        private int rundaPrzeciwnika;
+        private int ktoryPrzeciwnikMaZostacZaatakowany;
+        private int iloscJednostekGracza;
+        private int iloscJednostekPrzeciwnika;
+        private int numerRundyJednostki;
+        private int numerRundyPrzeciwnika;
+
+        public PoleBitwy(Poczatek c1, Instancje instancja, ObszaryInstancji obszarInstancji, Bitmap obrazek)
         {
-            o = c;
-            o2 = c2;
+            o1 = c1;
+
+            instancje = instancja;
+            obszaryInstancji = obszarInstancji;
+
+            przeciwnik0 = obszaryInstancji.przeciwnik0;
+            przeciwnik1 = obszaryInstancji.przeciwnik1;
+            przeciwnik2 = obszaryInstancji.przeciwnik2;
+            przeciwnik3 = obszaryInstancji.przeciwnik3;
+            przeciwnik4 = obszaryInstancji.przeciwnik4;
+            przeciwnik5 = obszaryInstancji.przeciwnik5;
+            przeciwnik6 = obszaryInstancji.przeciwnik6;
+
             InitializeComponent();
 
-            ktoraMapa = numerMapy;
+            this.BackgroundImage = obrazek;
 
-            var obrazek = Properties.Resources.ResourceManager.GetObject(tlo);
-            this.BackgroundImage = (Image)obrazek;
+            nazwaJednostkiGraczaLista.AddRange(new Label[] { labelNazwaJednostkiGracza0, labelNazwaJednostkiGracza1, labelNazwaJednostkiGracza2, labelNazwaJednostkiGracza3, labelNazwaJednostkiGracza4 });
+            iloscPZJednostkiGraczaLista.AddRange(new Label[] { labelJednostkaGracza0PZ, labelJednostkaGracza1PZ, labelJednostkaGracza2PZ, labelJednostkaGracza3PZ, labelJednostkaGracza4PZ });
+            liczebnoscJednostkiGraczaLista.AddRange(new Label[] { labelLiczebnoscJednostkiGracza0, labelLiczebnoscJednostkiGracza1, labelLiczebnoscJednostkiGracza2, labelLiczebnoscJednostkiGracza3, labelLiczebnoscJednostkiGracza4 });
+            atakJednostkiGraczaLista.AddRange(new Label[] { labelAtakJednostkiGracza0, labelAtakJednostkiGracza1, labelAtakJednostkiGracza2, labelAtakJednostkiGracza3, labelAtakJednostkiGracza4 });
+            obronaJednostkiGraczaLista.AddRange(new Label[] { labelObronaJednostkiGracza0, labelObronaJednostkiGracza1, labelObronaJednostkiGracza2, labelObronaJednostkiGracza3, labelObronaJednostkiGracza4 });
+            progressBarPZGraczaLista.AddRange(new ProgressBar[] { progressBarJednostka0, progressBarJednostka1, progressBarJednostka2, progressBarJednostka3, progressBarJednostka4 });
+            pictureBoxJednostekGraczaLista.AddRange(new PictureBox[] { pictureBoxWojownik, pictureBoxLucznik, pictureBoxWlocznik, pictureBoxCzarnyLucznik, pictureBoxCzarnyRycerz });
 
+            nazwaPrzeciwnicyLista.AddRange(new Label[] { labelNazwaPrzeciwnika0, labelNazwaPrzeciwnika1, labelNazwaPrzeciwnika2, labelNazwaPrzeciwnika3, labelNazwaPrzeciwnika4, labelNazwaPrzeciwnika5, labelNazwaPrzeciwnika6 });
+            iloscPZPrzeciwnikaLista.AddRange(new Label[] {labelPrzeciwnika0PZ,labelPrzeciwnika1PZ,labelPrzeciwnika2PZ,labelPrzeciwnika3PZ,labelPrzeciwnika4PZ,labelPrzeciwnika5PZ,labelPrzeciwnika6PZ });
+            liczebnoscPrzeciwnikaLista.AddRange(new Label[] { labelLiczebnoscPrzeciwnika0, labelLiczebnoscPrzeciwnika1, labelLiczebnoscPrzeciwnika2, labelLiczebnoscPrzeciwnika3, labelLiczebnoscPrzeciwnika4, labelLiczebnoscPrzeciwnika5, labelLiczebnoscPrzeciwnika6 });
+            atakPrzeciwnikaLista.AddRange(new Label[] { labelAtakPrzeciwnika0, labelAtakPrzeciwnika1, labelAtakPrzeciwnika2, labelAtakPrzeciwnika3, labelAtakPrzeciwnika4, labelAtakPrzeciwnika5,labelAtakPrzeciwnika6 });
+            obronaPrzeciwnikaLista.AddRange(new Label[] { labelObronaPrzeciwnika0, labelObronaPrzeciwnika1, labelObronaPrzeciwnika2, labelObronaPrzeciwnika3, labelObronaPrzeciwnika4, labelObronaPrzeciwnika5, labelObronaPrzeciwnika6 });
+            progressBarPZPrzeciwnikaLista.AddRange(new ProgressBar[] { progressBarPrzeciwnik0, progressBarPrzeciwnik1, progressBarPrzeciwnik2, progressBarPrzeciwnik3, progressBarPrzeciwnik4, progressBarPrzeciwnik5, progressBarPrzeciwnik6 });
+            pictureBoxPrzeciwnicyLista.AddRange(new PictureBox[] { pictureBoxPrzeciwnik0, pictureBoxPrzeciwnik1, pictureBoxPrzeciwnik2, pictureBoxPrzeciwnik3, pictureBoxPrzeciwnik4, pictureBoxPrzeciwnik5, pictureBoxPrzeciwnik6 });
 
-            if (o.wojownik.ilosc > 0)
-            {
-                o.wojownik.ObliczAtakJednostki();
-                o.wojownik.ObliczPZJednostki();
-                o.wojownik.stalePZ = o.wojownik.PZ;
-                o.wojownik.ObliczCalkowitePZ();
-                o.wojownik.pictureBox = pictureBoxJednostka1;
-                o.wojownik.pictureBox.Visible = true;
-                o.wojownik.progressBarPZ = progressBarJednostka1;
-                o.wojownik.labelPZ = labelJednostka1PZ;
-                o.wojownik.progressBarPZ.Maximum = o.wojownik.calkowitePZ;
-                wojska.Add(o.wojownik);
-            }
-            else
-            {
-                pictureBoxJednostka1.Visible = false;
-            }
+            #region dodanie buttonow do listy
 
-            if (o.lucznik2.ilosc > 0)
-            {
-                o.lucznik2.ObliczAtakJednostki();
-                o.lucznik2.ObliczPZJednostki();
-                o.lucznik2.stalePZ = o.lucznik2.PZ;
-                o.lucznik2.ObliczCalkowitePZ();
-                o.lucznik2.pictureBox = pictureBoxJednostka2;
-                o.lucznik2.pictureBox.Visible = true;
-                o.lucznik2.progressBarPZ = progressBarJednostka2;
-                o.lucznik2.labelPZ = labelJednostka2PZ;
-                o.lucznik2.progressBarPZ.Maximum = o.lucznik2.calkowitePZ;
-                wojska.Add(o.lucznik2);
-            }
-            else
-            {
-                pictureBoxJednostka2.Visible = false;
-            }
+            buttonsLista.AddRange(new Button[]{ buttonA1, buttonA2, buttonA3, buttonA4, buttonA5, buttonA6, buttonA7, buttonA8, buttonA9, buttonA10, buttonA11, buttonA12, buttonA13, buttonA14, buttonA15, buttonB1, buttonB2, buttonB3,
+                             buttonB4, buttonB5, buttonB6, buttonB7, buttonB8, buttonB9, buttonB10, buttonB11, buttonB12, buttonB13, buttonB14, buttonB15, buttonC1, buttonC2, buttonC3, buttonC4, buttonC5, buttonC6,
+                             buttonC7, buttonC8, buttonC9, buttonC10, buttonC11, buttonC12, buttonC13, buttonC14, buttonC15, buttonD1, buttonD2, buttonD3, buttonD4, buttonD5, buttonD6, buttonD7, buttonD8, buttonD9,
+                             buttonD10, buttonD11, buttonD12, buttonD13, buttonD14, buttonD15, buttonE1, buttonE2, buttonE3, buttonE4, buttonE5, buttonE6, buttonE7, buttonE8, buttonE9, buttonE10, buttonE11,
+                             buttonE12, buttonE13, buttonE14, buttonE15, buttonF1, buttonF2, buttonF3, buttonF4, buttonF5, buttonF6, buttonF7, buttonF8, buttonF9, buttonF10, buttonF11, buttonF12, buttonF13,
+                             buttonF14, buttonF15, buttonG1, buttonG2, buttonG3, buttonG4, buttonG5, buttonG6, buttonG7, buttonG8, buttonG9, buttonG10, buttonG11, buttonG12, buttonG13, buttonG14, buttonG15});
 
-            if (o.wlocznik.ilosc > 0)
-            {
-                o.wlocznik.ObliczAtakJednostki();
-                o.wlocznik.ObliczPZJednostki();
-                o.wlocznik.stalePZ = o.wlocznik.PZ;
-                o.wlocznik.ObliczCalkowitePZ();
-                o.wlocznik.pictureBox = pictureBoxJednostka3;
-                o.wlocznik.pictureBox.Visible = true;
-                o.wlocznik.progressBarPZ = progressBarJednostka3;
-                o.wlocznik.labelPZ = labelJednostka3PZ;
-                o.wlocznik.progressBarPZ.Maximum = o.wlocznik.calkowitePZ;
-                wojska.Add(o.wlocznik);
+            #endregion dodanie buttonow do listy buttons
 
-            }
-            else
-            {
-                o.wlocznik.pictureBox.Visible = false;
-            }
+            DodajJednostkiGraczaDoListyOrazOkreslIloscJednostek();
 
-            #region widmo
-            o.juzek.pictureBox = pictureBoxJuzek;
-            o.juzek.odlegloscAtak = 0;
-            o.juzek.odlegloscRuch = 0;
-            #endregion
+            DodajJednostkiPrzeciwnikaDoListyOrazOkreslIloscJednostekPrzeciwnika();
 
-            if (ktoraMapa == 1.1)
-            {
-                o.nietoperzDuzy.ilosc = iloscPrzeciwnik1;
-                o.nietoperzDuzy.pictureBox = pictureBoxPrzeciwnik1;
-                o.nietoperzDuzy.pictureBox.Image = Properties.Resources.nietoperzduzylewo;
-                o.nietoperzDuzy.pictureBox.Visible = true;
-                o.nietoperzDuzy.progressBarPZ = progressBarPrzeciwnik1;
-                o.nietoperzDuzy.stalePZ = o.nietoperzDuzy.PZ;
-                o.nietoperzDuzy.labelPZ = labelPrzeciwnik1PZ;
-                o.nietoperzDuzy.ObliczCalkowitePZ();
-                o.nietoperzDuzy.progressBarPZ.Maximum = o.nietoperzDuzy.calkowitePZ;
-
-                o.nietoperzMaly.ilosc = iloscPrzeciwnik2;
-                o.nietoperzMaly.pictureBox = pictureBoxPrzeciwnik2;
-                o.nietoperzMaly.pictureBox.Image = Properties.Resources.nietoperzmalylewo;
-                o.nietoperzMaly.pictureBox.Visible = true;
-                o.nietoperzMaly.progressBarPZ = progressBarPrzeciwnik2;
-                o.nietoperzMaly.labelPZ = labelPrzeciwnik2PZ;
-                o.nietoperzMaly.ObliczCalkowitePZ();
-                o.nietoperzMaly.progressBarPZ.Maximum = o.nietoperzMaly.calkowitePZ;
-
-                wrogowie.Add(o.nietoperzDuzy);
-                wrogowie.Add(o.nietoperzMaly);
-            }
-            else if (ktoraMapa == 1.2)
-            {
-                o.goblin.ilosc = iloscPrzeciwnik1;
-                o.goblin.pictureBox = pictureBoxPrzeciwnik1;
-                o.goblin.pictureBox.Image = Properties.Resources.goblinlewo;
-                o.goblin.pictureBox.Visible = true;
-                o.goblin.progressBarPZ = progressBarPrzeciwnik1;
-                o.goblin.labelPZ = labelPrzeciwnik1PZ;
-                o.goblin.ObliczCalkowitePZ();
-                o.goblin.progressBarPZ.Maximum = o.goblin.calkowitePZ;
-
-                o.nietoperzDuzy.ilosc = iloscPrzeciwnik2;
-                o.nietoperzDuzy.pictureBox = pictureBoxPrzeciwnik2;
-                o.nietoperzDuzy.pictureBox.Image = Properties.Resources.nietoperzduzylewo;
-                o.nietoperzDuzy.pictureBox.Visible = true;
-                o.nietoperzDuzy.progressBarPZ = progressBarPrzeciwnik2;
-                o.nietoperzDuzy.labelPZ = labelPrzeciwnik2PZ;
-                o.nietoperzDuzy.ObliczCalkowitePZ();
-                o.nietoperzDuzy.progressBarPZ.Maximum = o.nietoperzDuzy.calkowitePZ;
-
-                wrogowie.Add(o.goblin);
-                wrogowie.Add(o.nietoperzDuzy);
-            }
-            else if (ktoraMapa == 1.3)
-            {
-                o.goblin.ilosc = iloscPrzeciwnik1;
-                o.goblin.pictureBox = pictureBoxPrzeciwnik1;
-                o.goblin.pictureBox.Image = Properties.Resources.goblinlewo;
-                o.goblin.pictureBox.Visible = true;
-                o.goblin.progressBarPZ = progressBarPrzeciwnik1;
-                o.goblin.labelPZ = labelPrzeciwnik1PZ;
-                o.goblin.ObliczCalkowitePZ();
-                o.goblin.progressBarPZ.Maximum = o.goblin.calkowitePZ;
-
-                o.goblin2.ilosc = iloscPrzeciwnik2;
-                o.goblin2.pictureBox = pictureBoxPrzeciwnik2;
-                o.goblin2.pictureBox.Image = Properties.Resources.goblinlewo;
-                o.goblin2.pictureBox.Visible = true;
-                o.goblin2.progressBarPZ = progressBarPrzeciwnik2;
-                o.goblin2.labelPZ = labelPrzeciwnik2PZ;
-                o.goblin2.ObliczCalkowitePZ();
-                o.goblin2.progressBarPZ.Maximum = o.goblin2.calkowitePZ;
-
-                o.ork.ilosc = iloscPrzeciwnik3;
-                o.ork.pictureBox = pictureBoxPrzeciwnik3;
-                o.ork.pictureBox.Image = Properties.Resources.orklewo;
-                o.ork.pictureBox.Visible = true;
-                o.ork.progressBarPZ = progressBarPrzeciwnik3;
-                o.ork.labelPZ = labelPrzeciwnik3PZ;
-                o.ork.ObliczCalkowitePZ();
-                o.ork.progressBarPZ.Maximum = o.ork.calkowitePZ;
-
-                wrogowie.Add(o.goblin);
-                wrogowie.Add(o.goblin2);
-                wrogowie.Add(o.ork);
-            }
-            else if (ktoraMapa == 2.1)
-            {
-                o.nietoperzDuzy.ilosc = iloscPrzeciwnik1;
-                o.nietoperzDuzy.pictureBox = pictureBoxPrzeciwnik1;
-                o.nietoperzDuzy.pictureBox.Image = Properties.Resources.nietoperzduzylewo;
-                o.nietoperzDuzy.pictureBox.Visible = true;
-                o.nietoperzDuzy.progressBarPZ = progressBarPrzeciwnik1;
-                o.nietoperzDuzy.labelPZ = labelPrzeciwnik1PZ;
-                o.nietoperzDuzy.ObliczCalkowitePZ();
-                o.nietoperzDuzy.progressBarPZ.Maximum = o.nietoperzDuzy.calkowitePZ;
-
-                o.nietoperzMaly.ilosc = iloscPrzeciwnik2;
-                o.nietoperzMaly.pictureBox = pictureBoxPrzeciwnik2;
-                o.nietoperzMaly.pictureBox.Image = Properties.Resources.nietoperzmalylewo;
-                o.nietoperzMaly.pictureBox.Visible = true;
-                o.nietoperzMaly.progressBarPZ = progressBarPrzeciwnik2;
-                o.nietoperzMaly.labelPZ = labelPrzeciwnik2PZ;
-                o.nietoperzMaly.ObliczCalkowitePZ();
-                o.nietoperzMaly.progressBarPZ.Maximum = o.nietoperzMaly.calkowitePZ;
-
-                o.robak.ilosc = iloscPrzeciwnik3;
-                o.robak.pictureBox = pictureBoxPrzeciwnik3;
-                o.robak.pictureBox.Image = Properties.Resources.robaklewo;
-                o.robak.pictureBox.Visible = true;
-                o.robak.progressBarPZ = progressBarPrzeciwnik3;
-                o.robak.labelPZ = labelPrzeciwnik3PZ;
-                o.robak.ObliczCalkowitePZ();
-                o.robak.progressBarPZ.Maximum = o.robak.calkowitePZ;
-
-                wrogowie.Add(o.nietoperzDuzy);
-                wrogowie.Add(o.nietoperzMaly);
-                wrogowie.Add(o.robak);
-
-
-            }
-            else if (ktoraMapa == 2.2)
-            {
-                o.wazOgnisty.ilosc = iloscPrzeciwnik1;
-                o.wazOgnisty.pictureBox = pictureBoxPrzeciwnik1;
-                o.wazOgnisty.pictureBox.Image = Properties.Resources.waz2lewo;
-                o.wazOgnisty.pictureBox.Visible = true;
-                o.wazOgnisty.progressBarPZ = progressBarPrzeciwnik1;
-                o.wazOgnisty.labelPZ = labelPrzeciwnik1PZ;
-                o.wazOgnisty.ObliczCalkowitePZ();
-                o.wazOgnisty.progressBarPZ.Maximum = o.wazOgnisty.calkowitePZ;
-
-                o.wazJadowity.ilosc = iloscPrzeciwnik2;
-                o.wazJadowity.pictureBox = pictureBoxPrzeciwnik2;
-                o.wazJadowity.pictureBox.Image = Properties.Resources.waz1lewo;
-                o.wazJadowity.pictureBox.Visible = true;
-                o.wazJadowity.progressBarPZ = progressBarPrzeciwnik2;
-                o.wazJadowity.labelPZ = labelPrzeciwnik2PZ;
-                o.wazJadowity.ObliczCalkowitePZ();
-                o.wazJadowity.progressBarPZ.Maximum = o.wazJadowity.calkowitePZ;
-
-                wrogowie.Add(o.wazOgnisty);
-                wrogowie.Add(o.wazJadowity);
-
-                buttonA8.Visible = false;
-                buttonA9.Visible = false;
-                buttonB8.Visible = false;
-                buttonB9.Visible = false;
-                buttonC8.Visible = false;
-                buttonC9.Visible = false;
-                buttonD8.Visible = false;
-                buttonD9.Visible = false;
-                buttonE8.Visible = false;
-                buttonE9.Visible = false;
-
-            }
-
-
-            #region wrzucenie przycisków do listy przycisków
-
-            buttons.Add(buttonA1);
-            buttons.Add(buttonA2);
-            buttons.Add(buttonA3);
-            buttons.Add(buttonA4);
-            buttons.Add(buttonA5);
-            buttons.Add(buttonA6);
-            buttons.Add(buttonA7);
-            buttons.Add(buttonA8);
-            buttons.Add(buttonA9);
-
-            buttons.Add(buttonB1);
-            buttons.Add(buttonB2);
-            buttons.Add(buttonB3);
-            buttons.Add(buttonB4);
-            buttons.Add(buttonB5);
-            buttons.Add(buttonB6);
-            buttons.Add(buttonB7);
-            buttons.Add(buttonB8);
-            buttons.Add(buttonB9);
-
-            buttons.Add(buttonC1);
-            buttons.Add(buttonC2);
-            buttons.Add(buttonC3);
-            buttons.Add(buttonC4);
-            buttons.Add(buttonC5);
-            buttons.Add(buttonC6);
-            buttons.Add(buttonC7);
-            buttons.Add(buttonC8);
-            buttons.Add(buttonC9);
-
-            buttons.Add(buttonD1);
-            buttons.Add(buttonD2);
-            buttons.Add(buttonD3);
-            buttons.Add(buttonD4);
-            buttons.Add(buttonD5);
-            buttons.Add(buttonD6);
-            buttons.Add(buttonD7);
-            buttons.Add(buttonD8);
-            buttons.Add(buttonD9);
-
-            buttons.Add(buttonE1);
-            buttons.Add(buttonE2);
-            buttons.Add(buttonE3);
-            buttons.Add(buttonE4);
-            buttons.Add(buttonE5);
-            buttons.Add(buttonE6);
-            buttons.Add(buttonE7);
-            buttons.Add(buttonE8);
-            buttons.Add(buttonE9);
-            #endregion  
-
-            timerRunda.Start();
+            timerGra.Start();
         }
 
-        #region Kwadraty i ruch jednostek
+        #region Pola, po których poruszają się jednostki
 
-        private void buttonA1_Click(object sender, EventArgs e)
+        private void ButtonA1_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA1, A1, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA1, A1, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA1, A1, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA1);
         }
 
-        private void buttonA2_Click(object sender, EventArgs e)
+        private void ButtonA2_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA2, A2, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA2, A2, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA2, A2, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA2);
         }
 
-        private void buttonA3_Click(object sender, EventArgs e)
+        private void ButtonA3_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA3, A3, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA3, A3, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA3, A3, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA3);
         }
 
-        private void buttonA4_Click(object sender, EventArgs e)
+        private void ButtonA4_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA4, A4, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA4, A4, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA4, A4, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA4);
         }
 
-        private void buttonA5_Click(object sender, EventArgs e)
+        private void ButtonA5_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA5, A5, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA5, A5, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA5, A5, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA5);
         }
 
-        private void buttonA6_Click(object sender, EventArgs e)
+        private void ButtonA6_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA6, A6, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA6, A6, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA6, A6, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA6);
         }
 
-        private void buttonA7_Click(object sender, EventArgs e)
+        private void ButtonA7_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA7, A7, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA7, A7, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA7, A7, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA7);
         }
 
-        private void buttonA8_Click(object sender, EventArgs e)
+        private void ButtonA8_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA8, A8, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA8, A8, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA8, A8, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA8);
         }
 
-        private void buttonA9_Click(object sender, EventArgs e)
+        private void ButtonA9_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonA9, A9, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonA9, A9, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonA9, A9, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA9);
         }
 
-        private void buttonB9_Click(object sender, EventArgs e)
+        private void ButtonA10_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB9, B9, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB9, B9, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB9, B9, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA10);
         }
 
-        private void buttonB8_Click(object sender, EventArgs e)
+        private void ButtonA11_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB8, B8, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB8, B8, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB8, B8, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA11);
         }
 
-        private void buttonB7_Click(object sender, EventArgs e)
+        private void ButtonA12_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB7, B7, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB7, B7, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB7, B7, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA12);
         }
 
-        private void buttonB6_Click(object sender, EventArgs e)
+        private void ButtonA13_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB6, B6, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB6, B6, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB6, B6, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA13);
         }
 
-        private void buttonB5_Click(object sender, EventArgs e)
+        private void ButtonA14_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB5, B5, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB5, B5, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB5, B5, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA14);
         }
 
-        private void buttonB4_Click(object sender, EventArgs e)
+        private void ButtonA15_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB4, B4, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB4, B4, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB4, B4, o.wlocznik);
-            }
-
+            RuchJednostek(buttonA15);
         }
 
-        private void buttonB3_Click(object sender, EventArgs e)
-        {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB3, B3, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB3, B3, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB3, B3, o.wlocznik);
-            }
+        //-----------------------------------------------------------------------------------
 
+        private void ButtonB1_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonB1);
         }
 
-        private void buttonB2_Click(object sender, EventArgs e)
+        private void ButtonB2_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB2, B2, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB2, B2, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB2, B2, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB2);
         }
 
-        private void buttonB1_Click(object sender, EventArgs e)
+        private void ButtonB3_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonB1, B1, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonB1, B1, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonB1, B1, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB3);
         }
 
-        private void buttonC1_Click(object sender, EventArgs e)
+        private void ButtonB4_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC1, C1, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC1, C1, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC1, C1, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB4);
         }
 
-        private void buttonC2_Click(object sender, EventArgs e)
+        private void ButtonB5_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC2, C2, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC2, C2, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC2, C2, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB5);
         }
 
-        private void buttonC3_Click(object sender, EventArgs e)
+        private void ButtonB6_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC3, C3, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC3, C3, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC3, C3, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB6);
         }
 
-        private void buttonC4_Click(object sender, EventArgs e)
+        private void ButtonB7_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC4, C4, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC4, C4, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC4, C4, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB7);
         }
 
-        private void buttonC5_Click(object sender, EventArgs e)
+        private void ButtonB8_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC5, C5, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC5, C5, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC5, C5, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB8);
         }
 
-        private void buttonC6_Click(object sender, EventArgs e)
+        private void ButtonB9_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC6, C6, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC6, C6, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC6, C6, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB9);
         }
 
-        private void buttonC7_Click(object sender, EventArgs e)
+        private void ButtonB10_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC7, C7, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC7, C7, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC7, C7, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB10);
         }
 
-        private void buttonC8_Click(object sender, EventArgs e)
+        private void ButtonB11_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC8, C8, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC8, C8, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC8, C8, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB11);
         }
 
-        private void buttonC9_Click(object sender, EventArgs e)
+        private void ButtonB12_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonC9, C9, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonC9, C9, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonC9, C9, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB12);
         }
 
-        private void buttonD1_Click(object sender, EventArgs e)
+        private void ButtonB13_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD1, D1, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD1, D1, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD1, D1, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB13);
         }
 
-        private void buttonD2_Click(object sender, EventArgs e)
+        private void ButtonB14_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD2, D2, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD2, D2, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD2, D2, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB14);
         }
 
-        private void buttonD3_Click(object sender, EventArgs e)
+        private void ButtonB15_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD3, D3, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD3, D3, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD3, D3, o.wlocznik);
-            }
-
+            RuchJednostek(buttonB15);
         }
 
-        private void buttonD4_Click(object sender, EventArgs e)
-        {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD4, D4, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD4, D4, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD4, D4, o.wlocznik);
-            }
+        //-----------------------------------------------------------------------------------
 
+        private void ButtonC1_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonC1);
         }
 
-        private void buttonD5_Click(object sender, EventArgs e)
+        private void ButtonC2_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD5, D5, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD5, D5, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD5, D5, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC2);
         }
 
-        private void buttonD6_Click(object sender, EventArgs e)
+        private void ButtonC3_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD6, D6, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD6, D6, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD6, D6, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC3);
         }
 
-        private void buttonD7_Click(object sender, EventArgs e)
+        private void ButtonC4_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD7, D7, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD7, D7, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD7, D7, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC4);
         }
 
-        private void buttonD8_Click(object sender, EventArgs e)
+        private void ButtonC5_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD8, D8, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD8, D8, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD8, D8, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC5);
         }
 
-        private void buttonD9_Click(object sender, EventArgs e)
+        private void ButtonC6_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonD9, D9, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonD9, D9, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonD9, D9, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC6);
         }
 
-        private void buttonE1_Click(object sender, EventArgs e)
+        private void ButtonC7_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE1, E1, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE1, E1, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE1, E1, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC7);
         }
 
-        private void buttonE2_Click(object sender, EventArgs e)
+        private void ButtonC8_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE2, E2, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE2, E2, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE2, E2, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC8);
         }
 
-        private void buttonE3_Click(object sender, EventArgs e)
+        private void ButtonC9_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE3, E3, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE3, E3, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE3, E3, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC9);
         }
 
-        private void buttonE4_Click(object sender, EventArgs e)
+        private void ButtonC10_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE4, E4, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE4, E4, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE4, E4, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC10);
         }
 
-        private void buttonE5_Click(object sender, EventArgs e)
+        private void ButtonC11_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE5, E5, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE5, E5, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE5, E5, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC11);
         }
 
-        private void buttonE6_Click(object sender, EventArgs e)
+        private void ButtonC12_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE6, E6, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE6, E6, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE6, E6, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC12);
         }
 
-        private void buttonE7_Click(object sender, EventArgs e)
+        private void ButtonC13_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE7, E7, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE7, E7, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE7, E7, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC13);
         }
 
-        private void buttonE8_Click(object sender, EventArgs e)
+        private void ButtonC14_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE8, E8, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE8, E8, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE8, E8, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC14);
         }
 
-        private void buttonE9_Click(object sender, EventArgs e)
+        private void ButtonC15_Click(object sender, EventArgs e)
         {
-            if (rundaTwoja == 1)
-            {
-                RuchMalyZasieg(buttonE9, E9, o.wojownik);
-            }
-            else if (rundaTwoja == 2)
-            {
-                RuchMalyZasieg(buttonE9, E9, o.lucznik2);
-            }
-            else if (rundaTwoja == 3)
-            {
-                RuchMalyZasieg(buttonE9, E9, o.wlocznik);
-            }
-
+            RuchJednostek(buttonC15);
         }
 
-        #endregion
+        //-----------------------------------------------------------------------------------
 
-        #region PictureBox przeciwników
-        private void pictureBoxPrzeciwnik1_Click(object sender, EventArgs e)
+        private void ButtonD1_Click(object sender, EventArgs e)
         {
-            if (ktoraMapa == 1.1)
-            {
-                SprawdzCzyMoznaZaatakowac(o.nietoperzDuzy);
-            }
-            else if (ktoraMapa == 1.2)
-            {
-                SprawdzCzyMoznaZaatakowac(o.goblin);
-            }
-            else if (ktoraMapa == 1.3)
-            {
-                SprawdzCzyMoznaZaatakowac(o.goblin);
-            }
-            else if (ktoraMapa == 2.1)
-            {
-                SprawdzCzyMoznaZaatakowac(o.nietoperzDuzy);
-            }
-            else if (ktoraMapa == 2.2)
-            {
-                SprawdzCzyMoznaZaatakowac(o.wazOgnisty);
-            }
-
+            RuchJednostek(buttonD1);
         }
 
-        private void pictureBoxPrzeciwnik2_Click(object sender, EventArgs e)
+        private void ButtonD2_Click(object sender, EventArgs e)
         {
-            if (ktoraMapa == 1.1)
-            {
-                SprawdzCzyMoznaZaatakowac(o.nietoperzMaly);
-            }
-            else if (ktoraMapa == 1.2)
-            {
-                SprawdzCzyMoznaZaatakowac(o.nietoperzDuzy);
-            }
-            else if (ktoraMapa == 1.3)
-            {
-                SprawdzCzyMoznaZaatakowac(o.goblin2);
-            }
-            else if (ktoraMapa == 2.1)
-            {
-                SprawdzCzyMoznaZaatakowac(o.nietoperzMaly);
-            }
-            else if (ktoraMapa == 2.2)
-            {
-                SprawdzCzyMoznaZaatakowac(o.wazJadowity);
-            }
+            RuchJednostek(buttonD2);
         }
 
-        private void pictureBoxPrzeciwnik3_Click(object sender, EventArgs e)
+        private void ButtonD3_Click(object sender, EventArgs e)
         {
-            if (ktoraMapa == 1.1)
-            {
-
-            }
-            else if (ktoraMapa == 1.2)
-            {
-
-            }
-            else if (ktoraMapa == 1.3)
-            {
-                SprawdzCzyMoznaZaatakowac(o.ork);
-            }
-            else if (ktoraMapa == 2.1)
-            {
-                SprawdzCzyMoznaZaatakowac(o.robak);
-            }
-            else if (ktoraMapa == 2.2)
-            {
-
-            }
+            RuchJednostek(buttonD3);
         }
 
-        #endregion
-
-        #region Timery
-
-        private void timerRunda_Tick(object sender, EventArgs e)
+        private void ButtonD4_Click(object sender, EventArgs e)
         {
-            labelJednostka1.Text = (o.wojownik.nazwa + "(" + o.wojownik.ilosc + ")").ToString();
-            labelJednostka1PZ.Text = o.wojownik.calkowitePZ.ToString();
-            progressBarJednostka1.Value = o.wojownik.calkowitePZ;
-            labelJednostka2.Text = (o.lucznik2.nazwa + "(" + o.lucznik2.ilosc + ")").ToString();
-            labelJednostka2PZ.Text = o.lucznik2.calkowitePZ.ToString();
-            progressBarJednostka2.Value = o.lucznik2.calkowitePZ;
-            labelJednostka3.Text = (o.wlocznik.nazwa + "(" + o.wlocznik.ilosc + ")").ToString();
-            labelJednostka3PZ.Text = o.wlocznik.calkowitePZ.ToString();
-            progressBarJednostka3.Value = o.wlocznik.calkowitePZ;
-
-            if (ktoraMapa == 1.1)
-            {
-                labelPrzeciwnik1.Text = (o.nietoperzDuzy.nazwa + "(" + o.nietoperzDuzy.ilosc + ")").ToString();
-                labelPrzeciwnik1PZ.Text = o.nietoperzDuzy.calkowitePZ.ToString();
-                progressBarPrzeciwnik1.Value = o.nietoperzDuzy.calkowitePZ;
-                labelPrzeciwnik2.Text = (o.nietoperzMaly.nazwa + "(" + o.nietoperzMaly.ilosc + ")").ToString();
-                labelPrzeciwnik2PZ.Text = o.nietoperzMaly.calkowitePZ.ToString();
-                progressBarPrzeciwnik2.Value = o.nietoperzMaly.calkowitePZ;
-            }
-            else if (ktoraMapa == 1.2)
-            {
-                labelPrzeciwnik1.Text = (o.goblin.nazwa + "(" + o.goblin.ilosc + ")").ToString();
-                labelPrzeciwnik1PZ.Text = o.goblin.calkowitePZ.ToString();
-                progressBarPrzeciwnik1.Value = o.goblin.calkowitePZ;
-                labelPrzeciwnik2.Text = (o.nietoperzDuzy.nazwa + "(" + o.nietoperzDuzy.ilosc + ")").ToString();
-                labelPrzeciwnik2PZ.Text = o.nietoperzDuzy.calkowitePZ.ToString();
-                progressBarPrzeciwnik2.Value = o.nietoperzDuzy.calkowitePZ;
-
-            }
-            else if (ktoraMapa == 1.3)
-            {
-                labelPrzeciwnik1.Text = (o.goblin.nazwa + "(" + o.goblin.ilosc + ")").ToString();
-                labelPrzeciwnik1PZ.Text = o.goblin.calkowitePZ.ToString();
-                progressBarPrzeciwnik1.Value = o.goblin.calkowitePZ;
-                labelPrzeciwnik2.Text = (o.goblin2.nazwa + "(" + o.goblin2.ilosc + ")").ToString();
-                labelPrzeciwnik2PZ.Text = o.goblin2.calkowitePZ.ToString();
-                progressBarPrzeciwnik2.Value = o.goblin2.calkowitePZ;
-                labelPrzeciwnik3.Text = (o.ork.nazwa + "(" + o.ork.ilosc + ")").ToString();
-                labelPrzeciwnik3PZ.Text = o.ork.calkowitePZ.ToString();
-                progressBarPrzeciwnik3.Value = o.ork.calkowitePZ;
-            }
-            else if (ktoraMapa == 2.1)
-            {
-                labelPrzeciwnik1.Text = (o.nietoperzDuzy.nazwa + "(" + o.nietoperzDuzy.ilosc + ")").ToString();
-                labelPrzeciwnik1PZ.Text = o.nietoperzDuzy.calkowitePZ.ToString();
-                progressBarPrzeciwnik1.Value = o.nietoperzDuzy.calkowitePZ;
-                labelPrzeciwnik2.Text = (o.nietoperzMaly.nazwa + "(" + o.nietoperzMaly.ilosc + ")").ToString();
-                labelPrzeciwnik2PZ.Text = o.nietoperzMaly.calkowitePZ.ToString();
-                progressBarPrzeciwnik2.Value = o.nietoperzMaly.calkowitePZ;
-                labelPrzeciwnik3.Text = (o.robak.nazwa + "(" + o.robak.ilosc + ")").ToString();
-                labelPrzeciwnik3PZ.Text = o.robak.calkowitePZ.ToString();
-                progressBarPrzeciwnik3.Value = o.robak.calkowitePZ;
-            }
-            else if (ktoraMapa == 2.2)
-            {
-                labelPrzeciwnik1.Text = (o.wazOgnisty.nazwa + "(" + o.wazOgnisty.ilosc + ")").ToString();
-                labelPrzeciwnik1PZ.Text = o.wazOgnisty.calkowitePZ.ToString();
-                progressBarPrzeciwnik1.Value = o.wazOgnisty.calkowitePZ;
-                labelPrzeciwnik2.Text = (o.wazJadowity.nazwa + "(" + o.wazJadowity.ilosc + ")").ToString();
-                labelPrzeciwnik2PZ.Text = o.wazJadowity.calkowitePZ.ToString();
-                progressBarPrzeciwnik2.Value = o.wazJadowity.calkowitePZ;
-            }
-
-
-            if (pictureBoxJednostka1.Visible == false && pictureBoxJednostka2.Visible == false && pictureBoxJednostka3.Visible == false)
-            {
-                wojska.Clear();
-
-                wojska.Add(o.wojownik);
-                wojska.Add(o.lucznik2);
-                wojska.Add(o.wlocznik);
-
-                foreach (var item in wojska)
-                {
-                    item.PZ = item.stalePZ;
-                }
-                foreach (var item in wrogowie)
-                {
-                    item.PZ = item.stalePZ;
-                }
-
-                wojska.Clear();
-
-                timerRunda.Stop();
-
-                if (ktoraMapa == 1.1 || ktoraMapa == 1.2 || ktoraMapa == 1.3)
-                {
-                    o.osadaGoblinow.akcjaWrog = true;
-                    o.timerWojna.Start();
-                }
-                else if (ktoraMapa == 2.1 || ktoraMapa == 2.2)
-                {
-                    o.jaskiniaWezy.akcjaWrog = true;
-                    o.timerWojna.Start();
-                }
-
-                MessageBox.Show("Porażka!");
-                this.Close();
-
-            }
-            else if (pictureBoxPrzeciwnik1.Visible == false && pictureBoxPrzeciwnik2.Visible == false && pictureBoxPrzeciwnik3.Visible == false)
-            {
-                wojska.Clear();
-
-                wojska.Add(o.wojownik);
-                wojska.Add(o.lucznik2);
-                wojska.Add(o.wlocznik);
-
-
-                foreach (var item in wojska)
-                {
-                    item.PZ = item.stalePZ;
-                }
-
-                foreach (var item2 in wrogowie)
-                {
-                    item2.PZ = item2.stalePZ;
-                }
-
-                if (ktoraMapa == 1.1)
-                {
-                    o.osadaGoblinow.enablePoziom1 = false;
-                    o.osadaGoblinow.enablePoziom2 = true;
-                    if (o.osadaGoblinow.licznikZwiadowca == 1)
-                    {
-                        o.osadaGoblinow.licznikZwiadowca = 2;
-                    }
-
-                }
-                else if (ktoraMapa == 1.2)
-                {
-                    o.osadaGoblinow.enablePoziom2 = false;
-                    o.osadaGoblinow.enablePoziom3 = true;
-                    if (o.osadaGoblinow.licznikZwiadowca == 2)
-                    {
-                        o.osadaGoblinow.licznikZwiadowca = 3;
-                    }
-                }
-                else if (ktoraMapa == 1.3)
-                {
-                    o.osadaGoblinow.enablePoziom3 = false;
-                    if (o.osadaGoblinow.licznikZwiadowca == 3)
-                    {
-                        o.osadaGoblinow.licznikZwiadowca = 4;
-                    }
-
-                    o2.pictureBoxJaskiniaWezy.Visible = true;
-                }
-                else if (ktoraMapa == 2.1)
-                {
-                    o.jaskiniaWezy.enablePoziom1 = false;
-                    o.jaskiniaWezy.enablePoziom2 = true;
-                    if (o.jaskiniaWezy.licznikZwiadowca == 1)
-                    {
-                        o.osadaGoblinow.licznikZwiadowca = 2;
-                    }
-                }
-                else if (ktoraMapa == 2.2)
-                {
-                    o.jaskiniaWezy.enablePoziom2 = false;
-                    if (o.jaskiniaWezy.licznikZwiadowca == 2)
-                    {
-                        o.jaskiniaWezy.licznikZwiadowca = 3;
-                    }
-                }
-
-                wojska.Clear();
-
-                timerRunda.Stop();
-
-                MessageBox.Show("Zwycięstwo!");
-
-
-
-                this.Close();
-            }
-
-            if (rundaTwoja == 1 && pictureBoxJednostka1.Visible)
-            {
-                pictureBoxPrzeciwnik1.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.Transparent;
-                pictureBoxJednostka3.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.LightGoldenrodYellow;
-                SprawdzZasieguRuchu(o.wojownik);
-                SprawdzanieZasieguAtaku(o.wojownik);
-            }
-            else if (rundaTwoja == 1 && pictureBoxJednostka1.Visible == false)
-            {
-                rundaTwoja++;
-            }
-            else if (rundaTwoja == 2 && pictureBoxJednostka2.Visible)
-            {
-                pictureBoxPrzeciwnik1.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.Transparent;
-                pictureBoxJednostka3.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.LightGoldenrodYellow;
-                SprawdzZasieguRuchu(o.lucznik2);
-                SprawdzanieZasieguAtaku(o.lucznik2);
-            }
-            else if (rundaTwoja == 2 && pictureBoxJednostka2.Visible == false)
-            {
-                rundaTwoja++;
-            }
-            else if (rundaTwoja == 3 && pictureBoxJednostka3.Visible)
-            {
-                pictureBoxPrzeciwnik1.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.Transparent;
-                pictureBoxJednostka3.BackColor = Color.LightGoldenrodYellow;
-                SprawdzZasieguRuchu(o.wlocznik);
-                SprawdzanieZasieguAtaku(o.wlocznik);
-            }
-            else if (rundaTwoja == 3 && pictureBoxJednostka3.Visible == false)
-            {
-                rundaTwoja++;
-            }
-            else if (rundaTwoja == 4)
-            {
-                SprawdzZasieguRuchu(o.juzek);
-                rundaPrzeciwnika = 1;
-                rundaTwoja = 0;
-            }
-
-            if (rundaPrzeciwnika == 1 && pictureBoxPrzeciwnik1.Visible)
-            {
-                pictureBoxJednostka3.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik1.BackColor = Color.BlanchedAlmond;
-                //
-                if (ktoraMapa == 1.1)
-                {
-                    MechanikaPrzeciwnik(o.nietoperzDuzy);
-                }
-                else if (ktoraMapa == 1.2)
-                {
-                    MechanikaPrzeciwnik(o.goblin);
-                }
-                else if (ktoraMapa == 1.3)
-                {
-                    MechanikaPrzeciwnik(o.goblin);
-                }
-                else if (ktoraMapa == 2.1)
-                {
-                    MechanikaPrzeciwnik(o.nietoperzDuzy);
-                }
-                else if (ktoraMapa == 2.2)
-                {
-                    MechanikaPrzeciwnikówNieruchomychDystansowych(o.wazOgnisty);
-                }
-
-            }
-            else if (rundaPrzeciwnika == 1 && pictureBoxPrzeciwnik1.Visible == false)
-            {
-                rundaPrzeciwnika++;
-            }
-            else if (rundaPrzeciwnika == 2 && pictureBoxPrzeciwnik2.Visible)
-            {
-                pictureBoxJednostka3.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.BlanchedAlmond;
-                //
-                if (ktoraMapa == 1.1)
-                {
-                    MechanikaPrzeciwnik(o.nietoperzMaly);
-                }
-                else if (ktoraMapa == 1.2)
-                {
-                    MechanikaPrzeciwnik(o.nietoperzDuzy);
-                }
-                else if (ktoraMapa == 1.3)
-                {
-                    MechanikaPrzeciwnik(o.goblin2);
-                }
-                else if (ktoraMapa == 2.1)
-                {
-                    MechanikaPrzeciwnik(o.nietoperzMaly);
-                }
-                else if (ktoraMapa == 2.2)
-                {
-                    MechanikaPrzeciwnikówNieruchomychDystansowych(o.wazJadowity);
-                }
-            }
-            else if (rundaPrzeciwnika == 2 & pictureBoxPrzeciwnik2.Visible == false)
-            {
-                rundaPrzeciwnika++;
-            }
-            else if (rundaPrzeciwnika == 3 && pictureBoxPrzeciwnik3.Visible)
-            {
-                pictureBoxJednostka3.BackColor = Color.Transparent;
-                pictureBoxJednostka2.BackColor = Color.Transparent;
-                pictureBoxJednostka1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik1.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik2.BackColor = Color.Transparent;
-                pictureBoxPrzeciwnik3.BackColor = Color.BlanchedAlmond;
-                //
-                if (ktoraMapa == 1.1)
-                {
-
-                }
-                else if (ktoraMapa == 1.2)
-                {
-
-                }
-                else if (ktoraMapa == 1.3)
-                {
-                    MechanikaPrzeciwnik(o.ork);
-                }
-                else if (ktoraMapa == 2.1)
-                {
-                    MechanikaPrzeciwnik(o.robak);
-                }
-                else if (ktoraMapa == 2.2)
-                {
-
-                }
-            }
-            else if (rundaPrzeciwnika == 3 & pictureBoxPrzeciwnik3.Visible == false)
-            {
-                rundaPrzeciwnika++;
-            }
-            else if (rundaPrzeciwnika == 4)
-            {
-                rundaTwoja = 1;
-                rundaPrzeciwnika = 0;
-
-            }
+            RuchJednostek(buttonD4);
         }
-        #endregion timery
 
-        #region RuchMalyZasieg
-        public void RuchMalyZasieg(Button button, Point point, JednostkiGracza jednostka)
+        private void ButtonD5_Click(object sender, EventArgs e)
         {
-            if (jednostka.pictureBox.Location.X >= button.Location.X - jednostka.odlegloscRuch && jednostka.pictureBox.Location.X <= button.Location.X && jednostka.pictureBox.Location.Y == button.Location.Y)
+            RuchJednostek(buttonD5);
+        }
+
+        private void ButtonD6_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD6);
+        }
+
+        private void ButtonD7_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD7);
+        }
+
+        private void ButtonD8_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD8);
+        }
+
+        private void ButtonD9_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD9);
+        }
+
+        private void ButtonD10_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD10);
+        }
+
+        private void ButtonD11_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD11);
+        }
+
+        private void ButtonD12_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD12);
+        }
+
+        private void ButtonD13_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD13);
+        }
+
+        private void ButtonD14_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD14);
+        }
+
+        private void ButtonD15_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonD15);
+        }
+
+        //-----------------------------------------------------------------------------------
+
+        private void ButtonE1_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE1);
+        }
+
+        private void ButtonE2_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE2);
+        }
+
+        private void ButtonE3_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE3);
+        }
+
+        private void ButtonE4_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE4);
+        }
+
+        private void ButtonE5_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE5);
+        }
+
+        private void ButtonE6_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE6);
+        }
+
+        private void ButtonE7_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE7);
+        }
+
+        private void ButtonE8_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE8);
+        }
+
+        private void ButtonE9_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE9);
+        }
+
+        private void ButtonE10_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE10);
+        }
+
+        private void ButtonE11_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE11);
+        }
+
+        private void ButtonE12_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE12);
+        }
+
+        private void ButtonE13_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE13);
+        }
+
+        private void ButtonE14_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE14);
+        }
+
+        private void ButtonE15_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonE15);
+        }
+
+        //-----------------------------------------------------------------------------------
+
+        private void ButtonF1_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF1);
+        }
+                
+        private void ButtonF2_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF2);
+        }
+
+        private void ButtonF3_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF3);
+        }
+
+        private void ButtonF4_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF4);
+        }
+
+        private void ButtonF5_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF5);
+        }
+
+        private void ButtonF6_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF6);
+        }
+
+        private void ButtonF7_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF7);
+        }
+
+        private void ButtonF8_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF8);
+        }
+
+        private void ButtonF9_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF9);
+        }
+
+        private void ButtonF10_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF10);
+        }
+
+        private void ButtonF11_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF11);
+        }
+
+        private void ButtonF12_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF12);
+        }
+
+        private void ButtonF13_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF13);
+        }
+
+        private void ButtonF14_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF14);
+        }
+
+        private void ButtonF15_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonF15);
+        }
+
+        //-----------------------------------------------------------------------------------
+
+        private void ButtonG1_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG1);
+        }
+
+        private void ButtonG2_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG2);
+        }
+
+        private void ButtonG3_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG3);
+        }
+
+        private void ButtonG4_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG4);
+        }
+
+        private void ButtonG5_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG5);
+        }
+
+        private void ButtonG6_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG6);
+        }
+
+        private void ButtonG7_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG7);
+        }
+
+        private void ButtonG8_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG8);
+        }
+
+        private void ButtonG9_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG9);
+        }
+
+        private void ButtonG10_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG10);
+        }
+
+        private void ButtonG11_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG11);
+        }
+
+        private void ButtonG12_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG12);
+        }
+
+        private void ButtonG13_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG13);
+        }
+
+        private void ButtonG14_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG14);
+        }
+
+        private void ButtonG15_Click(object sender, EventArgs e)
+        {
+            RuchJednostek(buttonG15);
+        }
+
+        #endregion pola, po których poruszają się jednostki
+
+        #region Ruch jednostek po planszy
+
+        public void RuchJednostek(Button button)
+        {
+            if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= button.Location.X - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= button.Location.X && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == button.Location.Y)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekPrawo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekPrawo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;                
             }
-            else if (jednostka.pictureBox.Location.X <= button.Location.X + jednostka.odlegloscRuch && jednostka.pictureBox.Location.X >= button.Location.X && jednostka.pictureBox.Location.Y == button.Location.Y)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= button.Location.X + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= button.Location.X && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == button.Location.Y)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekLewo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekLewo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y >= button.Location.Y - jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y <= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekDol);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekDol;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y <= button.Location.Y + jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y >= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekGora);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekGora;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y >= button.Location.Y - jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y <= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X - jednostka.odlegloscRuch)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X - 100)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekPrawo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekPrawo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y >= button.Location.Y - jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y <= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X + jednostka.odlegloscRuch)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X + 100)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekLewo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekLewo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y <= button.Location.Y + jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y >= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X - jednostka.odlegloscRuch)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X - 100)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekPrawo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekPrawo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
-            else if (jednostka.pictureBox.Location.Y <= button.Location.Y + jednostka.odlegloscRuch && jednostka.pictureBox.Location.Y >= button.Location.Y && jednostka.pictureBox.Location.X == button.Location.X + jednostka.odlegloscRuch)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= button.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= button.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == button.Location.X + 100)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekLewo);
-                jednostka.pictureBox.Image = (Image)o;
-                jednostka.pictureBox.Location = point;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekLewo;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Location = button.Location;
+                rundaGracza++;
+                czyRundaGracza = false;
             }
             else
             {
                 Cursor.Current = Cursors.No;
+                
+            }
+
+            if (rundaGracza == iloscJednostekGracza)
+            {
+                rundaGracza = 0;
             }
         }
-        #endregion
 
-        #region AtakDalekiZasieg
-        public void AtakDalekiZasieg(JednostkiGracza jednostka, Wrogowie wrog)
+        #endregion Ruch jednostek po planszy
+
+        #region Dodaj jednostki gracza do listy oraz okresl ilosc jednostek gracza
+
+        public void DodajJednostkiGraczaDoListyOrazOkreslIloscJednostek()
         {
-            if ((jednostka.pictureBox.Location.X <= wrog.pictureBox.Location.X && jednostka.pictureBox.Location.X >= wrog.pictureBox.Location.X - jednostka.odlegloscAtak)
-                && ((jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y - jednostka.odlegloscAtak) && (jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y + jednostka.odlegloscAtak)))
+            if (o1.piechur.ilosc>0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekPrawo);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                o1.piechur.pictureBox = pictureBoxWojownik;
+                jednostkiGraczaLista.Add(o1.piechur);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
             }
-            else if (jednostka.pictureBox.Location.X >= wrog.pictureBox.Location.X && wrog.pictureBox.Location.X + jednostka.odlegloscAtak >= jednostka.pictureBox.Location.X
-                && ((jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y - jednostka.odlegloscAtak) && (jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y + jednostka.odlegloscAtak)))
+
+            if(o1.lucznik.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekLewo);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                o1.lucznik.pictureBox = pictureBoxLucznik;
+                jednostkiGraczaLista.Add(o1.lucznik);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
             }
+
+            if(o1.rycerz.ilosc > 0)
+            {
+                o1.rycerz.pictureBox = pictureBoxWlocznik;
+                jednostkiGraczaLista.Add(o1.rycerz);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
+            }
+
+            if(o1.czarnyRycerz.ilosc > 0)
+            {
+                o1.czarnyRycerz.pictureBox = pictureBoxCzarnyRycerz;
+                jednostkiGraczaLista.Add(o1.czarnyRycerz);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
+            }
+
+            if (o1.czarnyLucznik.ilosc > 0)
+            {
+                o1.czarnyLucznik.pictureBox = pictureBoxCzarnyLucznik;
+                jednostkiGraczaLista.Add(o1.czarnyLucznik);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
+            }
+
+            iloscJednostekGracza = numerRundyJednostki;
         }
-        #endregion
 
-        #region AtakKrotkiZasieg
-        public void ZaatakujNaKrotkiZasieg(JednostkiGracza jednostka, Wrogowie wrog)
+        #endregion Dodaj jednostki gracza do listy oraz okresl ilosc jednostek gracza
+
+        #region Dodaj jednostki przeciwnika do listy oraz okresl ilosc jednostek wroga
+
+        public void DodajJednostkiPrzeciwnikaDoListyOrazOkreslIloscJednostekPrzeciwnika()
         {
-            if (jednostka.pictureBox.Location.X >= wrog.pictureBox.Location.X - jednostka.odlegloscAtak && jednostka.pictureBox.Location.X <= wrog.pictureBox.Location.X
-                && jednostka.pictureBox.Location.Y == wrog.pictureBox.Location.Y)
+            if(przeciwnik0.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekPrawo);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik0.pictureBox = pictureBoxPrzeciwnik0;
+                przeciwnicyLista.Add(przeciwnik0);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.X <= wrog.pictureBox.Location.X + jednostka.odlegloscAtak && jednostka.pictureBox.Location.X >= wrog.pictureBox.Location.X
-                && jednostka.pictureBox.Location.Y == wrog.pictureBox.Location.Y)
+
+            if (przeciwnik1.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekLewo);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik1.pictureBox = pictureBoxPrzeciwnik1;
+                przeciwnicyLista.Add(przeciwnik1);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y + jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y
-                 && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X)
+
+            if (przeciwnik2.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekGora);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik2.pictureBox = pictureBoxPrzeciwnik2;
+                przeciwnicyLista.Add(przeciwnik2);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y - jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y
-                 && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X)
+
+            if (przeciwnik3.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekDol);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik3.pictureBox = pictureBoxPrzeciwnik3;
+                przeciwnicyLista.Add(przeciwnik3);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y - jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y
-                 && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X - jednostka.odlegloscAtak)
+
+            if (przeciwnik4.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekDol);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik4.pictureBox = pictureBoxPrzeciwnik4;
+                przeciwnicyLista.Add(przeciwnik4);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y - jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y
-                && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X + jednostka.odlegloscAtak)
+
+            if (przeciwnik5.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekDol);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik5.pictureBox = pictureBoxPrzeciwnik5;
+                przeciwnicyLista.Add(przeciwnik5);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y + jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y
-                && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X - jednostka.odlegloscAtak)
+
+            if (przeciwnik6.ilosc > 0)
             {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekGora);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
+                przeciwnik6.pictureBox = pictureBoxPrzeciwnik6;
+                przeciwnicyLista.Add(przeciwnik6);
+                UstawAtrybutyPrzeciwnika();
+                numerRundyPrzeciwnika++;
             }
-            else if (jednostka.pictureBox.Location.Y <= wrog.pictureBox.Location.Y + jednostka.odlegloscAtak && jednostka.pictureBox.Location.Y >= wrog.pictureBox.Location.Y
-               && jednostka.pictureBox.Location.X == wrog.pictureBox.Location.X + jednostka.odlegloscAtak)
-            {
-                var o = Properties.Resources.ResourceManager.GetObject(jednostka.obrazekGora);
-                jednostka.pictureBox.Image = (Image)o;
-                wrog.pictureBox.BackColor = Color.DarkRed;
-                ZadajObrazeniaPrzeciwnikowi(jednostka, wrog);
-                rundaTwoja++;
-            }
+
+            iloscJednostekPrzeciwnika = numerRundyPrzeciwnika;
+
         }
-        #endregion  
 
-        #region SprawdzanieZasiegu
-        public void SprawdzZasieguRuchu(JednostkiGracza jednostka)
+        #endregion Dodaj jednostki wroga do listy oraz okresl ilosc jednostek wroga
+
+        #region Sprawdz zasieg ruchu jednosti
+
+        public void SprawdzZasiegRuchuJednostek()
         {
-            foreach (var item in buttons)
+            if(czyRundaGracza == true && iloscJednostekGracza > 0)
             {
-                if ((jednostka.pictureBox.Location.X >= (item.Location.X - (jednostka.odlegloscRuch)) && jednostka.pictureBox.Location.Y == item.Location.Y)
-                    && (jednostka.pictureBox.Location.X <= (item.Location.X + (jednostka.odlegloscRuch)) && jednostka.pictureBox.Location.Y == item.Location.Y)
-                    || (jednostka.pictureBox.Location.Y >= (item.Location.Y - (jednostka.odlegloscRuch)) && (jednostka.pictureBox.Location.X >= item.Location.X - jednostka.odlegloscRuch && jednostka.pictureBox.Location.X <= item.Location.X + jednostka.odlegloscRuch))   // || jednostka.pictureBox.Location.X == item.Location.X))
-                    && (jednostka.pictureBox.Location.Y <= (item.Location.Y + (jednostka.odlegloscRuch)) && (jednostka.pictureBox.Location.X >= item.Location.X - jednostka.odlegloscRuch && jednostka.pictureBox.Location.X <= item.Location.X + jednostka.odlegloscRuch)))
+                foreach (var item in buttonsLista)
                 {
-                    item.Image = Properties.Resources.iks;
+                    if ((jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= (item.Location.X - 100) && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == item.Location.Y)
+                        && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= (item.Location.X + 100) && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == item.Location.Y)
+                        || (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= (item.Location.Y - 100) && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= item.Location.X - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= item.Location.X + 100))  // || jednostka.pictureBox.Location.X == item.Location.X))
+                        && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= (item.Location.Y + 100) && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= item.Location.X - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= item.Location.X + 100)))
+                    {
+                        item.Image = Properties.Resources.iks;
+                    }
+                    else
+                    {
+                        item.Image = null;
+                    }
                 }
-                else
+            }
+            else
+            {
+                foreach (var item in buttonsLista)
                 {
                     item.Image = null;
                 }
             }
         }
 
-        public void SprawdzanieZasieguAtaku(JednostkiGracza jednostka)
-        {
-            foreach (var item in buttons)
-            {
-                if ((jednostka.pictureBox.Location.X >= (item.Location.X - (jednostka.odlegloscAtak)) && jednostka.pictureBox.Location.Y == item.Location.Y)
-                    && (jednostka.pictureBox.Location.X <= (item.Location.X + (jednostka.odlegloscAtak)) && jednostka.pictureBox.Location.Y == item.Location.Y)
-                    || (jednostka.pictureBox.Location.Y >= (item.Location.Y - (jednostka.odlegloscAtak)) && (jednostka.pictureBox.Location.X >= item.Location.X - jednostka.odlegloscAtak && jednostka.pictureBox.Location.X <= item.Location.X + jednostka.odlegloscAtak))   // || jednostka.pictureBox.Location.X == item.Location.X))
-                    && (jednostka.pictureBox.Location.Y <= (item.Location.Y + (jednostka.odlegloscAtak)) && (jednostka.pictureBox.Location.X >= item.Location.X - jednostka.odlegloscAtak && jednostka.pictureBox.Location.X <= item.Location.X + jednostka.odlegloscAtak)))    // || jednostka.pictureBox.Location.X == item.Location.X)))
-                {
-                    //item.BackColor = Color.LightPink;
-                }
-                else
-                {
-                    //item.BackColor = Color.Transparent;
-                }
-            }
-        }
-
-        #endregion
+        #endregion Sprawdz zasieg ruchu jednostki
 
         #region Mechanika przeciwników
-        public void MechanikaPrzeciwnik(Wrogowie wrog)
+
+        public void MechanikaPrzeciwnik()
         {
-            wojska.Clear();
+           if(czyRundaGracza == false && iloscJednostekPrzeciwnika > 0)
+            {
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X + 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X - 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y + 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekGora;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y - 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekDol;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y + 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X + 100)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekGora;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y + 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X - 100)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekGora;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y - 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X + 100)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekDol;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y - 100 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X - 100)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekDol;
+                        item.pictureBox.BackColor = Color.DarkRed;
+                        ZadajObrazeniaJednostceGracza(item);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X >= item.pictureBox.Location.X && 
+                        przeciwnicyLista.Count(x=>x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X <= item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y < item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekDol;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y > item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X == item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekGora;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y < item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X > item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                        goto Koniec;
+                    }
+                }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y > item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X > item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                        goto Koniec;
+                    }
+                }
 
-            if (pictureBoxJednostka1.Visible)
-            {
-                wojska.Add(o.wojownik);
-            }
-            if (pictureBoxJednostka2.Visible)
-            {
-                wojska.Add(o.lucznik2);
-            }
-            if (pictureBoxJednostka3.Visible)
-            {
-                wojska.Add(o.wlocznik);
-            }
+                foreach (var item in jednostkiGraczaLista)
+                {
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y < item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                        goto Koniec;
+                    }
+                }
 
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.X == item.pictureBox.Location.X + wrog.odlegloscAtak && wrog.pictureBox.Location.Y == item.pictureBox.Location.Y)
+                foreach (var item in jednostkiGraczaLista)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekLewo);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y > item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                        goto Koniec;
+                    }
                 }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.X == item.pictureBox.Location.X - wrog.odlegloscAtak && wrog.pictureBox.Location.Y == item.pictureBox.Location.Y)
+                foreach(var item in jednostkiGraczaLista)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekPrawo);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                        goto Koniec;
+                    }
                 }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y + wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X)
+                foreach (var item in jednostkiGraczaLista)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekGora);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                        goto Koniec;
+                    }
                 }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y - wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X)
+                foreach (var item in jednostkiGraczaLista)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekDol);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 1 &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 1 &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y) == 1 &&
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y >= 200)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y -100);
+                        goto Koniec;
+                    }
                 }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y + wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X + wrog.odlegloscAtak)
+                foreach (var item in jednostkiGraczaLista)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekGora);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
+                    if (przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y == item.pictureBox.Location.Y && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X < item.pictureBox.Location.X &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 1 &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 1 &&
+                        przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X + 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y) == 1 &&
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y <= 600)
+                    {
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekPrawo;
+                        przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                        goto Koniec;
+                    }
                 }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y + wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X - wrog.odlegloscAtak)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekGora);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y - wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X + wrog.odlegloscAtak)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekDol);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y - wrog.odlegloscAtak && wrog.pictureBox.Location.X == item.pictureBox.Location.X - wrog.odlegloscAtak)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekDol);
-                    wrog.pictureBox.Image = (Image)o;
-                    item.pictureBox.BackColor = Color.DarkRed;
-                    ZadajObrazeniaJednostce(wrog, item);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y && wrog.pictureBox.Location.X >= item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekLewo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X - wrog.odlegloscRuch, wrog.pictureBox.Location.Y);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y == item.pictureBox.Location.Y && wrog.pictureBox.Location.X <= item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekPrawo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X + wrog.odlegloscRuch, wrog.pictureBox.Location.Y);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y < item.pictureBox.Location.Y && wrog.pictureBox.Location.X == item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekDol);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X, wrog.pictureBox.Location.Y + wrog.odlegloscRuch);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y > item.pictureBox.Location.Y && wrog.pictureBox.Location.X == item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekGora);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X, wrog.pictureBox.Location.Y - wrog.odlegloscRuch);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y < item.pictureBox.Location.Y && wrog.pictureBox.Location.X > item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekLewo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X - wrog.odlegloscRuch, wrog.pictureBox.Location.Y + wrog.odlegloscRuch);
-                    goto Koniec;
-                }
-            }
-            foreach (var item in wojska)
-            {
 
-                if (wrog.pictureBox.Location.Y > item.pictureBox.Location.Y && wrog.pictureBox.Location.X > item.pictureBox.Location.X)
+                // pozwolmy jednak jednostka sie ruszac w przypadu niespelnionych powyzszych warunkow - dopisze kiedy indziej warunki wyzej tak aby dzialalo w kazdej sytuacji bez tych warunkow ponizej
+
+                if (przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y) == 0
+                    && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X >= 310)
                 {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekLewo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X - wrog.odlegloscRuch, wrog.pictureBox.Location.Y - wrog.odlegloscRuch);
-                    goto Koniec;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y);
+                }
+                else if (przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0
+                         && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y >= 200)
+                {
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekGora;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                }
+                else if (przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0
+                       && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y <= 600)
+                {
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekDol;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                }
+                else if (przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100) == 0
+                        && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X >= 310 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y >= 200)
+                {
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y - 100);
+                }
+                else if (przeciwnicyLista.Count(x => x.pictureBox.Location.X == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100 && x.pictureBox.Location.Y == przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100) == 0
+                        && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X >= 310 && przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y <= 600)
+                {
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Image = przeciwnicyLista[rundaPrzeciwnika].obrazekLewo;
+                    przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location = new Point(przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.X - 100, przeciwnicyLista[rundaPrzeciwnika].pictureBox.Location.Y + 100);
+                }
+
+            Koniec:
+
+                rundaPrzeciwnika++;
+                czyRundaGracza = true;
+
+                if (rundaPrzeciwnika >= iloscJednostekPrzeciwnika)
+                {
+                    rundaPrzeciwnika = 0;
                 }
             }
-
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y < item.pictureBox.Location.Y && wrog.pictureBox.Location.X < item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekPrawo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X + wrog.odlegloscRuch, wrog.pictureBox.Location.Y + wrog.odlegloscRuch);
-                    goto Koniec;
-                }
-            }
-
-            foreach (var item in wojska)
-            {
-                if (wrog.pictureBox.Location.Y > item.pictureBox.Location.Y && wrog.pictureBox.Location.X < item.pictureBox.Location.X)
-                {
-                    var o = Properties.Resources.ResourceManager.GetObject(wrog.obrazekPrawo);
-                    wrog.pictureBox.Image = (Image)o;
-                    wrog.pictureBox.Location = new Point(wrog.pictureBox.Location.X + wrog.odlegloscRuch, wrog.pictureBox.Location.Y - wrog.odlegloscRuch);
-                    goto Koniec;
-                }
-            }
-
-        Koniec:
-            rundaPrzeciwnika++;
         }
 
         #endregion
 
-        public void ZadajObrazeniaPrzeciwnikowi(JednostkiMilitarne jednostka, Wrogowie wrog)
+        #region Zadaj obrazenia przeciwnikowi
+
+        public void ZadajObrazeniaPrzeciwnikowi()
         {
-            if (jednostka.ObliczCalkowityAtak() >= wrog.calkowitePZ)
+            var przeciwnik = przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany];
+
+            if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() >= przeciwnik.calkowitePZ)
             {
-                wrog.pictureBox.Visible = false;
-                wrog.ilosc = 0;
-                wrog.PZ = 0;
-                wrog.calkowitePZ = 0;
-                wrog.progressBarPZ.ForeColor = Color.Black;
-                wrog.progressBarPZ.Value = wrog.progressBarPZ.Maximum;
+                przeciwnik.pictureBox.Visible = false;
+                przeciwnik.ilosc = 0;
+                przeciwnik.PZ = 0;
+                przeciwnik.calkowitePZ = 0;
+                przeciwnik.progressBarPZ.ForeColor = Color.Black;
+                przeciwnik.progressBarPZ.Value = przeciwnik.progressBarPZ.Maximum;
+                przeciwnik.labelIlosc.Text = "0";
+                przeciwnik.labelPZ.Text = "0";
+                przeciwnicyLista.Remove(przeciwnik);
+
+                if (iloscJednostekPrzeciwnika > 0)
+                {
+                    iloscJednostekPrzeciwnika--;
+                }
+              
+                if(rundaPrzeciwnika > 0)
+                {
+                    rundaPrzeciwnika--;
+                }
             }
             else
             {
-                if (jednostka.ObliczCalkowityAtak() == wrog.PZ)
+                if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() == przeciwnik.PZ)
                 {
-                    if (wrog.ilosc == 1)
+                    if (przeciwnik.ilosc == 1)
                     {
-                        wrog.ilosc--;
-                        wrog.pictureBox.Visible = false;
-                        wrog.PZ = 0;
-                        wrog.calkowitePZ = 0;
-                        wrog.progressBarPZ.ForeColor = Color.Black;
-                        wrog.progressBarPZ.Value = wrog.progressBarPZ.Maximum;
+                        przeciwnik.ilosc--;
+                        przeciwnik.pictureBox.Visible = false;
+                        przeciwnik.PZ = 0;
+                        przeciwnik.calkowitePZ = 0;
+                        przeciwnik.progressBarPZ.ForeColor = Color.Black;
+                        przeciwnik.progressBarPZ.Value = przeciwnik.progressBarPZ.Maximum;
+                        przeciwnik.labelIlosc.Text = "0";
+                        przeciwnik.labelPZ.Text = "0";
+                        przeciwnicyLista.Remove(przeciwnik);
+
+                        if (iloscJednostekPrzeciwnika > 0)
+                        {
+                            iloscJednostekPrzeciwnika--;
+                        }
+
+                        if (rundaPrzeciwnika > 0)
+                        {
+                            rundaPrzeciwnika--;
+                        }
                     }
                     else
                     {
-                        wrog.ilosc--;
-                        wrog.PZ = wrog.stalePZ;
-                        wrog.calkowitePZ -= jednostka.ObliczCalkowityAtak();
+                        przeciwnik.ilosc--;
+                        przeciwnik.PZ = przeciwnik.stalePZ;
+                        przeciwnik.calkowitePZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
                     }
                 }
-                else if (jednostka.ObliczCalkowityAtak() > wrog.PZ)
+                else if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() > przeciwnik.PZ)
                 {
-                    if (wrog.ilosc == 1)
+                    if (przeciwnik.ilosc == 1)
                     {
-                        wrog.ilosc--;
-                        wrog.pictureBox.Visible = false;
-                        wrog.PZ = 0;
-                        wrog.calkowitePZ = 0;
-                        wrog.progressBarPZ.ForeColor = Color.Black;
-                        wrog.progressBarPZ.Value = wrog.progressBarPZ.Maximum;
+                        przeciwnik.ilosc--;
+                        przeciwnik.pictureBox.Visible = false;
+                        przeciwnik.PZ = 0;
+                        przeciwnik.calkowitePZ = 0;
+                        przeciwnik.progressBarPZ.ForeColor = Color.Black;
+                        przeciwnik.progressBarPZ.Value = przeciwnik.progressBarPZ.Maximum;
+                        przeciwnik.labelIlosc.Text = "0";
+                        przeciwnik.labelPZ.Text = "0";
+                        przeciwnicyLista.Remove(przeciwnik);
+
+                        if (iloscJednostekPrzeciwnika > 0)
+                        {
+                            iloscJednostekPrzeciwnika--;
+                        }
+
+                        if (rundaPrzeciwnika > 0)
+                        {
+                            rundaPrzeciwnika--;
+                        }
                     }
                     else
                     {
                         int resztaPZ;
-                        wrog.calkowitePZ -= jednostka.ObliczCalkowityAtak();
-                        wrog.PZ -= jednostka.ObliczCalkowityAtak();
+                        przeciwnik.calkowitePZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
+                        przeciwnik.PZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
 
-                        for (int i = 0; i < jednostka.ObliczCalkowityAtak(); i++)
+                        //for (int i = 0; i < jednostkiGracza[rundaGracza].ObliczCalkowityAtak(); i++)
+                        //{
+                        //    if (przeciwnicy.PZ <= 0)
+                        //    {
+                        //        resztaPZ = przeciwnicy.PZ;
+                        //        przeciwnicy.PZ = przeciwnicy.stalePZ + resztaPZ;
+                        //    }
+                        //    else if (przeciwnicy.PZ > 0)
+                        //    {
+                        //        przeciwnicy.ilosc -= i;
+                        //        break;
+                        //    }
+                        //}
+
+                        while(przeciwnik.PZ <= 0)
                         {
-                            if (wrog.PZ <= 0)
+                            int iloscZabitychPrzeciwnikow = 0;
+
+                            if (przeciwnik.PZ <= 0)
                             {
-                                resztaPZ = wrog.PZ;
-                                wrog.PZ = wrog.stalePZ + resztaPZ;
+                                resztaPZ = przeciwnik.PZ;
+                                przeciwnik.PZ = przeciwnik.stalePZ + resztaPZ;
+                                iloscZabitychPrzeciwnikow++;
                             }
-                            else if (wrog.PZ > 0)
+
+                            if (przeciwnik.PZ > 0)
                             {
-                                wrog.ilosc -= i;
+                                przeciwnik.ilosc -= iloscZabitychPrzeciwnikow;
                                 break;
                             }
                         }
                     }
                 }
-                else if (jednostka.ObliczCalkowityAtak() < wrog.PZ)
+                else if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() < przeciwnik.PZ)
                 {
-                    wrog.PZ -= jednostka.ObliczCalkowityAtak();
-                    wrog.calkowitePZ -= jednostka.ObliczCalkowityAtak();
+                    przeciwnik.PZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
+                    przeciwnik.calkowitePZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
                 }
             }
+
+            rundaGracza++;
+
+            if (rundaGracza >= iloscJednostekGracza)
+            {
+                rundaGracza = 0;
+            }
+
+            czyRundaGracza = false;
         }
 
-        public void ZadajObrazeniaJednostce(Wrogowie wrog, JednostkiMilitarne jednostka)
+        #endregion Zadaj obrazenia przeciwnikowi
+
+        #region Zadaj obrazenia jednostce gracza
+
+        public void ZadajObrazeniaJednostceGracza(JednostkiGracza jednostka)
         {
-            if (wrog.ObliczCalkowityAtak() >= jednostka.calkowitePZ)
+            if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() >= jednostka.calkowitePZ)
             {
                 jednostka.pictureBox.Visible = false;
+                o1.mieszkancy.liczbaMieszkancow -= jednostka.ilosc;
                 jednostka.ilosc = 0;
                 jednostka.PZ = 0;
                 jednostka.calkowitePZ = 0;
                 jednostka.progressBarPZ.ForeColor = Color.Black;
                 jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
+                jednostka.labelIlosc.Text = "0";
+                jednostka.labelPZ.Text = "0";
+                jednostkiGraczaLista.Remove(jednostka);
+
+                if(iloscJednostekGracza > 0)
+                {
+                    iloscJednostekGracza--;
+                }
+
+                if(rundaGracza > 0)
+                {
+                    rundaGracza--;
+                }
             }
             else
             {
-                if (wrog.ObliczCalkowityAtak() == jednostka.PZ)
+                if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() == jednostka.PZ)
                 {
                     if (jednostka.ilosc == 1)
                     {
                         jednostka.ilosc--;
+                        o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.pictureBox.Visible = false;
                         jednostka.PZ = 0;
                         jednostka.calkowitePZ = 0;
                         jednostka.progressBarPZ.ForeColor = Color.Black;
                         jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
+                        jednostka.labelIlosc.Text = "0";
+                        jednostka.labelPZ.Text = "0";
+                        jednostkiGraczaLista.Remove(jednostka);
+
+                        if (iloscJednostekGracza > 0)
+                        {
+                            iloscJednostekGracza--;
+                        }
+
+                        if (rundaGracza > 0)
+                        {
+                            rundaGracza--;
+                        }
                     }
                     else
                     {
                         jednostka.ilosc--;
+                        o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.PZ = jednostka.stalePZ;
-                        jednostka.calkowitePZ -= wrog.ObliczCalkowityAtak();
+                        jednostka.calkowitePZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
                     }
                 }
-                else if (wrog.ObliczCalkowityAtak() > jednostka.PZ)
+                else if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() > jednostka.PZ)
                 {
                     if (jednostka.ilosc == 1)
                     {
                         jednostka.ilosc--;
+                        o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.pictureBox.Visible = false;
                         jednostka.PZ = 0;
                         jednostka.calkowitePZ = 0;
                         jednostka.progressBarPZ.ForeColor = Color.Black;
                         jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
+                        jednostka.labelIlosc.Text = "0";
+                        jednostka.labelPZ.Text = "0";
+                        jednostkiGraczaLista.Remove(jednostka);
+
+                        if (iloscJednostekGracza > 0)
+                        {
+                            iloscJednostekGracza--;
+                        }
+
+                        if (rundaGracza > 0)
+                        {
+                            rundaGracza--;
+                        }
                     }
                     else
                     {
                         int resztaPZ;
 
-                        jednostka.calkowitePZ -= wrog.ObliczCalkowityAtak();
-                        jednostka.PZ -= wrog.ObliczCalkowityAtak();
-                        for (int i = 0; i < wrog.ObliczCalkowityAtak(); i++)
+                        jednostka.calkowitePZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
+                        jednostka.PZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
+
+                        //for (int i = 0; i < przeciwnicy[rundaGracza].ObliczCalkowityAtak(); i++)
+                        //{
+                        //if (jednostka.PZ <= 0)
+                        //{
+                        //    resztaPZ = jednostka.PZ;
+                        //    jednostka.PZ = jednostka.stalePZ + resztaPZ;
+                        //}
+                        //else if (jednostka.PZ > 0)
+                        //{
+                        //    jednostka.ilosc -= i;
+                        //    break;
+                        //}
+                        //}
+
+                        while (jednostka.PZ <= 0)
                         {
+                            int iloscZabitychJednostekGracza = 0;
+
                             if (jednostka.PZ <= 0)
                             {
                                 resztaPZ = jednostka.PZ;
                                 jednostka.PZ = jednostka.stalePZ + resztaPZ;
+                                iloscZabitychJednostekGracza++;
                             }
-                            else if (jednostka.PZ > 0)
+                                
+                            if (jednostka.PZ > 0)
                             {
-                                jednostka.ilosc -= i;
+                                jednostka.ilosc -= iloscZabitychJednostekGracza;
+                                o1.mieszkancy.liczbaMieszkancow -= iloscZabitychJednostekGracza;
                                 break;
                             }
                         }
                     }
                 }
-                else if (wrog.ObliczCalkowityAtak() < jednostka.PZ)
+                else if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() < jednostka.PZ)
                 {
-                    jednostka.PZ -= wrog.ObliczCalkowityAtak();
-                    jednostka.calkowitePZ -= wrog.ObliczCalkowityAtak();
+                    jednostka.PZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
+                    jednostka.calkowitePZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
                 }
             }
         }
 
-        public void SprawdzCzyMoznaZaatakowac(Wrogowie wrog)
+        #endregion Zadaj obrazenia jednostce gracza
+
+        #region Zaatakuj przeciwnika z bliska 
+
+        public void ZaatakujPrzeciwnikaBliskiDystans()
         {
-            if (rundaTwoja == 1 && pictureBoxJednostka1.Visible)
+            if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y)
             {
-                ZaatakujNaKrotkiZasieg(o.wojownik, wrog);
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekPrawo;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
             }
-            else if (rundaTwoja == 2 && pictureBoxJednostka2.Visible)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y)
             {
-                ZaatakujNaKrotkiZasieg(o.lucznik2, wrog);
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekLewo;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
             }
-            else if (rundaTwoja == 3 && pictureBoxJednostka3.Visible)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X)
             {
-                ZaatakujNaKrotkiZasieg(o.wlocznik, wrog);
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekGora;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X)
+            {
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekDol;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X - 100)
+            {
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekDol;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y - 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X + 100)
+            {
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekDol;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X - 100)
+            {
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekGora;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y + 100 && jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X == przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X + 100)
+            {
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekGora;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
             }
         }
 
+        #endregion Zaatakuj przeciwnika z bliska
 
+        #region Zaatakuj przeciwnika z daleka
 
-
-        private void buttonObrona_Click(object sender, EventArgs e)
+        public void ZaatakujPrzeciwnikaDalekiDystans()
         {
-            if (rundaTwoja == 1)
+            if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X && jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X - 300 && ((jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y - 300) && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y + 300)))
             {
-                pictureBoxJednostka1.BackColor = Color.Blue;
-                rundaTwoja++;
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekPrawo;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
             }
-            else if (rundaTwoja == 2)
+            else if (jednostkiGraczaLista[rundaGracza].pictureBox.Location.X >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X && przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.X + 300 >= jednostkiGraczaLista[rundaGracza].pictureBox.Location.X && ((jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y >= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y - 300) && (jednostkiGraczaLista[rundaGracza].pictureBox.Location.Y <= przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.Location.Y + 300)))
             {
-                pictureBoxJednostka2.BackColor = Color.Blue;
-                rundaTwoja++;
-            }
-            else if (rundaTwoja == 3)
-            {
-                pictureBoxJednostka3.BackColor = Color.Blue;
-                rundaTwoja++;
-            }
+                jednostkiGraczaLista[rundaGracza].pictureBox.Image = jednostkiGraczaLista[rundaGracza].obrazekLewo;
+                przeciwnicyLista[ktoryPrzeciwnikMaZostacZaatakowany].pictureBox.BackColor = Color.DarkRed;
+                ZadajObrazeniaPrzeciwnikowi();
+            }           
         }
 
-        public void MechanikaPrzeciwnikówNieruchomychDystansowych(Wrogowie wrog)
+        #endregion Zaatakuj przeciwnika z daleka
+
+        #region Timer
+
+        private void TimerGra_Tick(object sender, EventArgs e)
         {
-            wojska.Clear();
+            SprawdzZasiegRuchuJednostek();
+            MechanikaPrzeciwnik();
 
-            if (pictureBoxJednostka1.Visible)
+            foreach (var item in jednostkiGraczaLista)
             {
-                wojska.Add(o.wojownik);
-            }
-            if (pictureBoxJednostka2.Visible)
-            {
-                wojska.Add(o.lucznik2);
-            }
-            if (pictureBoxJednostka3.Visible)
-            {
-                wojska.Add(o.wlocznik);
+                item.progressBarPZ.Value = item.ObliczCalkowitePZ();
+                item.labelPZ.Text = item.ObliczCalkowitePZ().ToString();
+                item.labelIlosc.Text = item.ilosc.ToString();
+                item.labelAtak.Text = item.ObliczCalkowityAtak().ToString();
+                item.labelObrona.Text = item.obronaDomyslna.ToString();
             }
 
-            //atak obszarowy
-            /*
-            for (int i = 1; i < 9; i++)
+            foreach(var item in przeciwnicyLista)
             {
-                foreach (var item in wojska)
-                {
-                    if (przeciwnik.pictureBox.Location.X == item.pictureBox.Location.X + przeciwnik.odlegloscAtak * i)
-                    {
-                        item.pictureBox.BackColor = Color.DarkRed;
-                        ZadaneObrazeniaJednostce(przeciwnik, item);
-                        break;
-                    }
-                }
-            }
-            */
-
-            for (int i = 1; i < 9; i++)
-            {
-                foreach (var item in wojska)
-                {
-                    if (wrog.pictureBox.Location.X == item.pictureBox.Location.X + wrog.odlegloscAtak * i)
-                    {
-                        item.pictureBox.BackColor = Color.DarkRed;
-                        ZadajObrazeniaJednostce(wrog, item);
-                        goto Koniec;
-                    }
-                }
+                item.progressBarPZ.Value = item.ObliczCalkowitePZ();
+                item.labelPZ.Text = item.ObliczCalkowitePZ().ToString();
+                item.labelIlosc.Text = item.ilosc.ToString();
+                item.labelAtak.Text = item.ObliczCalkowityAtak().ToString();
+                item.labelObrona.Text = item.obronaDomyslna.ToString();
             }
 
-        Koniec:
-            rundaPrzeciwnika++;
+            if (iloscJednostekGracza == 0)
+            {
+                obszaryInstancji.czyBitwa = false;
+                obszaryInstancji.czyOdblokowane = false;
+                Close();
+                MessageBox.Show("Poniosłeś porażkę");
+            }
+
+            if (iloscJednostekPrzeciwnika == 0)
+            {
+                obszaryInstancji.czyBitwa = false;
+                obszaryInstancji.czyOdblokowane = true;
+                instancje.timerMapa.Start();
+                Close();
+                MessageBox.Show("Zwyciężyłeś");
+            }
         }
 
+        #endregion Timer
 
+        #region Ustaw atrybuty
 
-        private void buttonOpusc_Click(object sender, EventArgs e)
+        public void UstawAtrybutyJednostkiGracza()
         {
-            DialogResult dialogResult = MessageBox.Show("Czy na pewno chcesz opuścić pole bitwy?", "", MessageBoxButtons.YesNo);
-            if (dialogResult == DialogResult.Yes)
+            jednostkiGraczaLista[numerRundyJednostki].ObliczPZJednostki();
+            jednostkiGraczaLista[numerRundyJednostki].ObliczAtakJednostki();
+            jednostkiGraczaLista[numerRundyJednostki].ObliczCalkowityAtak();
+            jednostkiGraczaLista[numerRundyJednostki].stalePZ = jednostkiGraczaLista[numerRundyJednostki].PZ;
+            jednostkiGraczaLista[numerRundyJednostki].ObliczCalkowitePZ();
+            jednostkiGraczaLista[numerRundyJednostki].pictureBox.Visible = true;
+            jednostkiGraczaLista[numerRundyJednostki].progressBarPZ = progressBarPZGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelNazwa = nazwaJednostkiGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelPZ = iloscPZJednostkiGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelIlosc = liczebnoscJednostkiGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelAtak = atakJednostkiGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelObrona = obronaJednostkiGraczaLista[numerRundyJednostki];
+            jednostkiGraczaLista[numerRundyJednostki].labelNazwa.Text = jednostkiGraczaLista[numerRundyJednostki].nazwa;
+            jednostkiGraczaLista[numerRundyJednostki].progressBarPZ.Maximum = jednostkiGraczaLista[numerRundyJednostki].calkowitePZ;
+            jednostkiGraczaLista[numerRundyJednostki].progressBarPZ.Visible = true;
+        }
+
+        public void UstawAtrybutyPrzeciwnika()
+        {
+            przeciwnicyLista[numerRundyPrzeciwnika].ObliczPZJednostki();
+            przeciwnicyLista[numerRundyPrzeciwnika].ObliczCalkowityAtak();
+            przeciwnicyLista[numerRundyPrzeciwnika].stalePZ = przeciwnicyLista[numerRundyPrzeciwnika].PZ;
+            przeciwnicyLista[numerRundyPrzeciwnika].ObliczCalkowitePZ();
+            przeciwnicyLista[numerRundyPrzeciwnika].pictureBox.Visible = true;
+            przeciwnicyLista[numerRundyPrzeciwnika].pictureBox.Image = przeciwnicyLista[numerRundyPrzeciwnika].obrazekLewo;
+            przeciwnicyLista[numerRundyPrzeciwnika].progressBarPZ = progressBarPZPrzeciwnikaLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelNazwa = nazwaPrzeciwnicyLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelPZ = iloscPZPrzeciwnikaLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelIlosc = liczebnoscPrzeciwnikaLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelAtak = atakPrzeciwnikaLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelObrona = obronaPrzeciwnikaLista[numerRundyPrzeciwnika];
+            przeciwnicyLista[numerRundyPrzeciwnika].labelNazwa.Text = przeciwnicyLista[numerRundyPrzeciwnika].nazwa;
+            przeciwnicyLista[numerRundyPrzeciwnika].progressBarPZ.Maximum = przeciwnicyLista[numerRundyPrzeciwnika].calkowitePZ;
+            przeciwnicyLista[numerRundyPrzeciwnika].progressBarPZ.Visible = true;
+        }
+
+        #endregion Ustaw atrybuty
+
+        #region PictureBoxy przeciwnika
+
+        private void PictureBoxPrzeciwnik0_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik0);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
             {
-                timerRunda.Stop();
-                if (ktoraMapa == 1.1 || ktoraMapa == 1.2 || ktoraMapa == 1.3)
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if(jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        private void PictureBoxPrzeciwnik1_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik1);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        private void PictureBoxPrzeciwnik2_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik2);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        private void PictureBoxPrzeciwnik3_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik3);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }          
+        }
+
+        private void PictureBoxPrzeciwnik4_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik4);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        private void PictureBoxPrzeciwnik5_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik5);
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        private void PictureBoxPrzeciwnik6_Click(object sender, EventArgs e)
+        {
+            ktoryPrzeciwnikMaZostacZaatakowany = przeciwnicyLista.IndexOf(przeciwnik6); ;
+
+            if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == true)
+            {
+                ZaatakujPrzeciwnikaBliskiDystans();
+            }
+            else if (jednostkiGraczaLista[rundaGracza].czyAtakNaBliskiDystans == false)
+            {
+                ZaatakujPrzeciwnikaDalekiDystans();
+            }
+            else
+            {
+                Cursor.Current = Cursors.No;
+
+            }
+        }
+
+        #endregion PictureBoxy przeciwnika
+
+        private void ButtonObrona_Click(object sender, EventArgs e)
+        {
+            if(czyRundaGracza == true)
+            {
+                if(rundaGracza == iloscJednostekGracza-1)
                 {
-                    o.osadaGoblinow.akcjaWrog = true;
+                    rundaGracza = 0;
                 }
-                else if (ktoraMapa == 2.1 || ktoraMapa == 2.2)
+                else
                 {
-                    o.jaskiniaWezy.akcjaWrog = true;
+                    rundaGracza++;
                 }
 
-                o.timerWojna.Start();
-                this.Close();
-                MessageBox.Show("Opuściłeś pole bitwy");
+                czyRundaGracza = false;
             }
-          
         }
-    }          
+
+        private void ButtonOpusc_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            obszaryInstancji.czyBitwa = false;
+            obszaryInstancji.czyOdblokowane = false;
+        }
+    }
 }
-

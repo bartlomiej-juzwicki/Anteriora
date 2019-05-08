@@ -14,20 +14,16 @@ namespace Anteriora
     {
 
         Osada o1;
-        Początek o2;
+        Poczatek o2;
         Mapa o3;
 
-        public int czasGry;
-
-        public JaskiniaWezy(Osada c1, Początek c2, Mapa c3)
+        public JaskiniaWezy(Osada c1, Poczatek c2, Mapa c3)
         {
             o1 = c1;
             o2 = c2;
             o3 = c3;
             InitializeComponent();
             TworzWidok();
-            czasGry = o3.czasGry;
-            timerJaskiniaWezy.Start();
         }
 
         private void pictureBoxMechanizm1_Click(object sender, EventArgs e)
@@ -1247,26 +1243,6 @@ namespace Anteriora
 
                     break;
             }                      
-        }
-
-        private void timerJaskiniaWezy_Tick(object sender, EventArgs e)
-        {
-            czasGry++;
-            labelCzasMapa1.Text = "  Czas gry: " + czasGry.ToString() + " sekund(y)";
-            labelDrewno.Text = "Drewno: " + o2.drewno.ilosc.ToString();
-            labelKamien.Text = "Kamień: " + o2.kamień.ilosc.ToString();
-            labelSiano.Text = "Siano: " + o2.siano.ilosc.ToString();
-            labelJedzenie.Text = "Jedzenie: " + o2.jedzenie.ilosc.ToString();
-            labelWoda.Text = "Woda: " + o2.woda.ilosc.ToString();
-            labelZloto.Text = "Złoto: " + o1.zloto.ilosc.ToString();
-
-            o1.ZmianaKoloruTekstuLabela(o2.drewno, labelDrewno);
-            o1.ZmianaKoloruTekstuLabela(o2.kamień, labelKamien);
-            o1.ZmianaKoloruTekstuLabela(o2.siano, labelSiano);
-            o1.ZmianaKoloruTekstuLabela(o2.jedzenie, labelJedzenie);
-            o1.ZmianaKoloruTekstuLabela(o2.woda, labelWoda);
-            o1.ZmianaKoloruTekstuLabela(o1.zloto, labelZloto);
-            o1.PojemnośćMagazynu();
         }
     }
 }

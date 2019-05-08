@@ -20,7 +20,11 @@ namespace Anteriora
         public int pojemnosc { get; set; }
         public int liczbaPracownikowPotrzebnychDoBudowy { get; set; }
         public int czasUlepszenia { get; set; }
+        public bool czyBudowlaIstnieje { get; set; }
         public PictureBox pictureBox { get; set; }
+        public Bitmap bitmap { get; set; }
+        public ProgressBar progressBarBudowa { get; set; }
+        public ProgressBar progressBarUlepszanie { get; set; }
         public Point punkt { get; set; }
 
         public Budowle()
@@ -28,26 +32,30 @@ namespace Anteriora
 
         }
 
-        public Budowle(string nazwa, int liczbaPracownikow)
+        public Budowle(string nazwa, int liczbaPracownikowPotrzebnychDoBudowy)
         {
             this.nazwa = nazwa;
-            this.liczbaPracownikowPotrzebnychDoBudowy = liczbaPracownikow;
+            this.liczbaPracownikowPotrzebnychDoBudowy = liczbaPracownikowPotrzebnychDoBudowy;
         }
         // czas budowy
-        public int ZwrocCzasTrwaniaBudowy(int poziomUlepszenia)
+        public int ZwrocCzasTrwaniaBudowy()
         {
-            return czasBudowy = 10;
+            return czasBudowy = (poziomUlepszenia+1)*10;
         }
 
-        public int ZwrocCzasTrwaniaUlepszania(int poziomUlepszenia)
+        public int ZwrocCzasTrwaniaUlepszania()
         {
             return czasUlepszenia = 20 * (1 + poziomUlepszenia);
         }
 
         // ustawienie progressBar
-        public void PrzypiszPozycjeBudowli()
+        public static void PrzypiszPozycjeBudowli(List<Budowle> list)
         {
-            punkt = new Point(pictureBox.Location.X + pictureBox.Size.Width / 3, pictureBox.Location.Y + pictureBox.Size.Height / 2);
+            foreach (var item in list)
+            {
+                item.punkt = new Point(item.pictureBox.Location.X + item.pictureBox.Size.Width / 3, item.pictureBox.Location.Y + item.pictureBox.Size.Height / 2);
+            }
+           
         }
 
         public int ObliczLiczbePracownikowPotrzebnychDoBudowy()
