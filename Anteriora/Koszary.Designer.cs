@@ -39,10 +39,10 @@
             this.buttonUlepszLucznik = new System.Windows.Forms.Button();
             this.buttonUlepszRycerz = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.labelWartoscObronyPiechur = new System.Windows.Forms.Label();
+            this.labelWartoscAtakuPiechur = new System.Windows.Forms.Label();
             this.labelLiczebnoscPiechur = new System.Windows.Forms.Label();
             this.labelPoziomPiechur = new System.Windows.Forms.Label();
-            this.labelWartoscAtakuPiechur = new System.Windows.Forms.Label();
-            this.labelWartoscObronyPiechur = new System.Windows.Forms.Label();
             this.pictureBoxPiechur = new System.Windows.Forms.PictureBox();
             this.pictureBoxZwiadowca = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -226,10 +226,10 @@
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel6.Controls.Add(this.labelWartoscObronyPiechur);
+            this.panel6.Controls.Add(this.labelWartoscAtakuPiechur);
             this.panel6.Controls.Add(this.labelLiczebnoscPiechur);
             this.panel6.Controls.Add(this.labelPoziomPiechur);
-            this.panel6.Controls.Add(this.labelWartoscAtakuPiechur);
-            this.panel6.Controls.Add(this.labelWartoscObronyPiechur);
             this.panel6.Controls.Add(this.pictureBoxPiechur);
             this.panel6.Controls.Add(this.buttonUlepszPiechur);
             this.panel6.Controls.Add(this.buttonWerbujPiechur);
@@ -237,6 +237,30 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(607, 95);
             this.panel6.TabIndex = 80;
+            // 
+            // labelWartoscObronyPiechur
+            // 
+            this.labelWartoscObronyPiechur.AutoSize = true;
+            this.labelWartoscObronyPiechur.BackColor = System.Drawing.Color.Transparent;
+            this.labelWartoscObronyPiechur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWartoscObronyPiechur.ForeColor = System.Drawing.Color.Black;
+            this.labelWartoscObronyPiechur.Location = new System.Drawing.Point(118, 63);
+            this.labelWartoscObronyPiechur.Name = "labelWartoscObronyPiechur";
+            this.labelWartoscObronyPiechur.Size = new System.Drawing.Size(121, 16);
+            this.labelWartoscObronyPiechur.TabIndex = 78;
+            this.labelWartoscObronyPiechur.Text = "Wartość obrony:";
+            // 
+            // labelWartoscAtakuPiechur
+            // 
+            this.labelWartoscAtakuPiechur.AutoSize = true;
+            this.labelWartoscAtakuPiechur.BackColor = System.Drawing.Color.Transparent;
+            this.labelWartoscAtakuPiechur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelWartoscAtakuPiechur.ForeColor = System.Drawing.Color.Black;
+            this.labelWartoscAtakuPiechur.Location = new System.Drawing.Point(128, 47);
+            this.labelWartoscAtakuPiechur.Name = "labelWartoscAtakuPiechur";
+            this.labelWartoscAtakuPiechur.Size = new System.Drawing.Size(111, 16);
+            this.labelWartoscAtakuPiechur.TabIndex = 82;
+            this.labelWartoscAtakuPiechur.Text = "Wartość ataku:";
             // 
             // labelLiczebnoscPiechur
             // 
@@ -261,30 +285,6 @@
             this.labelPoziomPiechur.Size = new System.Drawing.Size(63, 16);
             this.labelPoziomPiechur.TabIndex = 81;
             this.labelPoziomPiechur.Text = "Poziom:";
-            // 
-            // labelWartoscAtakuPiechur
-            // 
-            this.labelWartoscAtakuPiechur.AutoSize = true;
-            this.labelWartoscAtakuPiechur.BackColor = System.Drawing.Color.Transparent;
-            this.labelWartoscAtakuPiechur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelWartoscAtakuPiechur.ForeColor = System.Drawing.Color.Black;
-            this.labelWartoscAtakuPiechur.Location = new System.Drawing.Point(128, 47);
-            this.labelWartoscAtakuPiechur.Name = "labelWartoscAtakuPiechur";
-            this.labelWartoscAtakuPiechur.Size = new System.Drawing.Size(111, 16);
-            this.labelWartoscAtakuPiechur.TabIndex = 82;
-            this.labelWartoscAtakuPiechur.Text = "Wartość ataku:";
-            // 
-            // labelWartoscObronyPiechur
-            // 
-            this.labelWartoscObronyPiechur.AutoSize = true;
-            this.labelWartoscObronyPiechur.BackColor = System.Drawing.Color.Transparent;
-            this.labelWartoscObronyPiechur.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelWartoscObronyPiechur.ForeColor = System.Drawing.Color.Black;
-            this.labelWartoscObronyPiechur.Location = new System.Drawing.Point(118, 63);
-            this.labelWartoscObronyPiechur.Name = "labelWartoscObronyPiechur";
-            this.labelWartoscObronyPiechur.Size = new System.Drawing.Size(121, 16);
-            this.labelWartoscObronyPiechur.TabIndex = 78;
-            this.labelWartoscObronyPiechur.Text = "Wartość obrony:";
             // 
             // pictureBoxPiechur
             // 

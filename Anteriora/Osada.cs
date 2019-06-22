@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Anteriora
@@ -28,7 +27,7 @@ namespace Anteriora
         public Budowle studnia = new Budowle("studnia", 2);
         
         public Budowle targowisko = new Budowle("targowisko",1);
-        public Budowle most = new Budowle("most",4);
+        public Budowle most = new Budowle("most", 4);
         public Budowle mur = new Budowle("mur", 10);
         public Budowle koszary = new Budowle("koszary", 6);
         public Budowle budynekMieszkalny = new Budowle("budynek mieszkalny", 4);
@@ -97,13 +96,13 @@ namespace Anteriora
         {
             o = c;
             InitializeComponent();
-            
-            timerCzasGry.Start();
+
+            pictureBoxGraczPart5.BackgroundImage = PostacGracza.obrazekGora;
 
             budynki.AddRange(new Budowle[] { tartak1, tartak2, kamieniolom1, kamieniolom2, kwateraRybacka, chataMaga, chatkaRolnika, hodowla, studnia, o.magazyn, targowisko, most, mur, koszary, budynekMieszkalny, kuznia });
             surowce.AddRange(new Materialy[] { o.drewno, o.kamień, o.siano, o.skora, o.welna, o.jedzenie, o.woda, o.rudaZelaza, o.rudaObsydianu, o.zelazo, o.obsydian, o.skorzanyPasek, o.kawalekDrewna });
 
-
+            timerCzasGry.Start();
             //zagadka.obrazekLewo = "dinozaurmacius";
             //zagadka.obrazekDol = "dinozaurmacius";
 
@@ -136,14 +135,14 @@ namespace Anteriora
 
             #endregion
 
-        }
 
+        }
 
         private void timerCzasGry_Tick(object sender, EventArgs e)
         {
             PojemnośćMagazynu();
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
 
             if (budynekMieszkalny.pictureBox.Visible == true)
             {
@@ -206,8 +205,10 @@ namespace Anteriora
             pictureBoxGraczPart6.Visible = false;
             pictureBoxGraczPart5.Visible = false;
             //MessageBox.Show("Czas rozbudować osadę!");
+
+            new Wiadomosc("To idealne miejsce na zbudowanie osady.\n\nZarządzaj ją mądrze, każdy twój ruch ma swoje konsekwencje.").Show();
         }
-      
+     
         private void pictureBoxNamiotPoziom1_Click(object sender, EventArgs e)
         {
             new Namiot(this, o).ShowDialog();
@@ -363,7 +364,9 @@ namespace Anteriora
 
         private void pictureBoxMapa_Click(object sender, EventArgs e)
         {
-            new EkranLadowania(o, this, "load").Show();                        
+            this.Visible = false;
+            this.Visible = false;
+            new EkranLadowania(o, this, new Size(1920,1080),2).Show();                        
         }
 
         private void buttonELO_Click(object sender, EventArgs e)
@@ -957,7 +960,12 @@ namespace Anteriora
             {
                 budowla.progressBarUlepszanie.Increment(10);
             }
-        }       
+        }
+
+        private void PictureBoxMur_Click(object sender, EventArgs e)
+        {
+            new EkranLadowania(o, this, new Size(820, 539), 4).Show();
+        }
 
         private void TimerCzasUlepszenia_Tick(object sender, EventArgs e)
         {
@@ -993,7 +1001,7 @@ namespace Anteriora
                 case "kuznia":
                     UlepszanieBudynkuOsada2(kuznia);
                     break;
-                case "sad":
+                case "chata maga":
                     UlepszanieBudynkuOsada2(chataMaga);
                     break;
                 case "kwatera rybacka":

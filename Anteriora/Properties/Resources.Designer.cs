@@ -63,6 +63,66 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Anteriora {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Anteriora2 {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Anteriora3 {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Anteriora4 {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Anteriora5 {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Anteriora6 {
+            get {
+                object obj = ResourceManager.GetObject("Anteriora6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap blokada1jaskiniawezy {
             get {
                 object obj = ResourceManager.GetObject("blokada1jaskiniawezy", resourceCulture);
@@ -126,6 +186,16 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap ChatkaRolnika {
             get {
                 object obj = ResourceManager.GetObject("ChatkaRolnika", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap combat_dummy {
+            get {
+                object obj = ResourceManager.GetObject("combat_dummy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -266,6 +336,16 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap duzykamienmapa11 {
             get {
                 object obj = ResourceManager.GetObject("duzykamienmapa11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap ekranLadowania {
+            get {
+                object obj = ResourceManager.GetObject("ekranLadowania", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1063,6 +1143,16 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap loading1 {
+            get {
+                object obj = ResourceManager.GetObject("loading1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap łódkamapa1 {
             get {
                 object obj = ResourceManager.GetObject("łódkamapa1", resourceCulture);
@@ -1333,6 +1423,16 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap magdol {
+            get {
+                object obj = ResourceManager.GetObject("magdol", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Mapa1koniec {
             get {
                 object obj = ResourceManager.GetObject("Mapa1koniec", resourceCulture);
@@ -1393,6 +1493,16 @@ namespace Anteriora.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap mapamurdrewniany {
+            get {
+                object obj = ResourceManager.GetObject("mapamurdrewniany", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap mechanizm1 {
             get {
                 object obj = ResourceManager.GetObject("mechanizm1", resourceCulture);
@@ -1446,6 +1556,16 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap Most {
             get {
                 object obj = ResourceManager.GetObject("Most", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap mostbitwapanel {
+            get {
+                object obj = ResourceManager.GetObject("mostbitwapanel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1586,6 +1706,26 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap nietoperzmalyprawo {
             get {
                 object obj = ResourceManager.GetObject("nietoperzmalyprawo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap oblezeniemapka {
+            get {
+                object obj = ResourceManager.GetObject("oblezeniemapka", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap oblezeniemapkabezmuru {
+            get {
+                object obj = ResourceManager.GetObject("oblezeniemapkabezmuru", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -2356,6 +2496,46 @@ namespace Anteriora.Properties {
         public static System.Drawing.Bitmap Studnia {
             get {
                 object obj = ResourceManager.GetObject("Studnia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap t1 {
+            get {
+                object obj = ResourceManager.GetObject("t1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap t2 {
+            get {
+                object obj = ResourceManager.GetObject("t2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap t3 {
+            get {
+                object obj = ResourceManager.GetObject("t3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap tarcza {
+            get {
+                object obj = ResourceManager.GetObject("tarcza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

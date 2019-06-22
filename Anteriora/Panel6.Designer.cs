@@ -79,7 +79,7 @@
             this.panel1.Controls.Add(this.labelUbraniaMieszkancowIlosc);
             this.panel1.Location = new System.Drawing.Point(5, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(95, 25);
+            this.panel1.Size = new System.Drawing.Size(75, 25);
             this.panel1.TabIndex = 24;
             // 
             // pictureBoxKamiennyMiecz
@@ -87,7 +87,7 @@
             this.pictureBoxKamiennyMiecz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxKamiennyMiecz.BackgroundImage = global::Anteriora.Properties.Resources.ubrania_mieszkanców;
             this.pictureBoxKamiennyMiecz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxKamiennyMiecz.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxKamiennyMiecz.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxKamiennyMiecz.Name = "pictureBoxKamiennyMiecz";
             this.pictureBoxKamiennyMiecz.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxKamiennyMiecz.TabIndex = 0;
@@ -95,14 +95,14 @@
             // 
             // labelUbraniaMieszkancowIlosc
             // 
-            this.labelUbraniaMieszkancowIlosc.AutoSize = true;
             this.labelUbraniaMieszkancowIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelUbraniaMieszkancowIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelUbraniaMieszkancowIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelUbraniaMieszkancowIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelUbraniaMieszkancowIlosc.Name = "labelUbraniaMieszkancowIlosc";
-            this.labelUbraniaMieszkancowIlosc.Size = new System.Drawing.Size(148, 18);
+            this.labelUbraniaMieszkancowIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelUbraniaMieszkancowIlosc.TabIndex = 1;
             this.labelUbraniaMieszkancowIlosc.Text = "ubraniaMieszkancow";
+            this.labelUbraniaMieszkancowIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel2
             // 
@@ -113,7 +113,7 @@
             this.panel2.Controls.Add(this.labelLozkoIlosc);
             this.panel2.Location = new System.Drawing.Point(5, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(95, 25);
+            this.panel2.Size = new System.Drawing.Size(75, 25);
             this.panel2.TabIndex = 25;
             // 
             // pictureBox1
@@ -121,7 +121,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Anteriora.Properties.Resources.łóżko;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(47, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(25, 20);
             this.pictureBox1.TabIndex = 0;
@@ -129,17 +129,18 @@
             // 
             // labelLozkoIlosc
             // 
-            this.labelLozkoIlosc.AutoSize = true;
             this.labelLozkoIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelLozkoIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelLozkoIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelLozkoIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelLozkoIlosc.Name = "labelLozkoIlosc";
-            this.labelLozkoIlosc.Size = new System.Drawing.Size(45, 18);
+            this.labelLozkoIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelLozkoIlosc.TabIndex = 1;
             this.labelLozkoIlosc.Text = "lozko";
+            this.labelLozkoIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // timer
             // 
+            this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.Timer_Tick);
             // 
             // Panel6
@@ -150,17 +151,17 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(105, 88);
+            this.ClientSize = new System.Drawing.Size(85, 88);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxRuchOkna);
             this.Controls.Add(this.pictureBoxWyjscie);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(1815, 815);
+            this.Location = new System.Drawing.Point(1835, 815);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(105, 88);
+            this.MaximumSize = new System.Drawing.Size(85, 88);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(105, 88);
+            this.MinimumSize = new System.Drawing.Size(85, 88);
             this.Name = "Panel6";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -170,10 +171,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWyjscie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRuchOkna)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKamiennyMiecz)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

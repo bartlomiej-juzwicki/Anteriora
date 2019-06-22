@@ -98,21 +98,21 @@
             // 
             // labelSkorzanyHelmIlosc
             // 
-            this.labelSkorzanyHelmIlosc.AutoSize = true;
             this.labelSkorzanyHelmIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelSkorzanyHelmIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSkorzanyHelmIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelSkorzanyHelmIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelSkorzanyHelmIlosc.Name = "labelSkorzanyHelmIlosc";
-            this.labelSkorzanyHelmIlosc.Size = new System.Drawing.Size(104, 18);
+            this.labelSkorzanyHelmIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelSkorzanyHelmIlosc.TabIndex = 1;
             this.labelSkorzanyHelmIlosc.Text = "skorzanyHelm";
+            this.labelSkorzanyHelmIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBoxSkorzanyHelm
             // 
             this.pictureBoxSkorzanyHelm.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSkorzanyHelm.BackgroundImage = global::Anteriora.Properties.Resources.skorzany_helm;
             this.pictureBoxSkorzanyHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSkorzanyHelm.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxSkorzanyHelm.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxSkorzanyHelm.Name = "pictureBoxSkorzanyHelm";
             this.pictureBoxSkorzanyHelm.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxSkorzanyHelm.TabIndex = 0;
@@ -127,7 +127,7 @@
             this.panel1.Controls.Add(this.labelSkorzanyHelmIlosc);
             this.panel1.Location = new System.Drawing.Point(5, 20);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(95, 25);
+            this.panel1.Size = new System.Drawing.Size(75, 25);
             this.panel1.TabIndex = 13;
             // 
             // panel2
@@ -139,7 +139,7 @@
             this.panel2.Controls.Add(this.labelSkorzaneButyIlosc);
             this.panel2.Location = new System.Drawing.Point(5, 113);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(95, 25);
+            this.panel2.Size = new System.Drawing.Size(75, 25);
             this.panel2.TabIndex = 15;
             // 
             // pictureBoxSkorzaneButy
@@ -147,7 +147,7 @@
             this.pictureBoxSkorzaneButy.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSkorzaneButy.BackgroundImage = global::Anteriora.Properties.Resources.skorzane_buty;
             this.pictureBoxSkorzaneButy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSkorzaneButy.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxSkorzaneButy.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxSkorzaneButy.Name = "pictureBoxSkorzaneButy";
             this.pictureBoxSkorzaneButy.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxSkorzaneButy.TabIndex = 0;
@@ -155,14 +155,14 @@
             // 
             // labelSkorzaneButyIlosc
             // 
-            this.labelSkorzaneButyIlosc.AutoSize = true;
             this.labelSkorzaneButyIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelSkorzaneButyIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSkorzaneButyIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelSkorzaneButyIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelSkorzaneButyIlosc.Name = "labelSkorzaneButyIlosc";
-            this.labelSkorzaneButyIlosc.Size = new System.Drawing.Size(99, 18);
+            this.labelSkorzaneButyIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelSkorzaneButyIlosc.TabIndex = 1;
             this.labelSkorzaneButyIlosc.Text = "skorzaneButy";
+            this.labelSkorzaneButyIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel4
             // 
@@ -173,7 +173,7 @@
             this.panel4.Controls.Add(this.labelSkorzanaZbrojaIlosc);
             this.panel4.Location = new System.Drawing.Point(5, 51);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(95, 25);
+            this.panel4.Size = new System.Drawing.Size(75, 25);
             this.panel4.TabIndex = 16;
             // 
             // pictureBoxSkorzanaZbroja
@@ -181,7 +181,7 @@
             this.pictureBoxSkorzanaZbroja.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSkorzanaZbroja.BackgroundImage = global::Anteriora.Properties.Resources.skorzana_zbroja;
             this.pictureBoxSkorzanaZbroja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSkorzanaZbroja.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxSkorzanaZbroja.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxSkorzanaZbroja.Name = "pictureBoxSkorzanaZbroja";
             this.pictureBoxSkorzanaZbroja.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxSkorzanaZbroja.TabIndex = 0;
@@ -189,14 +189,14 @@
             // 
             // labelSkorzanaZbrojaIlosc
             // 
-            this.labelSkorzanaZbrojaIlosc.AutoSize = true;
             this.labelSkorzanaZbrojaIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelSkorzanaZbrojaIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSkorzanaZbrojaIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelSkorzanaZbrojaIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelSkorzanaZbrojaIlosc.Name = "labelSkorzanaZbrojaIlosc";
-            this.labelSkorzanaZbrojaIlosc.Size = new System.Drawing.Size(124, 18);
+            this.labelSkorzanaZbrojaIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelSkorzanaZbrojaIlosc.TabIndex = 1;
             this.labelSkorzanaZbrojaIlosc.Text = "skorzaneSpodnie";
+            this.labelSkorzanaZbrojaIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel5
             // 
@@ -207,7 +207,7 @@
             this.panel5.Controls.Add(this.labelSkorzaneSpodnieIlosc);
             this.panel5.Location = new System.Drawing.Point(5, 82);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(95, 25);
+            this.panel5.Size = new System.Drawing.Size(75, 25);
             this.panel5.TabIndex = 17;
             // 
             // pictureBoxSkorzaneSpodnie
@@ -215,7 +215,7 @@
             this.pictureBoxSkorzaneSpodnie.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxSkorzaneSpodnie.BackgroundImage = global::Anteriora.Properties.Resources.skorzane_spodnie;
             this.pictureBoxSkorzaneSpodnie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxSkorzaneSpodnie.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxSkorzaneSpodnie.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxSkorzaneSpodnie.Name = "pictureBoxSkorzaneSpodnie";
             this.pictureBoxSkorzaneSpodnie.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxSkorzaneSpodnie.TabIndex = 0;
@@ -223,14 +223,14 @@
             // 
             // labelSkorzaneSpodnieIlosc
             // 
-            this.labelSkorzaneSpodnieIlosc.AutoSize = true;
             this.labelSkorzaneSpodnieIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelSkorzaneSpodnieIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelSkorzaneSpodnieIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelSkorzaneSpodnieIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelSkorzaneSpodnieIlosc.Name = "labelSkorzaneSpodnieIlosc";
-            this.labelSkorzaneSpodnieIlosc.Size = new System.Drawing.Size(104, 18);
+            this.labelSkorzaneSpodnieIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelSkorzaneSpodnieIlosc.TabIndex = 1;
             this.labelSkorzaneSpodnieIlosc.Text = "skorzanyHelm";
+            this.labelSkorzaneSpodnieIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel6
             // 
@@ -241,7 +241,7 @@
             this.panel6.Controls.Add(this.labelZelaznyHelmIlosc);
             this.panel6.Location = new System.Drawing.Point(5, 144);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(95, 25);
+            this.panel6.Size = new System.Drawing.Size(75, 25);
             this.panel6.TabIndex = 16;
             // 
             // pictureBoxZelaznyHelm
@@ -249,7 +249,7 @@
             this.pictureBoxZelaznyHelm.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelaznyHelm.BackgroundImage = global::Anteriora.Properties.Resources.zelazny_helm;
             this.pictureBoxZelaznyHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelaznyHelm.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelaznyHelm.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelaznyHelm.Name = "pictureBoxZelaznyHelm";
             this.pictureBoxZelaznyHelm.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelaznyHelm.TabIndex = 0;
@@ -257,14 +257,14 @@
             // 
             // labelZelaznyHelmIlosc
             // 
-            this.labelZelaznyHelmIlosc.AutoSize = true;
             this.labelZelaznyHelmIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelaznyHelmIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelaznyHelmIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelaznyHelmIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelaznyHelmIlosc.Name = "labelZelaznyHelmIlosc";
-            this.labelZelaznyHelmIlosc.Size = new System.Drawing.Size(93, 18);
+            this.labelZelaznyHelmIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelaznyHelmIlosc.TabIndex = 1;
             this.labelZelaznyHelmIlosc.Text = "zelaznyHelm";
+            this.labelZelaznyHelmIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel7
             // 
@@ -275,7 +275,7 @@
             this.panel7.Controls.Add(this.labelZelaznaZbrojaIlosc);
             this.panel7.Location = new System.Drawing.Point(5, 175);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(95, 25);
+            this.panel7.Size = new System.Drawing.Size(75, 25);
             this.panel7.TabIndex = 16;
             // 
             // pictureBoxZelaznaZbroja
@@ -283,7 +283,7 @@
             this.pictureBoxZelaznaZbroja.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelaznaZbroja.BackgroundImage = global::Anteriora.Properties.Resources.zelazna_zbroja;
             this.pictureBoxZelaznaZbroja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelaznaZbroja.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelaznaZbroja.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelaznaZbroja.Name = "pictureBoxZelaznaZbroja";
             this.pictureBoxZelaznaZbroja.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelaznaZbroja.TabIndex = 0;
@@ -291,14 +291,14 @@
             // 
             // labelZelaznaZbrojaIlosc
             // 
-            this.labelZelaznaZbrojaIlosc.AutoSize = true;
             this.labelZelaznaZbrojaIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelaznaZbrojaIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelaznaZbrojaIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelaznaZbrojaIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelaznaZbrojaIlosc.Name = "labelZelaznaZbrojaIlosc";
-            this.labelZelaznaZbrojaIlosc.Size = new System.Drawing.Size(101, 18);
+            this.labelZelaznaZbrojaIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelaznaZbrojaIlosc.TabIndex = 1;
             this.labelZelaznaZbrojaIlosc.Text = "zelaznaZbroja";
+            this.labelZelaznaZbrojaIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel8
             // 
@@ -309,7 +309,7 @@
             this.panel8.Controls.Add(this.labelZelazneSpodnieIlosc);
             this.panel8.Location = new System.Drawing.Point(5, 206);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(95, 25);
+            this.panel8.Size = new System.Drawing.Size(75, 25);
             this.panel8.TabIndex = 16;
             // 
             // pictureBoxZelazneSpodnie
@@ -317,7 +317,7 @@
             this.pictureBoxZelazneSpodnie.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelazneSpodnie.BackgroundImage = global::Anteriora.Properties.Resources.zelazne_spodnie;
             this.pictureBoxZelazneSpodnie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelazneSpodnie.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelazneSpodnie.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelazneSpodnie.Name = "pictureBoxZelazneSpodnie";
             this.pictureBoxZelazneSpodnie.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelazneSpodnie.TabIndex = 0;
@@ -325,14 +325,14 @@
             // 
             // labelZelazneSpodnieIlosc
             // 
-            this.labelZelazneSpodnieIlosc.AutoSize = true;
             this.labelZelazneSpodnieIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelazneSpodnieIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelazneSpodnieIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelazneSpodnieIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelazneSpodnieIlosc.Name = "labelZelazneSpodnieIlosc";
-            this.labelZelazneSpodnieIlosc.Size = new System.Drawing.Size(113, 18);
+            this.labelZelazneSpodnieIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelazneSpodnieIlosc.TabIndex = 1;
             this.labelZelazneSpodnieIlosc.Text = "zelazneSpodnie";
+            this.labelZelazneSpodnieIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel9
             // 
@@ -343,7 +343,7 @@
             this.panel9.Controls.Add(this.labelZelazneButyIlosc);
             this.panel9.Location = new System.Drawing.Point(5, 237);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(95, 25);
+            this.panel9.Size = new System.Drawing.Size(75, 25);
             this.panel9.TabIndex = 17;
             // 
             // pictureBoxZelazneButy
@@ -351,7 +351,7 @@
             this.pictureBoxZelazneButy.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelazneButy.BackgroundImage = global::Anteriora.Properties.Resources.zelazne_buty;
             this.pictureBoxZelazneButy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelazneButy.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelazneButy.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelazneButy.Name = "pictureBoxZelazneButy";
             this.pictureBoxZelazneButy.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelazneButy.TabIndex = 0;
@@ -359,14 +359,14 @@
             // 
             // labelZelazneButyIlosc
             // 
-            this.labelZelazneButyIlosc.AutoSize = true;
             this.labelZelazneButyIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelazneButyIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelazneButyIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelazneButyIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelazneButyIlosc.Name = "labelZelazneButyIlosc";
-            this.labelZelazneButyIlosc.Size = new System.Drawing.Size(88, 18);
+            this.labelZelazneButyIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelazneButyIlosc.TabIndex = 1;
             this.labelZelazneButyIlosc.Text = "zelazneButy";
+            this.labelZelazneButyIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // pictureBoxWyjscie
             // 
@@ -405,7 +405,7 @@
             this.panel10.Controls.Add(this.labelObsydianowyHelmIlosc);
             this.panel10.Location = new System.Drawing.Point(5, 268);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(95, 25);
+            this.panel10.Size = new System.Drawing.Size(75, 25);
             this.panel10.TabIndex = 17;
             // 
             // pictureBoxObsydianowyHelm
@@ -413,7 +413,7 @@
             this.pictureBoxObsydianowyHelm.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianowyHelm.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowy_helm;
             this.pictureBoxObsydianowyHelm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianowyHelm.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianowyHelm.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianowyHelm.Name = "pictureBoxObsydianowyHelm";
             this.pictureBoxObsydianowyHelm.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianowyHelm.TabIndex = 0;
@@ -421,14 +421,14 @@
             // 
             // labelObsydianowyHelmIlosc
             // 
-            this.labelObsydianowyHelmIlosc.AutoSize = true;
             this.labelObsydianowyHelmIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianowyHelmIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianowyHelmIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianowyHelmIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianowyHelmIlosc.Name = "labelObsydianowyHelmIlosc";
-            this.labelObsydianowyHelmIlosc.Size = new System.Drawing.Size(129, 18);
+            this.labelObsydianowyHelmIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianowyHelmIlosc.TabIndex = 1;
             this.labelObsydianowyHelmIlosc.Text = "obsydianowyHelm";
+            this.labelObsydianowyHelmIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel11
             // 
@@ -439,7 +439,7 @@
             this.panel11.Controls.Add(this.labelObsydianowaZbrojaIlosc);
             this.panel11.Location = new System.Drawing.Point(5, 299);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(95, 25);
+            this.panel11.Size = new System.Drawing.Size(75, 25);
             this.panel11.TabIndex = 20;
             // 
             // pictureBoxObsydianowaZbroja
@@ -447,7 +447,7 @@
             this.pictureBoxObsydianowaZbroja.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianowaZbroja.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowa_zbroja;
             this.pictureBoxObsydianowaZbroja.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianowaZbroja.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianowaZbroja.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianowaZbroja.Name = "pictureBoxObsydianowaZbroja";
             this.pictureBoxObsydianowaZbroja.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianowaZbroja.TabIndex = 0;
@@ -455,14 +455,14 @@
             // 
             // labelObsydianowaZbrojaIlosc
             // 
-            this.labelObsydianowaZbrojaIlosc.AutoSize = true;
             this.labelObsydianowaZbrojaIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianowaZbrojaIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianowaZbrojaIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianowaZbrojaIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianowaZbrojaIlosc.Name = "labelObsydianowaZbrojaIlosc";
-            this.labelObsydianowaZbrojaIlosc.Size = new System.Drawing.Size(137, 18);
+            this.labelObsydianowaZbrojaIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianowaZbrojaIlosc.TabIndex = 1;
             this.labelObsydianowaZbrojaIlosc.Text = "obsydianowaZbroja";
+            this.labelObsydianowaZbrojaIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel12
             // 
@@ -473,7 +473,7 @@
             this.panel12.Controls.Add(this.labelObsydianoweSpodnieIlosc);
             this.panel12.Location = new System.Drawing.Point(5, 330);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(95, 25);
+            this.panel12.Size = new System.Drawing.Size(75, 25);
             this.panel12.TabIndex = 21;
             // 
             // pictureBoxObsydianoweSpodnie
@@ -481,7 +481,7 @@
             this.pictureBoxObsydianoweSpodnie.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianoweSpodnie.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowe_spodnie;
             this.pictureBoxObsydianoweSpodnie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianoweSpodnie.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianoweSpodnie.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianoweSpodnie.Name = "pictureBoxObsydianoweSpodnie";
             this.pictureBoxObsydianoweSpodnie.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianoweSpodnie.TabIndex = 0;
@@ -489,14 +489,14 @@
             // 
             // labelObsydianoweSpodnieIlosc
             // 
-            this.labelObsydianoweSpodnieIlosc.AutoSize = true;
             this.labelObsydianoweSpodnieIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianoweSpodnieIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianoweSpodnieIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianoweSpodnieIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianoweSpodnieIlosc.Name = "labelObsydianoweSpodnieIlosc";
-            this.labelObsydianoweSpodnieIlosc.Size = new System.Drawing.Size(149, 18);
+            this.labelObsydianoweSpodnieIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianoweSpodnieIlosc.TabIndex = 1;
             this.labelObsydianoweSpodnieIlosc.Text = "obsydianoweSpodnie";
+            this.labelObsydianoweSpodnieIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel13
             // 
@@ -507,7 +507,7 @@
             this.panel13.Controls.Add(this.labelObsydianoweButyIlosc);
             this.panel13.Location = new System.Drawing.Point(5, 361);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(95, 25);
+            this.panel13.Size = new System.Drawing.Size(75, 25);
             this.panel13.TabIndex = 22;
             // 
             // pictureBoxObsydianoweButy
@@ -515,7 +515,7 @@
             this.pictureBoxObsydianoweButy.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianoweButy.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowe_buty;
             this.pictureBoxObsydianoweButy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianoweButy.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianoweButy.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianoweButy.Name = "pictureBoxObsydianoweButy";
             this.pictureBoxObsydianoweButy.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianoweButy.TabIndex = 0;
@@ -523,14 +523,14 @@
             // 
             // labelObsydianoweButyIlosc
             // 
-            this.labelObsydianoweButyIlosc.AutoSize = true;
             this.labelObsydianoweButyIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianoweButyIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianoweButyIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianoweButyIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianoweButyIlosc.Name = "labelObsydianoweButyIlosc";
-            this.labelObsydianoweButyIlosc.Size = new System.Drawing.Size(124, 18);
+            this.labelObsydianoweButyIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianoweButyIlosc.TabIndex = 1;
             this.labelObsydianoweButyIlosc.Text = "obsydianoweButy";
+            this.labelObsydianoweButyIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Panel3
             // 
@@ -540,7 +540,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(105, 408);
+            this.ClientSize = new System.Drawing.Size(85, 408);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.pictureBoxRuchOkna);
@@ -557,11 +557,11 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(1815, 407);
+            this.Location = new System.Drawing.Point(1835, 407);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(105, 408);
+            this.MaximumSize = new System.Drawing.Size(85, 408);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(105, 408);
+            this.MinimumSize = new System.Drawing.Size(85, 408);
             this.Name = "Panel3";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -569,41 +569,29 @@
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSkorzanyHelm)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSkorzaneButy)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSkorzanaZbroja)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSkorzaneSpodnie)).EndInit();
             this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelaznyHelm)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelaznaZbroja)).EndInit();
             this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelazneSpodnie)).EndInit();
             this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelazneButy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWyjscie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRuchOkna)).EndInit();
             this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianowyHelm)).EndInit();
             this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianowaZbroja)).EndInit();
             this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianoweSpodnie)).EndInit();
             this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianoweButy)).EndInit();
             this.ResumeLayout(false);
 

@@ -43,8 +43,8 @@ namespace Anteriora
         
         private void pictureBoxNamiot_Click(object sender, EventArgs e)
         {
-
-            this.Visible = false;
+            o1.Visible = true;
+            this.Close();
 
         }
 
@@ -53,7 +53,8 @@ namespace Anteriora
             //new OsadaGoblinow1(o1).ShowDialog();
             //new MenuPolaBitwy(o1, this, 1).ShowDialog();
             //new OsadaGoblinow(o1, o2, this).Show();
-            new EkranLadowania(o2, o1, this, "osadaGoblinowObrazek").Show();
+            this.Visible = false;
+            new EkranLadowania(o2, o1, this, 3).Show();
         }
 
         private void pictureBoxJaskiniaWezy_Click(object sender, EventArgs e)
@@ -125,9 +126,9 @@ namespace Anteriora
             {
                 if (instancja.licznikZwiadowca < licznik)
                 {
-                    if (o2.zwiadowca.ilosc == 1)
+                    if (o2.zwiadowca.liczebnoscAtakujacych == 1)
                     {
-                        o2.zwiadowca.ilosc--;
+                        o2.zwiadowca.liczebnoscAtakujacych--;
                         instancja.akcjaZwiadowca = true;
                         o1.timerZwiadowca.Start();
                         MessageBox.Show("Wysłałeś zwiadowcę.");

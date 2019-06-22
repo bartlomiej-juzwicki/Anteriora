@@ -16,11 +16,11 @@ namespace Anteriora
 
         public Mieszkancy mieszkancy = new Mieszkancy();
         
-        public Materialy drewno = new Materialy(1000);
+        public Materialy drewno = new Materialy(2000);
         public Materialy siano = new Materialy(2000);
-        public Materialy kamień = new Materialy(1000);
-        public Materialy jedzenie = new Materialy(1000);
-        public Materialy woda = new Materialy(1000);
+        public Materialy kamień = new Materialy(2000);
+        public Materialy jedzenie = new Materialy(2000);
+        public Materialy woda = new Materialy(2000);
         public Materialy skora = new Materialy(0);
         public Materialy zloto = new Materialy(100);
         public Materialy rudaZelaza = new Materialy(100);
@@ -55,54 +55,59 @@ namespace Anteriora
         public Inne lozko = new Inne("Łóżko", "888999333", Properties.Resources.łóżko, 3);
 
         public JednostkiGracza zwiadowca = new JednostkiGracza();
-        public JednostkiGracza piechur = new JednostkiGracza("Piechur", 10, 10, 100, 0, 100, true, Properties.Resources.wojownikprawo, Properties.Resources.wojowniklewo, Properties.Resources.wojownikgora, Properties.Resources.wojownikdol);
-        public JednostkiGracza lucznik = new JednostkiGracza("Łucznik", 20, 5, 50, 0, 300, false, Properties.Resources.lucznikprawo, Properties.Resources.luczniklewo, Properties.Resources.lucznikgora, Properties.Resources.lucznikdol);
-        public JednostkiGracza rycerz = new JednostkiGracza("Rycerz", 40, 20, 200, 0, 100, true, Properties.Resources.rycerzprawo, Properties.Resources.rycerzlewo, Properties.Resources.rycerzgora, Properties.Resources.rycerzdol);
-        public JednostkiGracza czarnyRycerz = new JednostkiGracza("Czarny rycerz", 10, 10, 100, 0, 100, true, Properties.Resources.czarnyrycerzprawo, Properties.Resources.czarnyrycerzlewo, Properties.Resources.czarnyrycerzgora, Properties.Resources.czarnyrycerzdol);
-        public JednostkiGracza czarnyLucznik = new JednostkiGracza("Czarny łucznik", 20, 5, 50, 0, 300, false, Properties.Resources.czarnylucznikprawo, Properties.Resources.czarnyluczniklewo, Properties.Resources.czarnylucznikgora, Properties.Resources.czarnylucznikdol);
+        public JednostkiGracza piechur = new JednostkiGracza("Piechur", 10, 10, 100, 1, 100, true, Properties.Resources.wojownikprawo, Properties.Resources.wojowniklewo, Properties.Resources.wojownikgora, Properties.Resources.wojownikdol);
+        public JednostkiGracza lucznik = new JednostkiGracza("Łucznik", 20, 5, 50, 1, 300, false, Properties.Resources.lucznikprawo, Properties.Resources.luczniklewo, Properties.Resources.lucznikgora, Properties.Resources.lucznikdol);
+        public JednostkiGracza rycerz = new JednostkiGracza("Rycerz", 40, 20, 200, 1, 100, true, Properties.Resources.rycerzprawo, Properties.Resources.rycerzlewo, Properties.Resources.rycerzgora, Properties.Resources.rycerzdol);
+        public JednostkiGracza czarnyRycerz = new JednostkiGracza("Czarny rycerz", 10, 10, 100, 1, 100, true, Properties.Resources.czarnyrycerzprawo, Properties.Resources.czarnyrycerzlewo, Properties.Resources.czarnyrycerzgora, Properties.Resources.czarnyrycerzdol);
+        public JednostkiGracza czarnyLucznik = new JednostkiGracza("Czarny łucznik", 20, 5, 50, 1, 300, false, Properties.Resources.czarnylucznikprawo, Properties.Resources.czarnyluczniklewo, Properties.Resources.czarnylucznikgora, Properties.Resources.czarnylucznikdol);
 
         public Budowle magazyn = new Budowle("magazyn", 1);
 
         // przydaje sie przy zapobiegnięciu spamu messageBoxami
         public int flaga;
         public Random rnd = new Random();
+        public int czasGry;
 
         public Poczatek()
         {
             InitializeComponent();
 
             new Panel(this).Show();
-            
+
+            pictureBoxGraczPart1.BackgroundImage = PostacGracza.obrazekDol;
+            pictureBoxGraczPart2.BackgroundImage = PostacGracza.obrazekLewo;
+            pictureBoxGraczPart3.BackgroundImage = PostacGracza.obrazekGora;
+            pictureBoxGraczPart4.BackgroundImage = PostacGracza.obrazekDol;
+
+            timerCzasGry.Start();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             // odpalamy czas na starcie, co 1 sekunde tick
-            timerCzasGry.Start();
+            
         }
 
         private void timerCzasGry_Tick(object sender, EventArgs e)
         {
-           
-            //drewno.ilosc = 5000;
-            //kamień.ilosc = 5000;
-            //siano.ilosc = 9000;
+
+            czasGry++;
+            //drewno.liczebnoscAtakujacych = 5000;
+            //kamień.liczebnoscAtakujacych = 5000;
+            //siano.liczebnoscAtakujacych = 9000;
             // wrzucamy do label wartości surowców
             
             Komentarz();
         }
         public void Komentarz()
         {
-            //if (czasGry == 1)
-            //{
-            //   MessageBox.Show("Suchy ląd!");
-            //}
+            if (czasGry == 1)
+            {
+                new Wiadomosc("Witaj, " + PostacGracza.nazwa + "!" + "\n\nTwój statek zatonął. Niewielu pozostało.\n\nAle nic straconego. Twoja misja wciąż trwa. W końcu odnalazłeś nieznany ląd, prawda? Rozejrzyj się trochę.\n\nPoruszaj się z punktu do punktu za pomocą LPM.").Show();
+            }
 
-            //if(czasGry == 5)
-            //{
-            //    MessageBox.Show("Widzę tam jakieś schody!");
-            //}
-            
         }
 
         /// <summary>
@@ -128,16 +133,11 @@ namespace Anteriora
         /// <param name="e"></param>
         private void pictureBoxKrabyMapa1_Click(object sender, EventArgs e)
         {
-
-            
-
             //DialogResult dialogResult = MessageBox.Show("Czy chcesz zaatakować kraby?", "", MessageBoxButtons.YesNo);
             //if (dialogResult == DialogResult.Yes)
             //{                
             //    MessageBox.Show("Zginąłeś! Przegrywasz w ciągu " + czasGry + " sekund.");
             //}
-
-
         }
 
         /// <summary>
@@ -199,7 +199,7 @@ namespace Anteriora
             pictureBoxSiano5.Visible = true;
             pictureBoxSianoX.Visible = true;
 
-            MessageBox.Show("Tam jest jakieś urwisko!");
+            //MessageBox.Show("Tam jest jakieś urwisko!");
         }
 
         /// <summary>
@@ -213,7 +213,7 @@ namespace Anteriora
             pictureBoxGraczPart3.Visible = true;
             if(flaga == 0)
             {
-               MessageBox.Show("Muszę zebrać drewno, aby wybudować most!");
+               //MessageBox.Show("Muszę zebrać drewno, aby wybudować most!");
                 flaga++;
             }            
             else if (drewno.ilosc >= 50)
@@ -221,7 +221,7 @@ namespace Anteriora
                 drewno.ilosc -= 50;
                 pictureBoxMostMapa1.Visible = true;
                 pictureBoxBrakMostu.Visible = false;
-                MessageBox.Show("Jest lekko niestabilny, muszę uważać.");
+                //MessageBox.Show("Jest lekko niestabilny, muszę uważać.");
             }
         }
 
@@ -270,8 +270,8 @@ namespace Anteriora
             #endregion
 
 
-            MessageBox.Show("Ok, bardzo niestabilny.");
-            MessageBox.Show("Muszę iść dalej!");
+            //MessageBox.Show("Ok, bardzo niestabilny.");
+           // MessageBox.Show("Muszę iść dalej!");
             
         }
 
@@ -307,8 +307,7 @@ namespace Anteriora
         /// <param name="e"></param>
         private void pictureBoxKoniecMapa1_Click(object sender, EventArgs e)
         {
-            timerCzasGry.Stop();
-            new EkranLadowania(this,null,"load2").Show();
+            new EkranLadowania(this,null,new Size(1920,1080), 1).Show();
         }
         
         // po kliknieciu na surowiec dostajemy losową ilość surowca

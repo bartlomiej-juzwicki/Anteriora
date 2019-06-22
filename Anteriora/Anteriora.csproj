@@ -36,6 +36,9 @@
     <Reference Include="AlphaBlendTextBox">
       <HintPath>..\..\AlphaBlendTextBox.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -118,11 +121,23 @@
       <DependentUpon>MechanizmJaskiniaWezy.cs</DependentUpon>
     </Compile>
     <Compile Include="Mieszkancy.cs" />
+    <Compile Include="Mur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mur.Designer.cs">
+      <DependentUpon>Mur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Namiot.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Namiot.Designer.cs">
       <DependentUpon>Namiot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OblezenieOsady.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OblezenieOsady.Designer.cs">
+      <DependentUpon>OblezenieOsady.cs</DependentUpon>
     </Compile>
     <Compile Include="ObszaryInstancji.cs" />
     <Compile Include="Osada.cs">
@@ -173,6 +188,18 @@
     <Compile Include="Panel6.Designer.cs">
       <DependentUpon>Panel6.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panel7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel7.Designer.cs">
+      <DependentUpon>Panel7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel8.Designer.cs">
+      <DependentUpon>Panel8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Poczatek.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,12 +218,20 @@
     <Compile Include="PoleBitwy.Designer.cs">
       <DependentUpon>PoleBitwy.cs</DependentUpon>
     </Compile>
+    <Compile Include="PostacGracza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RestClient.cs" />
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
     </Compile>
     <Compile Include="Uzbrojenie.cs" />
     <Compile Include="Przeciwnicy.cs" />
@@ -217,6 +252,12 @@
     </Compile>
     <Compile Include="Wiadomosc.Designer.cs">
       <DependentUpon>Wiadomosc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WyborPostaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WyborPostaci.Designer.cs">
+      <DependentUpon>WyborPostaci.cs</DependentUpon>
     </Compile>
     <Compile Include="Wyposazenie.cs" />
     <Compile Include="Zarzadzanie.cs">
@@ -255,8 +296,14 @@
     <EmbeddedResource Include="MechanizmJaskiniaWezy.resx">
       <DependentUpon>MechanizmJaskiniaWezy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mur.resx">
+      <DependentUpon>Mur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Namiot.resx">
       <DependentUpon>Namiot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OblezenieOsady.resx">
+      <DependentUpon>OblezenieOsady.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Osada.resx">
       <DependentUpon>Osada.cs</DependentUpon>
@@ -282,6 +329,12 @@
     <EmbeddedResource Include="Panel6.resx">
       <DependentUpon>Panel6.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panel7.resx">
+      <DependentUpon>Panel7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel8.resx">
+      <DependentUpon>Panel8.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Poczatek.resx">
       <DependentUpon>Poczatek.cs</DependentUpon>
     </EmbeddedResource>
@@ -296,6 +349,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Targowisko.resx">
       <DependentUpon>Targowisko.cs</DependentUpon>
     </EmbeddedResource>
@@ -305,9 +361,13 @@
     <EmbeddedResource Include="Wiadomosc.resx">
       <DependentUpon>Wiadomosc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WyborPostaci.resx">
+      <DependentUpon>WyborPostaci.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Zarzadzanie.resx">
       <DependentUpon>Zarzadzanie.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -1133,6 +1193,82 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ubrania mieszkanców.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mostbitwapanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapamurdrewniany.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarcza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekranLadowania.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblezeniemapka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblezeniemapkabezmuru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\combat_dummy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Anteriora6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Death Is Just Another Path.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magdol.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

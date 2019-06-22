@@ -107,12 +107,13 @@
             // 
             // pictureBoxGraczPart5
             // 
-            this.pictureBoxGraczPart5.BackgroundImage = global::Anteriora.Properties.Resources.GraczPart5;
-            this.pictureBoxGraczPart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxGraczPart5.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGraczPart5.BackgroundImage = global::Anteriora.Properties.Resources.lucznikgora;
+            this.pictureBoxGraczPart5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGraczPart5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBoxGraczPart5.Location = new System.Drawing.Point(338, 982);
             this.pictureBoxGraczPart5.Name = "pictureBoxGraczPart5";
-            this.pictureBoxGraczPart5.Size = new System.Drawing.Size(56, 46);
+            this.pictureBoxGraczPart5.Size = new System.Drawing.Size(56, 41);
             this.pictureBoxGraczPart5.TabIndex = 32;
             this.pictureBoxGraczPart5.TabStop = false;
             // 
@@ -301,6 +302,7 @@
             this.pictureBoxMur.TabIndex = 48;
             this.pictureBoxMur.TabStop = false;
             this.pictureBoxMur.Visible = false;
+            this.pictureBoxMur.Click += new System.EventHandler(this.PictureBoxMur_Click);
             // 
             // pictureBoxHodowla
             // 

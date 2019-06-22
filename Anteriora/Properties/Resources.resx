@@ -910,4 +910,58 @@
   <data name="łóżko" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\łóżko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="mostbitwapanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mostbitwapanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mapamurdrewniany" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mapamurdrewniany.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tarcza" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tarcza.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ekranLadowania" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ekranLadowania.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oblezeniemapka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oblezeniemapka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="oblezeniemapkabezmuru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oblezeniemapkabezmuru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="combat_dummy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\combat_dummy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="loading1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\loading1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="t1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\t1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="t2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\t2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="t3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\t3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anteriora6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Anteriora6.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="magdol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magdol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

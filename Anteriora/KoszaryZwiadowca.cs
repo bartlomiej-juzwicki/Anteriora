@@ -22,7 +22,7 @@ namespace Anteriora
             
             InitializeComponent();
             textBoxNotatkaZwiadowcy.Text = o1.notatkaZwiadowcy;
-            labelZwiadowcaIlosc.Text = "Ilość zwiadowców: "+ o2.zwiadowca.ilosc.ToString();
+            labelZwiadowcaIlosc.Text = "Ilość zwiadowców: "+ o2.zwiadowca.liczebnoscAtakujacych.ToString();
             labelZwiadowcaAtak.Text = "Szansa na powodzenie: 0%";
             labelZwiadowcaPoziomUlepszenia.Text ="Poziom zwiadowców: " + o2.zwiadowca.poziomUlepszenia.ToString();
             timerZwiadowcaTekst.Start();
@@ -62,15 +62,15 @@ namespace Anteriora
 
         private void buttonZwiadowca_Click(object sender, EventArgs e)
         {
-            if(o2.zwiadowca.ilosc < 1 )
+            if(o2.zwiadowca.liczebnoscAtakujacych < 1 )
             {
                 if (o2.zloto.ilosc >= 1)
                 {
                     o2.zloto.ilosc -= 1;
-                    o2.zwiadowca.ilosc++;
-                    labelZwiadowcaIlosc.Text = "Ilość zwiadowców: " + o2.zwiadowca.ilosc.ToString();
+                    o2.zwiadowca.liczebnoscAtakujacych++;
+                    labelZwiadowcaIlosc.Text = "Ilość zwiadowców: " + o2.zwiadowca.liczebnoscAtakujacych.ToString();
                     labelZwiadowcaAtak.Text = "Szansa na powodzenie: " + o2.zwiadowca.ObliczAtakJednostki().ToString() + "%";
-                    MessageBox.Show(o2.zwiadowca.ilosc.ToString());
+                    MessageBox.Show(o2.zwiadowca.liczebnoscAtakujacych.ToString());
                 }
                 else
                 {

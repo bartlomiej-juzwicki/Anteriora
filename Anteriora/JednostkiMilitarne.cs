@@ -14,7 +14,8 @@ namespace Anteriora
     public class JednostkiMilitarne
     {
         public string nazwa { get; set; }
-        public int ilosc { get; set; }
+        public int liczebnoscAtakujacych { get; set; }
+        public int liczebnoscBroniacych { get; set; }
         public int poziomUlepszenia { get; set; }
         public int atakDomyslny { get; set; }
         public int atak { get; set; }
@@ -44,7 +45,7 @@ namespace Anteriora
         }
         public int ObliczCalkowitePZ()
         {
-            return calkowitePZ = (stalePZ * ilosc) - (stalePZ - PZ);
+            return calkowitePZ = (stalePZ * liczebnoscAtakujacych) - (stalePZ - PZ);
         }
 
         public int ObliczAtakJednostki()
@@ -60,7 +61,7 @@ namespace Anteriora
         public int ObliczCalkowityAtak()
         {
             ObliczAtakJednostki();
-            return atak * ilosc;
+            return atak * liczebnoscAtakujacych;
         }
     }
 }

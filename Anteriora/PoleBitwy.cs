@@ -24,156 +24,10 @@ namespace Anteriora
         Przeciwnicy przeciwnik5;
         Przeciwnicy przeciwnik6;
         ObszaryInstancji obszaryInstancji;
-
-        #region Punkty
-
-        #region A
-
-        Point A1 = new Point(210, 100);
-        Point A2 = new Point(310, 100);
-        Point A3 = new Point(410, 100);
-        Point A4 = new Point(510, 100);
-        Point A5 = new Point(610, 100);
-        Point A6 = new Point(710, 100);
-        Point A7 = new Point(810, 100);
-        Point A8 = new Point(910, 100);
-        Point A9 = new Point(1010, 100);
-        Point A10 = new Point(1110, 100);
-        Point A11 = new Point(1210, 100);
-        Point A12 = new Point(1310, 100);
-        Point A13 = new Point(1410, 100);
-        Point A14 = new Point(1510, 100);
-        Point A15 = new Point(1610, 100);
-
-        #endregion A
-
-        #region B
-
-        Point B1 = new Point(210, 200);
-        Point B2 = new Point(310, 200);
-        Point B3 = new Point(410, 200);
-        Point B4 = new Point(510, 200);
-        Point B5 = new Point(610, 200);
-        Point B6 = new Point(710, 200);
-        Point B7 = new Point(810, 200);
-        Point B8 = new Point(910, 200);
-        Point B9 = new Point(1010, 200);
-        Point B10 = new Point(1110, 200);
-        Point B11 = new Point(1210, 200);
-        Point B12 = new Point(1310, 200);
-        Point B13 = new Point(1410, 200);
-        Point B14 = new Point(1510, 200);
-        Point B15 = new Point(1610, 200);
-
-        #endregion B
-
-        #region C
-
-        Point C1 = new Point(210, 300);
-        Point C2 = new Point(310, 300);
-        Point C3 = new Point(410, 300);
-        Point C4 = new Point(510, 300);
-        Point C5 = new Point(610, 300);
-        Point C6 = new Point(710, 300);
-        Point C7 = new Point(810, 300);
-        Point C8 = new Point(910, 300);
-        Point C9 = new Point(1010, 300);
-        Point C10 = new Point(1110, 300);
-        Point C11 = new Point(1210, 300);
-        Point C12 = new Point(1310, 300);
-        Point C13 = new Point(1410, 300);
-        Point C14 = new Point(1510, 300);
-        Point C15 = new Point(1610, 300);
-
-        #endregion C
-
-        #region D
-
-        Point D1 = new Point(210, 400);
-        Point D2 = new Point(310, 400);
-        Point D3 = new Point(410, 400);
-        Point D4 = new Point(510, 400);
-        Point D5 = new Point(610, 400);
-        Point D6 = new Point(710, 400);
-        Point D7 = new Point(810, 400);
-        Point D8 = new Point(910, 400);
-        Point D9 = new Point(1010, 400);
-        Point D10 = new Point(1110, 400);
-        Point D11 = new Point(1210, 400);
-        Point D12 = new Point(1310, 400);
-        Point D13 = new Point(1410, 400);
-        Point D14 = new Point(1510, 400);
-        Point D15 = new Point(1610, 400);
-
-        #endregion D
-
-        #region E
-
-        Point E1 = new Point(210, 500);
-        Point E2 = new Point(310, 500);
-        Point E3 = new Point(410, 500);
-        Point E4 = new Point(510, 500);
-        Point E5 = new Point(610, 500);
-        Point E6 = new Point(710, 500);
-        Point E7 = new Point(810, 500);
-        Point E8 = new Point(910, 500);
-        Point E9 = new Point(1010, 500);
-        Point E10 = new Point(1110, 500);
-        Point E11 = new Point(1210, 500);
-        Point E12 = new Point(1310, 500);
-        Point E13 = new Point(1410, 500);
-        Point E14 = new Point(1510, 500);
-        Point E15 = new Point(1610, 500);
-
-        #endregion E
-
-        #region F
-
-        Point F1 = new Point(210, 600);
-        Point F2 = new Point(310, 600);
-        Point F3 = new Point(410, 600);
-        Point F4 = new Point(510, 600);
-        Point F5 = new Point(610, 600);
-        Point F6 = new Point(710, 600);
-        Point F7 = new Point(810, 600);
-        Point F8 = new Point(910, 600);
-        Point F9 = new Point(1010, 600);
-        Point F10 = new Point(1110, 600);
-        Point F11 = new Point(1210, 600);
-        Point F12 = new Point(1310, 600);
-        Point F13 = new Point(1410, 600);
-        Point F14 = new Point(1510, 600);
-        Point F15 = new Point(1610, 600);
-
-        #endregion F
-
-        #region G
-
-        Point G1 = new Point(210, 700);
-        Point G2 = new Point(310, 700);
-        Point G3 = new Point(410, 700);
-        Point G4 = new Point(510, 700);
-        Point G5 = new Point(610, 700);
-        Point G6 = new Point(710, 700);
-        Point G7 = new Point(810, 700);
-        Point G8 = new Point(910, 700);
-        Point G9 = new Point(1010, 700);
-        Point G10 = new Point(1110, 700);
-        Point G11 = new Point(1210, 700);
-        Point G12 = new Point(1310, 700);
-        Point G13 = new Point(1410, 700);
-        Point G14 = new Point(1510, 700);
-        Point G15 = new Point(1610, 700);
-
-
-        #endregion G
-
-
-        #endregion  Punty
-        
+           
         List<Button> buttonsLista = new List<Button>();
 
-        List<JednostkiGracza> jednostkiGraczaLista = new List<JednostkiGracza>();        
+        List<JednostkiGracza> jednostkiGraczaLista = new List<JednostkiGracza>();
         List<Label> nazwaJednostkiGraczaLista = new List<Label>();
         List<Label> iloscPZJednostkiGraczaLista = new List<Label>();
         List<Label> liczebnoscJednostkiGraczaLista = new List<Label>();
@@ -181,7 +35,7 @@ namespace Anteriora
         List<Label> obronaJednostkiGraczaLista = new List<Label>();
         List<ProgressBar> progressBarPZGraczaLista = new List<ProgressBar>();
         List<PictureBox> pictureBoxJednostekGraczaLista = new List<PictureBox>();
-
+         
         List<Przeciwnicy> przeciwnicyLista = new List<Przeciwnicy>();
         List<Label> nazwaPrzeciwnicyLista = new List<Label>();
         List<Label> iloscPZPrzeciwnikaLista = new List<Label>();
@@ -189,14 +43,11 @@ namespace Anteriora
         List<Label> atakPrzeciwnikaLista = new List<Label>();
         List<Label> obronaPrzeciwnikaLista = new List<Label>();
         List<ProgressBar> progressBarPZPrzeciwnikaLista = new List<ProgressBar>();
-        List<PictureBox> pictureBoxPrzeciwnicyLista = new List<PictureBox>();
 
         private bool czyRundaGracza = true;
         private int rundaGracza;
         private int rundaPrzeciwnika;
         private int ktoryPrzeciwnikMaZostacZaatakowany;
-        private int iloscJednostekGracza;
-        private int iloscJednostekPrzeciwnika;
         private int numerRundyJednostki;
         private int numerRundyPrzeciwnika;
 
@@ -225,7 +76,6 @@ namespace Anteriora
             atakJednostkiGraczaLista.AddRange(new Label[] { labelAtakJednostkiGracza0, labelAtakJednostkiGracza1, labelAtakJednostkiGracza2, labelAtakJednostkiGracza3, labelAtakJednostkiGracza4 });
             obronaJednostkiGraczaLista.AddRange(new Label[] { labelObronaJednostkiGracza0, labelObronaJednostkiGracza1, labelObronaJednostkiGracza2, labelObronaJednostkiGracza3, labelObronaJednostkiGracza4 });
             progressBarPZGraczaLista.AddRange(new ProgressBar[] { progressBarJednostka0, progressBarJednostka1, progressBarJednostka2, progressBarJednostka3, progressBarJednostka4 });
-            pictureBoxJednostekGraczaLista.AddRange(new PictureBox[] { pictureBoxWojownik, pictureBoxLucznik, pictureBoxWlocznik, pictureBoxCzarnyLucznik, pictureBoxCzarnyRycerz });
 
             nazwaPrzeciwnicyLista.AddRange(new Label[] { labelNazwaPrzeciwnika0, labelNazwaPrzeciwnika1, labelNazwaPrzeciwnika2, labelNazwaPrzeciwnika3, labelNazwaPrzeciwnika4, labelNazwaPrzeciwnika5, labelNazwaPrzeciwnika6 });
             iloscPZPrzeciwnikaLista.AddRange(new Label[] {labelPrzeciwnika0PZ,labelPrzeciwnika1PZ,labelPrzeciwnika2PZ,labelPrzeciwnika3PZ,labelPrzeciwnika4PZ,labelPrzeciwnika5PZ,labelPrzeciwnika6PZ });
@@ -233,7 +83,6 @@ namespace Anteriora
             atakPrzeciwnikaLista.AddRange(new Label[] { labelAtakPrzeciwnika0, labelAtakPrzeciwnika1, labelAtakPrzeciwnika2, labelAtakPrzeciwnika3, labelAtakPrzeciwnika4, labelAtakPrzeciwnika5,labelAtakPrzeciwnika6 });
             obronaPrzeciwnikaLista.AddRange(new Label[] { labelObronaPrzeciwnika0, labelObronaPrzeciwnika1, labelObronaPrzeciwnika2, labelObronaPrzeciwnika3, labelObronaPrzeciwnika4, labelObronaPrzeciwnika5, labelObronaPrzeciwnika6 });
             progressBarPZPrzeciwnikaLista.AddRange(new ProgressBar[] { progressBarPrzeciwnik0, progressBarPrzeciwnik1, progressBarPrzeciwnik2, progressBarPrzeciwnik3, progressBarPrzeciwnik4, progressBarPrzeciwnik5, progressBarPrzeciwnik6 });
-            pictureBoxPrzeciwnicyLista.AddRange(new PictureBox[] { pictureBoxPrzeciwnik0, pictureBoxPrzeciwnik1, pictureBoxPrzeciwnik2, pictureBoxPrzeciwnik3, pictureBoxPrzeciwnik4, pictureBoxPrzeciwnik5, pictureBoxPrzeciwnik6 });
 
             #region dodanie buttonow do listy
 
@@ -245,6 +94,12 @@ namespace Anteriora
                              buttonF14, buttonF15, buttonG1, buttonG2, buttonG3, buttonG4, buttonG5, buttonG6, buttonG7, buttonG8, buttonG9, buttonG10, buttonG11, buttonG12, buttonG13, buttonG14, buttonG15});
 
             #endregion dodanie buttonow do listy buttons
+
+            o1.piechur.pictureBox = pictureBoxPiechur;
+            o1.lucznik.pictureBox = pictureBoxLucznik;
+            o1.rycerz.pictureBox = pictureBoxWlocznik;
+            o1.czarnyRycerz.pictureBox = pictureBoxCzarnyRycerz;
+            o1.czarnyLucznik.pictureBox = pictureBoxCzarnyLucznik;
 
             DodajJednostkiGraczaDoListyOrazOkreslIloscJednostek();
 
@@ -860,7 +715,7 @@ namespace Anteriora
                 
             }
 
-            if (rundaGracza == iloscJednostekGracza)
+            if (rundaGracza == jednostkiGraczaLista.Count)
             {
                 rundaGracza = 0;
             }
@@ -872,47 +727,40 @@ namespace Anteriora
 
         public void DodajJednostkiGraczaDoListyOrazOkreslIloscJednostek()
         {
-            if (o1.piechur.ilosc>0)
+            if (o1.piechur.liczebnoscAtakujacych>0)
             {
-                o1.piechur.pictureBox = pictureBoxWojownik;
                 jednostkiGraczaLista.Add(o1.piechur);
                 UstawAtrybutyJednostkiGracza();
                 numerRundyJednostki++;
-            }
+            }          
 
-            if(o1.lucznik.ilosc > 0)
+            if(o1.rycerz.liczebnoscAtakujacych > 0)
             {
-                o1.lucznik.pictureBox = pictureBoxLucznik;
-                jednostkiGraczaLista.Add(o1.lucznik);
-                UstawAtrybutyJednostkiGracza();
-                numerRundyJednostki++;
-            }
-
-            if(o1.rycerz.ilosc > 0)
-            {
-                o1.rycerz.pictureBox = pictureBoxWlocznik;
                 jednostkiGraczaLista.Add(o1.rycerz);
                 UstawAtrybutyJednostkiGracza();
                 numerRundyJednostki++;
             }
 
-            if(o1.czarnyRycerz.ilosc > 0)
+            if(o1.czarnyRycerz.liczebnoscAtakujacych > 0)
             {
-                o1.czarnyRycerz.pictureBox = pictureBoxCzarnyRycerz;
                 jednostkiGraczaLista.Add(o1.czarnyRycerz);
                 UstawAtrybutyJednostkiGracza();
                 numerRundyJednostki++;
             }
 
-            if (o1.czarnyLucznik.ilosc > 0)
+            if (o1.lucznik.liczebnoscAtakujacych > 0)
             {
-                o1.czarnyLucznik.pictureBox = pictureBoxCzarnyLucznik;
-                jednostkiGraczaLista.Add(o1.czarnyLucznik);
+                jednostkiGraczaLista.Add(o1.lucznik);
                 UstawAtrybutyJednostkiGracza();
                 numerRundyJednostki++;
             }
 
-            iloscJednostekGracza = numerRundyJednostki;
+            if (o1.czarnyLucznik.liczebnoscAtakujacych > 0)
+            {
+                jednostkiGraczaLista.Add(o1.czarnyLucznik);
+                UstawAtrybutyJednostkiGracza();
+                numerRundyJednostki++;
+            }
         }
 
         #endregion Dodaj jednostki gracza do listy oraz okresl ilosc jednostek gracza
@@ -921,7 +769,7 @@ namespace Anteriora
 
         public void DodajJednostkiPrzeciwnikaDoListyOrazOkreslIloscJednostekPrzeciwnika()
         {
-            if(przeciwnik0.ilosc > 0)
+            if(przeciwnik0.liczebnoscAtakujacych > 0)
             {
                 przeciwnik0.pictureBox = pictureBoxPrzeciwnik0;
                 przeciwnicyLista.Add(przeciwnik0);
@@ -929,7 +777,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik1.ilosc > 0)
+            if (przeciwnik1.liczebnoscAtakujacych > 0)
             {
                 przeciwnik1.pictureBox = pictureBoxPrzeciwnik1;
                 przeciwnicyLista.Add(przeciwnik1);
@@ -937,7 +785,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik2.ilosc > 0)
+            if (przeciwnik2.liczebnoscAtakujacych > 0)
             {
                 przeciwnik2.pictureBox = pictureBoxPrzeciwnik2;
                 przeciwnicyLista.Add(przeciwnik2);
@@ -945,7 +793,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik3.ilosc > 0)
+            if (przeciwnik3.liczebnoscAtakujacych > 0)
             {
                 przeciwnik3.pictureBox = pictureBoxPrzeciwnik3;
                 przeciwnicyLista.Add(przeciwnik3);
@@ -953,7 +801,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik4.ilosc > 0)
+            if (przeciwnik4.liczebnoscAtakujacych > 0)
             {
                 przeciwnik4.pictureBox = pictureBoxPrzeciwnik4;
                 przeciwnicyLista.Add(przeciwnik4);
@@ -961,7 +809,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik5.ilosc > 0)
+            if (przeciwnik5.liczebnoscAtakujacych > 0)
             {
                 przeciwnik5.pictureBox = pictureBoxPrzeciwnik5;
                 przeciwnicyLista.Add(przeciwnik5);
@@ -969,7 +817,7 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            if (przeciwnik6.ilosc > 0)
+            if (przeciwnik6.liczebnoscAtakujacych > 0)
             {
                 przeciwnik6.pictureBox = pictureBoxPrzeciwnik6;
                 przeciwnicyLista.Add(przeciwnik6);
@@ -977,17 +825,15 @@ namespace Anteriora
                 numerRundyPrzeciwnika++;
             }
 
-            iloscJednostekPrzeciwnika = numerRundyPrzeciwnika;
-
         }
 
         #endregion Dodaj jednostki wroga do listy oraz okresl ilosc jednostek wroga
 
-        #region Sprawdz zasieg ruchu jednosti
+        #region Sprawdz zasieg ruchu jednostki
 
         public void SprawdzZasiegRuchuJednostek()
         {
-            if(czyRundaGracza == true && iloscJednostekGracza > 0)
+            if(czyRundaGracza == true && jednostkiGraczaLista.Count > 0)
             {
                 foreach (var item in buttonsLista)
                 {
@@ -1019,7 +865,7 @@ namespace Anteriora
 
         public void MechanikaPrzeciwnik()
         {
-           if(czyRundaGracza == false && iloscJednostekPrzeciwnika > 0)
+           if(czyRundaGracza == false && przeciwnicyLista.Count > 0)
             {
                 foreach (var item in jednostkiGraczaLista)
                 {
@@ -1268,7 +1114,7 @@ namespace Anteriora
                 rundaPrzeciwnika++;
                 czyRundaGracza = true;
 
-                if (rundaPrzeciwnika >= iloscJednostekPrzeciwnika)
+                if (rundaPrzeciwnika >= przeciwnicyLista.Count)
                 {
                     rundaPrzeciwnika = 0;
                 }
@@ -1286,7 +1132,7 @@ namespace Anteriora
             if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() >= przeciwnik.calkowitePZ)
             {
                 przeciwnik.pictureBox.Visible = false;
-                przeciwnik.ilosc = 0;
+                przeciwnik.liczebnoscAtakujacych = 0;
                 przeciwnik.PZ = 0;
                 przeciwnik.calkowitePZ = 0;
                 przeciwnik.progressBarPZ.ForeColor = Color.Black;
@@ -1295,23 +1141,18 @@ namespace Anteriora
                 przeciwnik.labelPZ.Text = "0";
                 przeciwnicyLista.Remove(przeciwnik);
 
-                if (iloscJednostekPrzeciwnika > 0)
+                if (rundaPrzeciwnika >= przeciwnicyLista.Count)
                 {
-                    iloscJednostekPrzeciwnika--;
-                }
-              
-                if(rundaPrzeciwnika > 0)
-                {
-                    rundaPrzeciwnika--;
+                    rundaPrzeciwnika = 0;
                 }
             }
             else
             {
                 if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() == przeciwnik.PZ)
                 {
-                    if (przeciwnik.ilosc == 1)
+                    if (przeciwnik.liczebnoscAtakujacych == 1)
                     {
-                        przeciwnik.ilosc--;
+                        przeciwnik.liczebnoscAtakujacych--;
                         przeciwnik.pictureBox.Visible = false;
                         przeciwnik.PZ = 0;
                         przeciwnik.calkowitePZ = 0;
@@ -1321,28 +1162,23 @@ namespace Anteriora
                         przeciwnik.labelPZ.Text = "0";
                         przeciwnicyLista.Remove(przeciwnik);
 
-                        if (iloscJednostekPrzeciwnika > 0)
+                        if (rundaPrzeciwnika >= przeciwnicyLista.Count)
                         {
-                            iloscJednostekPrzeciwnika--;
-                        }
-
-                        if (rundaPrzeciwnika > 0)
-                        {
-                            rundaPrzeciwnika--;
+                            rundaPrzeciwnika = 0;
                         }
                     }
                     else
                     {
-                        przeciwnik.ilosc--;
+                        przeciwnik.liczebnoscAtakujacych--;
                         przeciwnik.PZ = przeciwnik.stalePZ;
                         przeciwnik.calkowitePZ -= jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak();
                     }
                 }
                 else if (jednostkiGraczaLista[rundaGracza].ObliczCalkowityAtak() > przeciwnik.PZ)
                 {
-                    if (przeciwnik.ilosc == 1)
+                    if (przeciwnik.liczebnoscAtakujacych == 1)
                     {
-                        przeciwnik.ilosc--;
+                        przeciwnik.liczebnoscAtakujacych--;
                         przeciwnik.pictureBox.Visible = false;
                         przeciwnik.PZ = 0;
                         przeciwnik.calkowitePZ = 0;
@@ -1352,15 +1188,11 @@ namespace Anteriora
                         przeciwnik.labelPZ.Text = "0";
                         przeciwnicyLista.Remove(przeciwnik);
 
-                        if (iloscJednostekPrzeciwnika > 0)
+                        if (rundaPrzeciwnika >= przeciwnicyLista.Count)
                         {
-                            iloscJednostekPrzeciwnika--;
+                            rundaPrzeciwnika = 0;
                         }
 
-                        if (rundaPrzeciwnika > 0)
-                        {
-                            rundaPrzeciwnika--;
-                        }
                     }
                     else
                     {
@@ -1377,7 +1209,7 @@ namespace Anteriora
                         //    }
                         //    else if (przeciwnicy.PZ > 0)
                         //    {
-                        //        przeciwnicy.ilosc -= i;
+                        //        przeciwnicy.liczebnoscAtakujacych -= i;
                         //        break;
                         //    }
                         //}
@@ -1395,7 +1227,7 @@ namespace Anteriora
 
                             if (przeciwnik.PZ > 0)
                             {
-                                przeciwnik.ilosc -= iloscZabitychPrzeciwnikow;
+                                przeciwnik.liczebnoscAtakujacych -= iloscZabitychPrzeciwnikow;
                                 break;
                             }
                         }
@@ -1410,7 +1242,7 @@ namespace Anteriora
 
             rundaGracza++;
 
-            if (rundaGracza >= iloscJednostekGracza)
+            if (rundaGracza >= jednostkiGraczaLista.Count)
             {
                 rundaGracza = 0;
             }
@@ -1427,33 +1259,51 @@ namespace Anteriora
             if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() >= jednostka.calkowitePZ)
             {
                 jednostka.pictureBox.Visible = false;
-                o1.mieszkancy.liczbaMieszkancow -= jednostka.ilosc;
-                jednostka.ilosc = 0;
+                o1.mieszkancy.liczbaMieszkancow -= jednostka.liczebnoscAtakujacych;
+                jednostka.liczebnoscAtakujacych = 0;
                 jednostka.PZ = 0;
                 jednostka.calkowitePZ = 0;
                 jednostka.progressBarPZ.ForeColor = Color.Black;
                 jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
                 jednostka.labelIlosc.Text = "0";
                 jednostka.labelPZ.Text = "0";
-                jednostkiGraczaLista.Remove(jednostka);
+                //jednostkiGraczaLista.Remove(jednostka);
 
-                if(iloscJednostekGracza > 0)
+                //if(iloscJednostekGracza > 0)
+                //{
+                //    iloscJednostekGracza--;
+                //}
+
+                //if(rundaGracza > 0)
+                //{
+                //    rundaGracza--;
+                //}
+
+                if (rundaGracza == jednostkiGraczaLista.IndexOf(jednostka))
                 {
-                    iloscJednostekGracza--;
+                    if (rundaGracza == jednostkiGraczaLista.Count - 1)
+                    {
+                        rundaGracza = 0;
+                    }
+                    else
+                    {
+                        rundaGracza = jednostkiGraczaLista.IndexOf(jednostka);
+                    }
                 }
-
-                if(rundaGracza > 0)
+                else if (rundaGracza > jednostkiGraczaLista.IndexOf(jednostka))
                 {
                     rundaGracza--;
                 }
+
+                jednostkiGraczaLista.Remove(jednostka);
             }
             else
             {
                 if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() == jednostka.PZ)
                 {
-                    if (jednostka.ilosc == 1)
+                    if (jednostka.liczebnoscAtakujacych == 1)
                     {
-                        jednostka.ilosc--;
+                        jednostka.liczebnoscAtakujacych--;
                         o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.pictureBox.Visible = false;
                         jednostka.PZ = 0;
@@ -1462,21 +1312,39 @@ namespace Anteriora
                         jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
                         jednostka.labelIlosc.Text = "0";
                         jednostka.labelPZ.Text = "0";
-                        jednostkiGraczaLista.Remove(jednostka);
+                        //jednostkiGraczaLista.Remove(jednostka);
 
-                        if (iloscJednostekGracza > 0)
+                        //if (iloscJednostekGracza > 0)
+                        //{
+                        //    iloscJednostekGracza--;
+                        //}
+
+                        //if (rundaGracza > 0)
+                        //{
+                        //    rundaGracza--;
+                        //}
+
+                        if (rundaGracza == jednostkiGraczaLista.IndexOf(jednostka))
                         {
-                            iloscJednostekGracza--;
+                            if (rundaGracza == jednostkiGraczaLista.Count - 1)
+                            {
+                                rundaGracza = 0;
+                            }
+                            else
+                            {
+                                rundaGracza = jednostkiGraczaLista.IndexOf(jednostka);
+                            }
                         }
-
-                        if (rundaGracza > 0)
+                        else if (rundaGracza > jednostkiGraczaLista.IndexOf(jednostka))
                         {
                             rundaGracza--;
                         }
+
+                        jednostkiGraczaLista.Remove(jednostka);
                     }
                     else
                     {
-                        jednostka.ilosc--;
+                        jednostka.liczebnoscAtakujacych--;
                         o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.PZ = jednostka.stalePZ;
                         jednostka.calkowitePZ -= przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak();
@@ -1484,9 +1352,9 @@ namespace Anteriora
                 }
                 else if (przeciwnicyLista[rundaPrzeciwnika].ObliczCalkowityAtak() > jednostka.PZ)
                 {
-                    if (jednostka.ilosc == 1)
+                    if (jednostka.liczebnoscAtakujacych == 1)
                     {
-                        jednostka.ilosc--;
+                        jednostka.liczebnoscAtakujacych--;
                         o1.mieszkancy.liczbaMieszkancow--;
                         jednostka.pictureBox.Visible = false;
                         jednostka.PZ = 0;
@@ -1495,17 +1363,35 @@ namespace Anteriora
                         jednostka.progressBarPZ.Value = jednostka.progressBarPZ.Maximum;
                         jednostka.labelIlosc.Text = "0";
                         jednostka.labelPZ.Text = "0";
-                        jednostkiGraczaLista.Remove(jednostka);
+                        //jednostkiGraczaLista.Remove(jednostka);
 
-                        if (iloscJednostekGracza > 0)
+                        //if (iloscJednostekGracza > 0)
+                        //{
+                        //    iloscJednostekGracza--;
+                        //}
+
+                        //if (rundaGracza > 0)
+                        //{
+                        //    rundaGracza--;
+                        //}
+
+                        if (rundaGracza == jednostkiGraczaLista.IndexOf(jednostka))
                         {
-                            iloscJednostekGracza--;
+                            if (rundaGracza == jednostkiGraczaLista.Count - 1)
+                            {
+                                rundaGracza = 0;
+                            }
+                            else
+                            {
+                                rundaGracza = jednostkiGraczaLista.IndexOf(jednostka);
+                            }
                         }
-
-                        if (rundaGracza > 0)
+                        else if (rundaGracza > jednostkiGraczaLista.IndexOf(jednostka))
                         {
                             rundaGracza--;
                         }
+
+                        jednostkiGraczaLista.Remove(jednostka);
                     }
                     else
                     {
@@ -1523,7 +1409,7 @@ namespace Anteriora
                         //}
                         //else if (jednostka.PZ > 0)
                         //{
-                        //    jednostka.ilosc -= i;
+                        //    jednostka.liczebnoscAtakujacych -= i;
                         //    break;
                         //}
                         //}
@@ -1541,7 +1427,7 @@ namespace Anteriora
                                 
                             if (jednostka.PZ > 0)
                             {
-                                jednostka.ilosc -= iloscZabitychJednostekGracza;
+                                jednostka.liczebnoscAtakujacych -= iloscZabitychJednostekGracza;
                                 o1.mieszkancy.liczbaMieszkancow -= iloscZabitychJednostekGracza;
                                 break;
                             }
@@ -1645,7 +1531,7 @@ namespace Anteriora
             {
                 item.progressBarPZ.Value = item.ObliczCalkowitePZ();
                 item.labelPZ.Text = item.ObliczCalkowitePZ().ToString();
-                item.labelIlosc.Text = item.ilosc.ToString();
+                item.labelIlosc.Text = item.liczebnoscAtakujacych.ToString();
                 item.labelAtak.Text = item.ObliczCalkowityAtak().ToString();
                 item.labelObrona.Text = item.obronaDomyslna.ToString();
             }
@@ -1654,12 +1540,12 @@ namespace Anteriora
             {
                 item.progressBarPZ.Value = item.ObliczCalkowitePZ();
                 item.labelPZ.Text = item.ObliczCalkowitePZ().ToString();
-                item.labelIlosc.Text = item.ilosc.ToString();
+                item.labelIlosc.Text = item.liczebnoscAtakujacych.ToString();
                 item.labelAtak.Text = item.ObliczCalkowityAtak().ToString();
                 item.labelObrona.Text = item.obronaDomyslna.ToString();
             }
 
-            if (iloscJednostekGracza == 0)
+            if (jednostkiGraczaLista.Count == 0)
             {
                 obszaryInstancji.czyBitwa = false;
                 obszaryInstancji.czyOdblokowane = false;
@@ -1667,7 +1553,7 @@ namespace Anteriora
                 MessageBox.Show("Poniosłeś porażkę");
             }
 
-            if (iloscJednostekPrzeciwnika == 0)
+            if (przeciwnicyLista.Count == 0)
             {
                 obszaryInstancji.czyBitwa = false;
                 obszaryInstancji.czyOdblokowane = true;
@@ -1862,7 +1748,7 @@ namespace Anteriora
         {
             if(czyRundaGracza == true)
             {
-                if(rundaGracza == iloscJednostekGracza-1)
+                if(rundaGracza == jednostkiGraczaLista.Count - 1)
                 {
                     rundaGracza = 0;
                 }

@@ -502,7 +502,7 @@
             this.textBoxIlosc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.textBoxIlosc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBoxIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxIlosc.Location = new System.Drawing.Point(430, 278);
+            this.textBoxIlosc.Location = new System.Drawing.Point(430, 269);
             this.textBoxIlosc.Margin = new System.Windows.Forms.Padding(0);
             this.textBoxIlosc.Name = "textBoxIlosc";
             this.textBoxIlosc.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -566,6 +566,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxKowadlo);
             this.Controls.Add(this.panel7);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

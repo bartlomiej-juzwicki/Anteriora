@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.labelKamiennyMieczIlosc);
             this.panel1.Location = new System.Drawing.Point(5, 16);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(95, 25);
+            this.panel1.Size = new System.Drawing.Size(75, 25);
             this.panel1.TabIndex = 14;
             // 
             // pictureBoxKamiennyMiecz
@@ -83,7 +83,7 @@
             this.pictureBoxKamiennyMiecz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxKamiennyMiecz.BackgroundImage = global::Anteriora.Properties.Resources.kamienny_miecz;
             this.pictureBoxKamiennyMiecz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxKamiennyMiecz.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxKamiennyMiecz.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxKamiennyMiecz.Name = "pictureBoxKamiennyMiecz";
             this.pictureBoxKamiennyMiecz.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxKamiennyMiecz.TabIndex = 0;
@@ -91,14 +91,14 @@
             // 
             // labelKamiennyMieczIlosc
             // 
-            this.labelKamiennyMieczIlosc.AutoSize = true;
             this.labelKamiennyMieczIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelKamiennyMieczIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelKamiennyMieczIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelKamiennyMieczIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelKamiennyMieczIlosc.Name = "labelKamiennyMieczIlosc";
-            this.labelKamiennyMieczIlosc.Size = new System.Drawing.Size(111, 18);
+            this.labelKamiennyMieczIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelKamiennyMieczIlosc.TabIndex = 1;
             this.labelKamiennyMieczIlosc.Text = "kamiennyMiecz";
+            this.labelKamiennyMieczIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel2
             // 
@@ -109,7 +109,7 @@
             this.panel2.Controls.Add(this.labelZelaznyMieczIlosc);
             this.panel2.Location = new System.Drawing.Point(5, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(95, 25);
+            this.panel2.Size = new System.Drawing.Size(75, 25);
             this.panel2.TabIndex = 15;
             // 
             // pictureBoxZelaznyMiecz
@@ -117,7 +117,7 @@
             this.pictureBoxZelaznyMiecz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelaznyMiecz.BackgroundImage = global::Anteriora.Properties.Resources.zelazny_miecz;
             this.pictureBoxZelaznyMiecz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelaznyMiecz.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelaznyMiecz.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelaznyMiecz.Name = "pictureBoxZelaznyMiecz";
             this.pictureBoxZelaznyMiecz.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelaznyMiecz.TabIndex = 0;
@@ -125,14 +125,14 @@
             // 
             // labelZelaznyMieczIlosc
             // 
-            this.labelZelaznyMieczIlosc.AutoSize = true;
             this.labelZelaznyMieczIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelaznyMieczIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelaznyMieczIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelaznyMieczIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelaznyMieczIlosc.Name = "labelZelaznyMieczIlosc";
-            this.labelZelaznyMieczIlosc.Size = new System.Drawing.Size(98, 18);
+            this.labelZelaznyMieczIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelaznyMieczIlosc.TabIndex = 1;
             this.labelZelaznyMieczIlosc.Text = "zelaznyMiecz";
+            this.labelZelaznyMieczIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel3
             // 
@@ -143,7 +143,7 @@
             this.panel3.Controls.Add(this.labelObsydianowyMieczIlosc);
             this.panel3.Location = new System.Drawing.Point(5, 78);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(95, 25);
+            this.panel3.Size = new System.Drawing.Size(75, 25);
             this.panel3.TabIndex = 16;
             // 
             // pictureBoxObsydianowyMiecz
@@ -151,7 +151,7 @@
             this.pictureBoxObsydianowyMiecz.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianowyMiecz.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowy_miecz;
             this.pictureBoxObsydianowyMiecz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianowyMiecz.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianowyMiecz.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianowyMiecz.Name = "pictureBoxObsydianowyMiecz";
             this.pictureBoxObsydianowyMiecz.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianowyMiecz.TabIndex = 0;
@@ -159,14 +159,14 @@
             // 
             // labelObsydianowyMieczIlosc
             // 
-            this.labelObsydianowyMieczIlosc.AutoSize = true;
             this.labelObsydianowyMieczIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianowyMieczIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianowyMieczIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianowyMieczIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianowyMieczIlosc.Name = "labelObsydianowyMieczIlosc";
-            this.labelObsydianowyMieczIlosc.Size = new System.Drawing.Size(134, 18);
+            this.labelObsydianowyMieczIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianowyMieczIlosc.TabIndex = 1;
             this.labelObsydianowyMieczIlosc.Text = "obsydianowyMiecz";
+            this.labelObsydianowyMieczIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel5
             // 
@@ -177,7 +177,7 @@
             this.panel5.Controls.Add(this.labelLukIlosc);
             this.panel5.Location = new System.Drawing.Point(5, 109);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(95, 25);
+            this.panel5.Size = new System.Drawing.Size(75, 25);
             this.panel5.TabIndex = 17;
             // 
             // pictureBoxLuk
@@ -185,7 +185,7 @@
             this.pictureBoxLuk.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxLuk.BackgroundImage = global::Anteriora.Properties.Resources.luk;
             this.pictureBoxLuk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxLuk.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxLuk.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxLuk.Name = "pictureBoxLuk";
             this.pictureBoxLuk.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxLuk.TabIndex = 0;
@@ -193,14 +193,14 @@
             // 
             // labelLukIlosc
             // 
-            this.labelLukIlosc.AutoSize = true;
             this.labelLukIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelLukIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelLukIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelLukIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelLukIlosc.Name = "labelLukIlosc";
-            this.labelLukIlosc.Size = new System.Drawing.Size(27, 18);
+            this.labelLukIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelLukIlosc.TabIndex = 1;
             this.labelLukIlosc.Text = "luk";
+            this.labelLukIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // timer
             // 
@@ -240,7 +240,7 @@
             this.panel6.Controls.Add(this.labelZelaznaTarczaIlosc);
             this.panel6.Location = new System.Drawing.Point(5, 140);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(95, 25);
+            this.panel6.Size = new System.Drawing.Size(75, 25);
             this.panel6.TabIndex = 18;
             // 
             // pictureBoxZelaznaTarcza
@@ -248,7 +248,7 @@
             this.pictureBoxZelaznaTarcza.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxZelaznaTarcza.BackgroundImage = global::Anteriora.Properties.Resources.zelazna_tarcza;
             this.pictureBoxZelaznaTarcza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxZelaznaTarcza.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxZelaznaTarcza.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxZelaznaTarcza.Name = "pictureBoxZelaznaTarcza";
             this.pictureBoxZelaznaTarcza.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxZelaznaTarcza.TabIndex = 0;
@@ -256,14 +256,14 @@
             // 
             // labelZelaznaTarczaIlosc
             // 
-            this.labelZelaznaTarczaIlosc.AutoSize = true;
             this.labelZelaznaTarczaIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelZelaznaTarczaIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZelaznaTarczaIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelZelaznaTarczaIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelZelaznaTarczaIlosc.Name = "labelZelaznaTarczaIlosc";
-            this.labelZelaznaTarczaIlosc.Size = new System.Drawing.Size(105, 18);
+            this.labelZelaznaTarczaIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelZelaznaTarczaIlosc.TabIndex = 1;
             this.labelZelaznaTarczaIlosc.Text = "zelaznaTarcza";
+            this.labelZelaznaTarczaIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel7
             // 
@@ -274,7 +274,7 @@
             this.panel7.Controls.Add(this.labelObsydianowaTarczaIlosc);
             this.panel7.Location = new System.Drawing.Point(5, 171);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(95, 25);
+            this.panel7.Size = new System.Drawing.Size(75, 25);
             this.panel7.TabIndex = 18;
             // 
             // pictureBoxObsydianowaTarcza
@@ -282,7 +282,7 @@
             this.pictureBoxObsydianowaTarcza.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxObsydianowaTarcza.BackgroundImage = global::Anteriora.Properties.Resources.obsydianowa_tarcza;
             this.pictureBoxObsydianowaTarcza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxObsydianowaTarcza.Location = new System.Drawing.Point(3, 3);
+            this.pictureBoxObsydianowaTarcza.Location = new System.Drawing.Point(47, 3);
             this.pictureBoxObsydianowaTarcza.Name = "pictureBoxObsydianowaTarcza";
             this.pictureBoxObsydianowaTarcza.Size = new System.Drawing.Size(25, 20);
             this.pictureBoxObsydianowaTarcza.TabIndex = 0;
@@ -290,14 +290,14 @@
             // 
             // labelObsydianowaTarczaIlosc
             // 
-            this.labelObsydianowaTarczaIlosc.AutoSize = true;
             this.labelObsydianowaTarczaIlosc.BackColor = System.Drawing.Color.Transparent;
             this.labelObsydianowaTarczaIlosc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelObsydianowaTarczaIlosc.Location = new System.Drawing.Point(32, 4);
+            this.labelObsydianowaTarczaIlosc.Location = new System.Drawing.Point(3, 4);
             this.labelObsydianowaTarczaIlosc.Name = "labelObsydianowaTarczaIlosc";
-            this.labelObsydianowaTarczaIlosc.Size = new System.Drawing.Size(141, 18);
+            this.labelObsydianowaTarczaIlosc.Size = new System.Drawing.Size(40, 18);
             this.labelObsydianowaTarczaIlosc.TabIndex = 1;
             this.labelObsydianowaTarczaIlosc.Text = "obsydianowaTarcza";
+            this.labelObsydianowaTarczaIlosc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Panel4
             // 
@@ -307,7 +307,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(105, 212);
+            this.ClientSize = new System.Drawing.Size(85, 212);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBoxWyjscie);
@@ -317,35 +317,29 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(1815, 200);
+            this.Location = new System.Drawing.Point(1835, 200);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(105, 212);
+            this.MaximumSize = new System.Drawing.Size(85, 212);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(105, 212);
+            this.MinimumSize = new System.Drawing.Size(85, 212);
             this.Name = "Panel4";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.TopMost = true;
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxKamiennyMiecz)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelaznyMiecz)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianowyMiecz)).EndInit();
             this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLuk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxWyjscie)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRuchOkna)).EndInit();
             this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxZelaznaTarcza)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxObsydianowaTarcza)).EndInit();
             this.ResumeLayout(false);
 

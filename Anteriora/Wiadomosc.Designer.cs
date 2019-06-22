@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.buttonOK = new System.Windows.Forms.Button();
             this.labelOpis = new System.Windows.Forms.Label();
+            this.buttonOK = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,8 +45,20 @@
             this.panel2.Controls.Add(this.labelOpis);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 39);
+            this.panel2.Size = new System.Drawing.Size(388, 74);
             this.panel2.TabIndex = 16;
+            // 
+            // labelOpis
+            // 
+            this.labelOpis.AutoSize = true;
+            this.labelOpis.BackColor = System.Drawing.Color.Transparent;
+            this.labelOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelOpis.Location = new System.Drawing.Point(20, 20);
+            this.labelOpis.Name = "labelOpis";
+            this.labelOpis.Size = new System.Drawing.Size(40, 16);
+            this.labelOpis.TabIndex = 0;
+            this.labelOpis.Text = "Opis";
+            this.labelOpis.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // buttonOK
             // 
@@ -59,25 +71,14 @@
             this.buttonOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.buttonOK.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonOK.Location = new System.Drawing.Point(0, 48);
+            this.buttonOK.Location = new System.Drawing.Point(0, 80);
             this.buttonOK.MinimumSize = new System.Drawing.Size(61, 25);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(200, 34);
+            this.buttonOK.Size = new System.Drawing.Size(388, 43);
             this.buttonOK.TabIndex = 18;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.ButtonOK_Click);
-            // 
-            // labelOpis
-            // 
-            this.labelOpis.AutoSize = true;
-            this.labelOpis.BackColor = System.Drawing.Color.Transparent;
-            this.labelOpis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelOpis.Location = new System.Drawing.Point(7, 20);
-            this.labelOpis.Name = "labelOpis";
-            this.labelOpis.Size = new System.Drawing.Size(36, 16);
-            this.labelOpis.TabIndex = 0;
-            this.labelOpis.Text = "Opis";
             // 
             // Wiadomosc
             // 
@@ -86,7 +87,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Anteriora.Properties.Resources.pasekzyciatlo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(200, 82);
+            this.ClientSize = new System.Drawing.Size(388, 123);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.panel2);
             this.DoubleBuffered = true;

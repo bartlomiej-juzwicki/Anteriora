@@ -9,19 +9,19 @@ namespace Anteriora
 {
     public class JednostkiGracza : JednostkiMilitarne
     {
-        public int liczebnoscWojsk { get; set; }
+        //public int liczebnoscWojsk { get; set; }
 
-        readonly Poczatek o;
+        //readonly Poczatek o;
 
         public JednostkiGracza(string nazwa, int atakDomyslny, int obronaDomyslna, int PZDomyslne, int ilosc, int odlegloscAtaku, bool czyAtakNaBliskiDystans,
                                 Bitmap obrazekPrawo, Bitmap obrazekLewo, Bitmap obrazekGora, Bitmap obrazekDol)
         {
             this.nazwa = nazwa;
             this.poziomUlepszenia = 1;
-            this.atakDomyslny = atakDomyslny;
+            this.atakDomyslny = atakDomyslny; 
             this.obronaDomyslna = obronaDomyslna;
             this.PZDomyslne = PZDomyslne;
-            this.ilosc = ilosc;
+            this.liczebnoscAtakujacych = ilosc;
             this.odlegloscAtaku = odlegloscAtaku;
             this.czyAtakNaBliskiDystans = czyAtakNaBliskiDystans;
             this.obrazekPrawo = obrazekPrawo;
@@ -37,9 +37,9 @@ namespace Anteriora
             this.poziomUlepszenia = 1;
         }
 
-        public int ObliczLiczebnoscWojsk()
-        {
-            return liczebnoscWojsk = o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc;
-        }
+        //public int ObliczLiczebnoscWojsk()
+        //{
+        //    return liczebnoscWojsk = o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych;
+        //}
     }
 }

@@ -15,9 +15,8 @@ namespace Anteriora
         [STAThread]
         static void Main()
         {
-           
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Poczatek());
+            Application.Run(new Start());
         }
     }
 }

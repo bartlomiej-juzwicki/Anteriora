@@ -395,47 +395,51 @@
             // 
             // pictureBoxGraczPart1
             // 
-            this.pictureBoxGraczPart1.BackgroundImage = global::Anteriora.Properties.Resources.GraczPart1;
-            this.pictureBoxGraczPart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxGraczPart1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGraczPart1.BackgroundImage = global::Anteriora.Properties.Resources.wojownikdol;
+            this.pictureBoxGraczPart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGraczPart1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxGraczPart1.Location = new System.Drawing.Point(1402, 838);
+            this.pictureBoxGraczPart1.Location = new System.Drawing.Point(1482, 791);
             this.pictureBoxGraczPart1.Name = "pictureBoxGraczPart1";
-            this.pictureBoxGraczPart1.Size = new System.Drawing.Size(29, 39);
+            this.pictureBoxGraczPart1.Size = new System.Drawing.Size(56, 41);
             this.pictureBoxGraczPart1.TabIndex = 25;
             this.pictureBoxGraczPart1.TabStop = false;
             // 
             // pictureBoxGraczPart2
             // 
-            this.pictureBoxGraczPart2.BackgroundImage = global::Anteriora.Properties.Resources.GraczPart2;
-            this.pictureBoxGraczPart2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxGraczPart2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGraczPart2.BackgroundImage = global::Anteriora.Properties.Resources.wojowniklewo;
+            this.pictureBoxGraczPart2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGraczPart2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxGraczPart2.Location = new System.Drawing.Point(743, 798);
+            this.pictureBoxGraczPart2.Location = new System.Drawing.Point(722, 798);
             this.pictureBoxGraczPart2.Name = "pictureBoxGraczPart2";
-            this.pictureBoxGraczPart2.Size = new System.Drawing.Size(29, 39);
+            this.pictureBoxGraczPart2.Size = new System.Drawing.Size(56, 41);
             this.pictureBoxGraczPart2.TabIndex = 26;
             this.pictureBoxGraczPart2.TabStop = false;
             this.pictureBoxGraczPart2.Visible = false;
             // 
             // pictureBoxGraczPart3
             // 
-            this.pictureBoxGraczPart3.BackgroundImage = global::Anteriora.Properties.Resources.GraczPart3;
-            this.pictureBoxGraczPart3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxGraczPart3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGraczPart3.BackgroundImage = global::Anteriora.Properties.Resources.wojownikgora;
+            this.pictureBoxGraczPart3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGraczPart3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxGraczPart3.Location = new System.Drawing.Point(378, 351);
+            this.pictureBoxGraczPart3.Location = new System.Drawing.Point(390, 356);
             this.pictureBoxGraczPart3.Name = "pictureBoxGraczPart3";
-            this.pictureBoxGraczPart3.Size = new System.Drawing.Size(76, 50);
+            this.pictureBoxGraczPart3.Size = new System.Drawing.Size(56, 41);
             this.pictureBoxGraczPart3.TabIndex = 27;
             this.pictureBoxGraczPart3.TabStop = false;
             this.pictureBoxGraczPart3.Visible = false;
             // 
             // pictureBoxGraczPart4
             // 
-            this.pictureBoxGraczPart4.BackgroundImage = global::Anteriora.Properties.Resources.GraczPart4;
-            this.pictureBoxGraczPart4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxGraczPart4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxGraczPart4.BackgroundImage = global::Anteriora.Properties.Resources.wojownikdol;
+            this.pictureBoxGraczPart4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxGraczPart4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxGraczPart4.Location = new System.Drawing.Point(377, 133);
+            this.pictureBoxGraczPart4.Location = new System.Drawing.Point(390, 127);
             this.pictureBoxGraczPart4.Name = "pictureBoxGraczPart4";
-            this.pictureBoxGraczPart4.Size = new System.Drawing.Size(76, 51);
+            this.pictureBoxGraczPart4.Size = new System.Drawing.Size(56, 41);
             this.pictureBoxGraczPart4.TabIndex = 28;
             this.pictureBoxGraczPart4.TabStop = false;
             this.pictureBoxGraczPart4.Visible = false;
@@ -460,6 +464,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Anteriora.Properties.Resources.poczatek1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1920, 1080);

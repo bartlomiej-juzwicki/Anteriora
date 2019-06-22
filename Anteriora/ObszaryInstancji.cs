@@ -28,19 +28,19 @@ namespace Anteriora
                                                 Przeciwnicy przeciwnik6, int ilosc6, Przeciwnicy przeciwnik7, int ilosc7) 
         {
             this.przeciwnik0 = przeciwnik1;
-            this.przeciwnik0.ilosc = ilosc1;
+            this.przeciwnik0.liczebnoscAtakujacych = ilosc1;
             this.przeciwnik1 = przeciwnik2;
-            this.przeciwnik1.ilosc = ilosc2;
+            this.przeciwnik1.liczebnoscAtakujacych = ilosc2;
             this.przeciwnik2 = przeciwnik3;
-            this.przeciwnik2.ilosc = ilosc3;
+            this.przeciwnik2.liczebnoscAtakujacych = ilosc3;
             this.przeciwnik3 = przeciwnik4;
-            this.przeciwnik3.ilosc = ilosc4;
+            this.przeciwnik3.liczebnoscAtakujacych = ilosc4;
             this.przeciwnik4 = przeciwnik5;
-            this.przeciwnik4.ilosc = ilosc5;
+            this.przeciwnik4.liczebnoscAtakujacych = ilosc5;
             this.przeciwnik5 = przeciwnik6;
-            this.przeciwnik5.ilosc = ilosc6;
+            this.przeciwnik5.liczebnoscAtakujacych = ilosc6;
             this.przeciwnik6 = przeciwnik7;
-            this.przeciwnik6.ilosc = ilosc7;
+            this.przeciwnik6.liczebnoscAtakujacych = ilosc7;
         }
     }
 }

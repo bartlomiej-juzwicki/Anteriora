@@ -54,12 +54,8 @@ namespace Anteriora
             labelLiczbaPracujacychMieszkancow.Text = o1.mieszkancy.liczbaPracujacychMieszkancow.ToString();
             labelLiczbaBezrobotnychMieszkancow.Text = o1.mieszkancy.ObliczLiczbeBezrobotnychMieszkancow().ToString();
             labelWojskoIlosc.Text = o1.mieszkancy.liczebnoscWojsk.ToString();
-            labelZwiadowcaIlosc.Text = o1.zwiadowca.ilosc.ToString();
-            labelPiechurIlosc.Text = o1.piechur.ilosc.ToString();
-            labelLucznikIlosc.Text = o1.lucznik.ilosc.ToString();
-            labelRycerzIlosc.Text = o1.rycerz.ilosc.ToString();
-            labelCzarnyRycerzIlosc.Text = o1.czarnyRycerz.ilosc.ToString();
-            labelCzarnyLucznikIlosc.Text = o1.czarnyLucznik.ilosc.ToString();
+            labelAtakujacyIlosc.Text = (o1.piechur.liczebnoscAtakujacych + o1.lucznik.liczebnoscAtakujacych + o1.rycerz.liczebnoscAtakujacych + o1.czarnyRycerz.liczebnoscAtakujacych + o1.czarnyLucznik.liczebnoscAtakujacych).ToString();
+            labelBroniacyIlosc.Text = (o1.piechur.liczebnoscBroniacych + o1.lucznik.liczebnoscBroniacych + o1.rycerz.liczebnoscBroniacych + o1.czarnyRycerz.liczebnoscBroniacych + o1.czarnyLucznik.liczebnoscBroniacych).ToString();
         }
 
         private void pictureBoxWyjscie_Click(object sender, EventArgs e)

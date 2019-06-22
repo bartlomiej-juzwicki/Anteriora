@@ -57,7 +57,7 @@ namespace Anteriora
 
         private void pictureBoxKowadlo_Click(object sender, EventArgs e)
         {
-            iloscWytwarzanychPrzedmiotow = Convert.ToInt16(textBoxIlosc.Text);  // ilosc przedmiotow, które chcemy wytworzyć
+            iloscWytwarzanychPrzedmiotow = Convert.ToInt16(textBoxIlosc.Text);  // liczebnoscAtakujacych przedmiotow, które chcemy wytworzyć
             zawartosc = "";
 
             foreach (var item in sloty)
@@ -284,6 +284,7 @@ namespace Anteriora
             }
         }
 
+       
         public void WytworzObsydianowaBron(Bronie bron)
         {
             if (zawartosc == bron.kod1 || zawartosc == bron.kod2 || zawartosc == bron.kod3)

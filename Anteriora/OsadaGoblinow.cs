@@ -54,8 +54,9 @@ namespace Anteriora
             listaPictureBoxMgla.AddRange(new PictureBox[] { pictureBoxMglaPoziom1, pictureBoxMglaPoziom2, pictureBoxMglaPoziom3, pictureBoxMglaPoziom4, pictureBoxMglaPoziom5, pictureBoxMglaPoziom6, pictureBoxMglaPoziom7, pictureBoxMglaPoziom8 });
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonPowrot_Click(object sender, EventArgs e)
         {
+            o3.Visible = true;
             this.Close();
         }
 
@@ -471,7 +472,7 @@ namespace Anteriora
                 if(o1.kopalniaKamienia.poziomUlepszenia < 3)
                 {
                     int iloscSurowcow = 300 * o1.kopalniaKamienia.poziomUlepszenia;
-                    // do poprawy ilosc surowcow 
+                    // do poprawy liczebnoscAtakujacych surowcow 
                     DialogResult dialogResult = MessageBox.Show("Czy chcesz ulepszyć kopalnie kamienia do poziomu " + (o1.kopalniaKamienia.poziomUlepszenia + 1) + "?" + " Koszt: " + iloscSurowcow +" drewna.", "", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -501,7 +502,7 @@ namespace Anteriora
                 if (o1.kopalniaRudyZelaza1.poziomUlepszenia < 3)
                 {
                     int iloscSurowcow = 300 * o1.kopalniaRudyZelaza1.poziomUlepszenia;
-                    // do poprawy ilosc surowcow 
+                    // do poprawy liczebnoscAtakujacych surowcow 
                     DialogResult dialogResult = MessageBox.Show("Czy chcesz ulepszyć kopalnie rudy żelaza do poziomu " + (o1.kopalniaRudyZelaza1.poziomUlepszenia + 1) + "?" + " Koszt: " + iloscSurowcow + " drewna.", "", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {
@@ -531,7 +532,7 @@ namespace Anteriora
                 if (o1.kopalniaRudyZelaza2.poziomUlepszenia < 3)
                 {
                     int iloscSurowcow = 300 * o1.kopalniaRudyZelaza2.poziomUlepszenia;
-                    // do poprawy ilosc surowcow 
+                    // do poprawy liczebnoscAtakujacych surowcow 
                     DialogResult dialogResult = MessageBox.Show("Czy chcesz ulepszyć kopalnie rudy żelaza do poziomu " + (o1.kopalniaRudyZelaza2.poziomUlepszenia + 1) + "?" + " Koszt: " + iloscSurowcow + " drewna.", "", MessageBoxButtons.YesNo);
                     if (dialogResult == DialogResult.Yes)
                     {

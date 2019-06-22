@@ -62,6 +62,11 @@ namespace Anteriora
         {
             return liczbaPracownikowPotrzebnychDoBudowy = liczbaPracownikowPotrzebnychDoBudowy * (2 + poziomUlepszenia);
         }
+
+        public void ObliczWytrzymaloscBudowli()
+        {
+            wytrzymałosc = 1000 * poziomUlepszenia;
+        }
     }
 }
         

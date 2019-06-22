@@ -22,7 +22,7 @@ namespace Anteriora
         public Mieszkancy()
         {
             liczbaMiejscBudynku = 100;
-            liczbaMieszkancow = 20;
+            liczbaMieszkancow = 50;
             ObliczLiczbeBezrobotnychMieszkancow();
             czyPrzyrostMieszkancow = false;
         }

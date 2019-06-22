@@ -42,7 +42,7 @@ namespace Anteriora
                         o.skorzaneSpodnie.ilosc--;
                         o.skorzanyHelm.ilosc--;
                         o.zloto.ilosc -= 30;
-                        o.zwiadowca.ilosc++;
+                        o.zwiadowca.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -59,7 +59,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         private void buttonWerbujPiechur_Click(object sender, EventArgs e)
@@ -78,7 +79,7 @@ namespace Anteriora
                         o.skorzanyHelm.ilosc--;
                         o.kamiennyMiecz.ilosc--;
                         o.zloto.ilosc -= 10;
-                        o.piechur.ilosc++;
+                        o.piechur.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -95,7 +96,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         private void buttonWerbujLucznik_Click(object sender, EventArgs e)
@@ -114,7 +116,7 @@ namespace Anteriora
                         o.skorzanyHelm.ilosc--;
                         o.luk.ilosc--;
                         o.zloto.ilosc -= 15;
-                        o.lucznik.ilosc++;
+                        o.lucznik.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -131,7 +133,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         private void buttonWerbujRycerz_Click(object sender, EventArgs e)
@@ -151,7 +154,7 @@ namespace Anteriora
                         o.zelaznyMiecz.ilosc--;
                         o.zelaznaTarcza.ilosc--;
                         o.zloto.ilosc -= 50;
-                        o.rycerz.ilosc++;
+                        o.rycerz.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -168,7 +171,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         private void ButtonWerbujCzarnyRycerz_Click(object sender, EventArgs e)
@@ -188,7 +192,7 @@ namespace Anteriora
                         o.obsydianowyMiecz.ilosc--;
                         o.obsydianowaTarcza.ilosc--;
                         o.zloto.ilosc -= 100;
-                        o.czarnyRycerz.ilosc++;
+                        o.czarnyRycerz.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -205,7 +209,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         private void ButtonWerbujCzarnyLucznik_Click(object sender, EventArgs e)
@@ -224,7 +229,7 @@ namespace Anteriora
                         o.obsydianowyHelm.ilosc--;
                         o.luk.ilosc--;
                         o.zloto.ilosc -= 150;
-                        o.czarnyLucznik.ilosc++;
+                        o.czarnyLucznik.liczebnoscAtakujacych++;
                     }
                     else
                     {
@@ -241,7 +246,8 @@ namespace Anteriora
                 new Wiadomosc("Brak rekrutów").ShowDialog();
             }
 
-            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.ilosc + o.piechur.ilosc + o.lucznik.ilosc + o.rycerz.ilosc + o.czarnyRycerz.ilosc + o.czarnyLucznik.ilosc);
+            o.mieszkancy.liczebnoscWojsk = (o.zwiadowca.liczebnoscAtakujacych + o.piechur.liczebnoscAtakujacych + o.lucznik.liczebnoscAtakujacych + o.rycerz.liczebnoscAtakujacych + o.czarnyRycerz.liczebnoscAtakujacych + o.czarnyLucznik.liczebnoscAtakujacych + o.piechur.liczebnoscBroniacych + o.lucznik.liczebnoscBroniacych + o.rycerz.liczebnoscBroniacych + o.czarnyRycerz.liczebnoscBroniacych + o.czarnyLucznik.liczebnoscBroniacych);
+
         }
 
         #endregion werbowanie jednostek
@@ -392,31 +398,31 @@ namespace Anteriora
 
         public void UstawLabele()
         {
-            labelLiczebnoscZwiadowca.Text = "Liczebność: " + o.zwiadowca.ilosc.ToString();
+            labelLiczebnoscZwiadowca.Text = "Liczebność: " + o.zwiadowca.liczebnoscAtakujacych.ToString();
             labelPoziomZwiadowca.Text = "Poziom: " + o.zwiadowca.poziomUlepszenia.ToString();
             labelWartoscAtakuZwiadowca.Text = "Skuteczność: " + o.zwiadowca.ObliczAtakJednostki().ToString() + "%";
 
-            labelLiczebnoscPiechur.Text = "Liczebność: " + o.piechur.ilosc.ToString();
+            labelLiczebnoscPiechur.Text = "Liczebność: " + o.piechur.liczebnoscAtakujacych.ToString();
             labelPoziomPiechur.Text = "Poziom: " + o.piechur.poziomUlepszenia.ToString();
             labelWartoscAtakuPiechur.Text = "Wartość ataku: " + o.piechur.ObliczAtakJednostki().ToString();
             labelWartoscObronyPiechur.Text = "Wartość obrony: " + o.piechur.ObliczObroneJednostki().ToString();
 
-            labelLiczebnoscLucznik.Text = "Liczebność: " + o.lucznik.ilosc.ToString();
+            labelLiczebnoscLucznik.Text = "Liczebność: " + o.lucznik.liczebnoscAtakujacych.ToString();
             labelPoziomLucznik.Text = "Poziom: " + o.lucznik.poziomUlepszenia.ToString();
             labelWartoscAtakuLucznik.Text = "Wartość ataku: " + o.lucznik.ObliczAtakJednostki().ToString();
             labelWartoscObronyLucznik.Text = "Wartość obrony: " + o.lucznik.ObliczObroneJednostki().ToString();
 
-            labelLiczebnoscRycerz.Text = "Liczebność: " + o.rycerz.ilosc.ToString();
+            labelLiczebnoscRycerz.Text = "Liczebność: " + o.rycerz.liczebnoscAtakujacych.ToString();
             labelPoziomRycerz.Text = "Poziom: " + o.rycerz.poziomUlepszenia.ToString();
             labelWartoscAtakuRycerz.Text = "Wartość ataku: " + o.rycerz.ObliczAtakJednostki().ToString();
             labelWartoscObronyRycerz.Text = "Wartość obrony: " + o.rycerz.ObliczObroneJednostki().ToString();
 
-            labelLiczebnoscCzarnyRycerz.Text = "Liczebność: " + o.czarnyRycerz.ilosc.ToString();
+            labelLiczebnoscCzarnyRycerz.Text = "Liczebność: " + o.czarnyRycerz.liczebnoscAtakujacych.ToString();
             labelPoziomCzarnyRycerz.Text = "Poziom: " + o.czarnyRycerz.poziomUlepszenia.ToString();
             labelWartoscAtakuCzarnyRycerz.Text = "Wartość ataku: " + o.czarnyRycerz.ObliczAtakJednostki().ToString();
             labelWartoscObronyCzarnyRycerz.Text = "Wartość obrony: " + o.czarnyRycerz.ObliczObroneJednostki().ToString();
 
-            labelLiczebnoscCzarnyLucznik.Text = "Liczebność: " + o.czarnyLucznik.ilosc.ToString();
+            labelLiczebnoscCzarnyLucznik.Text = "Liczebność: " + o.czarnyLucznik.liczebnoscAtakujacych.ToString();
             labelPoziomCzarnyLucznik.Text = "Poziom: " + o.czarnyLucznik.poziomUlepszenia.ToString();
             labelWartoscAtakuCzarnyLucznik.Text = "Wartość ataku: " + o.czarnyLucznik.ObliczAtakJednostki().ToString();
             labelWartoscObronyCzarnyLucznik.Text = "Wartość obrony: " + o.czarnyLucznik.ObliczObroneJednostki().ToString();

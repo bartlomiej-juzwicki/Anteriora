@@ -20,6 +20,8 @@ namespace Anteriora
         public bool czyPanel4Istnieje;
         public bool czyPanel5Istnieje;
         public bool czyPanel6Istnieje;
+        public bool czyPanel7Istnieje;
+        public bool czyPanel8Istnieje;
 
         bool czyRuch;
         Point start = new Point(0, 0);
@@ -165,6 +167,20 @@ namespace Anteriora
                 Panel6 panel = new Panel6(o1, this);
                 panel.Show();
                 czyPanel6Istnieje = true;
+            }
+
+            if(czyPanel7Istnieje == false)
+            {
+                Panel7 panel = new Panel7(o1, this);
+                panel.Show();
+                czyPanel7Istnieje = true;
+            }
+
+            if(czyPanel8Istnieje == false)
+            {
+                Panel8 panel = new Panel8(o1, this);
+                panel.Show();
+                czyPanel8Istnieje = true;
             }
 
         }
